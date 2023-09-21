@@ -1,3 +1,3 @@
 <template>
-  <a href="#" class="ml-2 mr-4 text-gray-700">Trending</a>
+  <a href="#" class="ml-2 mr-4 text-gray-700 hover:bg-indigo-50 p-3 rounded-md transition-all">Trending</a>
 </template>

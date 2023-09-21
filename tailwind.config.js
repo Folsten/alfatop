@@ -188,6 +188,8 @@ module.exports = {
         800: '#9C2A10',
         900: '#7E2410',
       },
+      // > Other colors
+      'white': '#FFFFFF'
     }
   },
   plugins: [],

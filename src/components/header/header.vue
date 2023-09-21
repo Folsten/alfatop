@@ -6,14 +6,14 @@
         <HeaderLanguage />
       </div>
       <div class="flex items-center h-[72px]">
-        <IconBigLogo class="mr-auto" />
+        <IconBigLogo />
         <HeaderSearch />
-        <HeaderCart class="ml-auto" />
+        <HeaderCart />
         <HeaderAuth />
       </div>
       <HeaderMenu />
-      <hr>
     </div>
+    <hr>
   </header>
 </template>
 
