@@ -17,4 +17,7 @@ module.exports = {
     "amd": true,
     "node": true
   },
+  rules: {
+    'vue/multi-word-component-names': 'off',
+  },
 }
