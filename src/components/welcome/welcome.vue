@@ -1,13 +1,13 @@
 <template>
   <div class="container">
-    <div class="h-[160px] flex items-center justify-center font-semibold text-3xl text-center text-gray-900">
+    <div class="h-[160px] flex items-center justify-center font-semibold text-3xl text-center text-gray-900 mt-4 mb-4">
       <h1>Choose from 1000+ products offered by global retailers<br class="lg:hidden"> and pay with crypto</h1>
     </div>
-    <div class="flex md:flex-wrap">
-      <div class="flex w-full items-center mr-5 rounded-lg overflow-hidden h-[224px] md:mr-0 md:mb-5">
+    <div class="flex sm:flex-wrap">
+      <div class="flex w-full items-center mr-5 rounded-lg overflow-hidden h-[224px] sm:mb-5 lg:mr-1">
         <div class="mobile-and-crypto-card h-full w-full">
-          <div class="p-8 flex flex-col justify-center h-full">
-            <span class="text-[28px] text-white leading-10 sm:text-center">Recharge your mobile <br class="lg:hidden">with crypto</span>
+          <div class="p-8 flex flex-col justify-center h-full md:p-4">
+            <span class="text-[28px] text-white leading-10 sm:text-center md:text-2xl">Recharge your mobile <br class="lg:hidden">with crypto</span>
             <router-link
               to="#"
               class="w-40 h-9 text-gray-700 mt-5 flex justify-center items-center bg-gray-25 rounded-md sm:w-full"
@@ -15,14 +15,14 @@
           </div>
         </div>
       </div>
-      <div class="flex w-full items-center ml-5 rounded-lg overflow-hidden h-[224px] md:ml-0 md:mt-5">
+      <div class="flex w-full items-center ml-5 rounded-lg overflow-hidden h-[224px] sm:mt-5 lg:ml-1">
         <div class="gift-cards-and-more h-full w-full">
-          <div class="p-8 flex flex-col h-full justify-center">
-            <span class="text-[28px] text-white leading-10 sm:text-center">Shop exclusive gift cards
+          <div class="p-8 flex flex-col h-full justify-center md:p-4">
+            <span class="text-[28px] text-white leading-10 sm:text-center md:text-2xl">Shop exclusive gift cards
             <br class="lg:hidden">and more</span>
             <!-- <router-link to="#" class="w-40 h-9 text-gray-700 mt-5 flex justify-center items-center bg-gray-25 rounded-md">Browse products</router-link> -->
             <div class="flex mt-5 sm:flex-wrap">
-              <div class="relative w-2/3 sm:w-full sm:mb-2">
+              <div class="relative w-2/3 sm:w-full sm:mb-3">
                 <IconCyprus class="absolute left-3 h-[20px] w-[20px] top-[calc(50%-10px)]" />
                 <input
                   type="tel"

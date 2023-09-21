@@ -1,5 +1,6 @@
 <template>
-  <div class="flex mt-4 lg:flex-col">
+  <div class="text-gray-900">Services</div>
+  <div class="flex mt-4 lg:flex-col lg:items-center">
     <FooterMenuItem />
     <FooterMenuItem />
     <FooterMenuItem />

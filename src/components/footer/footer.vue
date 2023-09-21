@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-40 lg:mt-30">
+  <div class="container mt-40 lg:mt-20">
     <div class="flex lg:flex-wrap">
       <div class="flex flex-col w-full">
         <h4 class="text-gray-900 text-3xl font-semibold lg:text-center">Subscribe to our newsletter</h4>
@@ -25,32 +25,30 @@
     </div>
   </div>
   <div class="flex flex-col">
-    <div class="container mt-40 flex lg:mt-30 lg:flex-col">
-      <div class="flex flex-col">
-        <div class="text-gray-900">Services</div>
+    <div class="container mt-40 flex lg:mt-20 lg:flex-col">
+      <div class="flex flex-col lg:items-center sm:items-start">
         <FooterMenu />
       </div>
-      <div class="flex flex-col ml-20 md:ml-10 lg:ml-0 lg:mt-10">
-        <div class="text-gray-900">Company</div>
+      <div class="flex flex-col ml-20 lg:ml-0 lg:mt-10 lg:items-center sm:items-start">
         <FooterMenu />
       </div>
-      <div class="flex ml-auto lg:ml-0 lg:mt-6">
+      <div class="flex ml-auto lg:ml-0 lg:mt-6 lg:justify-center sm:justify-start">
         <router-link to="#">
-          <IconTelegram class="mr-5" />
+          <IconTelegram class="mr-2 ml-2 sm:ml-0" />
         </router-link>
         <router-link to="#">
-          <IconFacebook class="mr-5" />
+          <IconFacebook class="mr-2 ml-2" />
         </router-link>
         <router-link to="#">
-          <IconInstagram class="mr-5" />
+          <IconInstagram class="mr-2 ml-2" />
         </router-link>
         <router-link to="#">
-          <IconX class="mr-5" />
+          <IconX class="mr-2 ml-2" />
         </router-link>
       </div>
     </div>
     <div class="container mt-10 mb-14 lg:mb-10">
-      <div class="flex items-end lg:items-start lg:flex-col">
+      <div class="flex items-end lg:items-center sm:items-start lg:flex-col">
         <IconLogoLight />
         <div class="text-gray-500 text-xs ml-6 lg:ml-0 lg:mt-5">© 2023 ALFAtop, All rights reserved.</div>
         <div class="ml-auto flex items-center lg:ml-0 lg:mt-10">
