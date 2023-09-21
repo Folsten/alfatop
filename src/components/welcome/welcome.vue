@@ -4,9 +4,9 @@
       <h1>Choose from 1000+ products offered by global retailers<br class="lg:hidden"> and pay with crypto</h1>
     </div>
     <div class="flex md:flex-wrap">
-      <div class="flex w-full md:w-full items-center m-5 rounded-lg overflow-hidden">
+      <div class="flex w-full items-center mr-5 rounded-lg overflow-hidden h-[224px] md:mr-0 md:mb-5">
         <div class="mobile-and-crypto-card h-full w-full">
-          <div class="p-8 flex flex-col">
+          <div class="p-8 flex flex-col justify-center h-full">
             <span class="text-[28px] text-white leading-10 sm:text-center">Recharge your mobile <br class="lg:hidden">with crypto</span>
             <router-link
               to="#"
@@ -15,9 +15,9 @@
           </div>
         </div>
       </div>
-      <div class="flex w-full md:w-full items-center m-5 rounded-lg overflow-hidden">
+      <div class="flex w-full items-center ml-5 rounded-lg overflow-hidden h-[224px] md:ml-0 md:mt-5">
         <div class="gift-cards-and-more h-full w-full">
-          <div class="p-8 flex flex-col">
+          <div class="p-8 flex flex-col h-full justify-center">
             <span class="text-[28px] text-white leading-10 sm:text-center">Shop exclusive gift cards
             <br class="lg:hidden">and more</span>
             <!-- <router-link to="#" class="w-40 h-9 text-gray-700 mt-5 flex justify-center items-center bg-gray-25 rounded-md">Browse products</router-link> -->
@@ -54,6 +54,6 @@
 }
 </style>
 
-<script setup land="ts">
+<script setup lang="ts">
 import IconCyprus from '~/icons/icon-cyprus.vue';
 </script>
