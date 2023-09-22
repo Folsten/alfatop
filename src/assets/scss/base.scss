@@ -12,6 +12,7 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
     font-weight: 500;
+    font-size: 1rem;
   }
 
   input {
@@ -21,11 +22,5 @@
   .container {
     @apply pl-4 pr-4;
     max-width: 1200px;
-  }
-}
-
-@layer components {
-  input::placeholder {
-    @apply text-gray-500;
   }
 }

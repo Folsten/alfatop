@@ -1,0 +1,30 @@
+@tailwind components;
+
+@layer components {
+  .fly-window {
+    @apply absolute bg-gray-25 rounded-md border border-gray-300 shadow-xs z-10;
+  }
+
+  input::placeholder {
+    @apply text-gray-500;
+  }
+
+  .scroll-custom {
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 6px; /* ширина scrollbar */
+      // height: 24px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: white; /* цвет дорожки */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      // background-color: blue; /* цвет плашки */
+      border-radius: 90px; /* закругления плашки */
+      border: 3px solid #C9C9CC; /* padding вокруг плашки */
+    }
+  }
+}
