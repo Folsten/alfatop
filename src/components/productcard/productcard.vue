@@ -1,13 +1,13 @@
 <template>
-  <div class="flex flex-col w-[200px] mr-2 ml-2 mt-8">
+  <div class="flex flex-col w-1/4 pr-2 pl-2 mt-8 xl:w-1/3 lg:w-1/2 md:pl-1 md:pr-1 sm:w-full">
     <div class="relative">
       <img
         src="./images/coca.jpg"
-        class="rounded-md"
+        class="rounded-md w-full"
       >
       <div class="absolute w-full top-0 flex">
         <div class="w-full flex pt-4 pl-4 pr-4">
-          <div class="bg-blue-600 text-gray-25 text-xs font-medium pt-1 pb-1 pl-3 pr-3 rounded-md">New</div>
+          <div class="bg-blue-600 text-gray-25 text-xs font-medium pt-1 pb-1 pl-3 pr-3 rounded-md md:pl-2 md:pr-2">New</div>
           <div class="bg-orange-400 text-gray-25 text-xs font-medium pt-1 pb-1 pl-3 pr-3 rounded-md ml-2">Popular</div>
           <IconFavourite class="ml-auto cursor-pointer" />
         </div>

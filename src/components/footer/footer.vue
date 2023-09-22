@@ -1,7 +1,5 @@
 <template>
-  <div class="container mt-20 lg:justify-center lg:flex lg:w-3/4">
-  </div>
-  <div class="flex flex-col">
+  <div class="flex flex-col mt-20 mb-16">
     <div class="container flex lg:flex-col">
       <div class="flex flex-col lg:items-center sm:items-start">
         <FooterMenu />
@@ -24,7 +22,7 @@
         </router-link>
       </div>
     </div>
-    <div class="container mt-10 mb-14 lg:mb-10">
+    <div class="container mt-10">
       <div class="flex items-end lg:items-center sm:items-start lg:flex-col">
         <IconLogoLight />
         <div class="text-gray-500 text-xs ml-6 lg:ml-0 lg:mt-5">© 2023 ALFAtop, All rights reserved.</div>
