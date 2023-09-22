@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center ml-2">
     <IconCyprus class="h-5 w-5 mr-2" />
-    <div class="text-gray-500 font-medium">
+    <div class="text-gray-500 text-sm font-medium">
       Cyprus
     </div>
     <div class="ml-1">

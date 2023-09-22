@@ -9,6 +9,59 @@ module.exports = {
     container: {
       center: true,
     },
+    fontSize: {
+      xs: ['12px','16px'],
+      sm: ['14px','24px'],
+      md: ['16px','24px'],
+      lg: ['18px','32px'],
+      mh6: ['18px', '24px'],
+      mh5: ['20px', '32px'],
+      mh4: ['24px', '40px'],
+      mh3: ['28px', {
+        lineHeight: '40px',
+        letterSpacing: '-2%'
+      }],
+      mh2: ['32px', {
+        lineHeight: '40px',
+        letterSpacing: '-2%'
+      }],
+      mh1: ['36px', {
+        lineHeight: '48px',
+        letterSpacing: '-2%'
+      }],
+      dh6: ['20px', {
+        lineHeight: '24px',
+        letterSpacing: '-2%'
+      }],
+      dh5: ['24px', {
+        lineHeight: '32px',
+        letterSpacing: '-2%'
+      }],
+      dh4: ['28px', {
+        lineHeight: '40px',
+        letterSpacing: '-2%'
+      }],
+      dh3: ['32px', {
+        lineHeight: '40px',
+        letterSpacing: '-2%'
+      }],
+      dh2: ['36px', {
+        lineHeight: '48px',
+        letterSpacing: '-2%'
+      }],
+      dh1: ['40px', {
+        lineHeight: '48px',
+        letterSpacing: '-2%'
+      }],
+      dsm: ['44px', {
+        lineHeight: '48px',
+        letterSpacing: '-2%'
+      }],
+      dlg: ['52px', {
+        lineHeight: '56px',
+        letterSpacing: '-2%'
+      }]
+    },
     screens: {
       '2xl': {'max': '1535px'},
       'xl': {'max': '1279px'},

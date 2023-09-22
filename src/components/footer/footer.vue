@@ -1,23 +1,23 @@
 <template>
-  <div class="container mt-40 lg:mt-20">
-    <div class="flex lg:flex-wrap">
+  <div class="container mt-40 lg:mt-20 lg:justify-center lg:flex lg:w-3/4">
+    <div class="flex lg:flex-wrap justify-center">
       <div class="flex flex-col w-full">
-        <h4 class="text-gray-900 text-3xl font-semibold lg:text-center">Subscribe to our newsletter</h4>
-        <p class="text-gray-700 text-lg font-normal mt-1 lg:text-center lg:mb-3">Stay updated with our promotions and the
+        <h4 class="text-gray-900 text-dh4 font-semibold lg:text-center text-mh4">Subscribe to our newsletter</h4>
+        <p class="text-gray-700 text-lg font-normal lg:text-center lg:mb-6">Stay updated with our promotions and the
           latest news.</p>
       </div>
       <div class="flex flex-col w-full lg:items-center">
         <div class="flex w-full lg:justify-center lg:flex-wrap">
           <input
             type="text"
-            placeholder="Enter your email"
-            class="rounded-lg border-2 p-3 w-full lg:w-2/3 h-12"
+            placeholder="Enter your Email"
+            class="rounded-lg border-2 p-3 w-full h-12"
           >
           <button
-            class="bg-orange-400 text-orange-25 rounded-md text-base w-[118px] ml-3 lg:w-2/3 lg:h-12 lg:mt-2 lg:ml-0"
+            class="bg-orange-400 text-orange-25 rounded-md text-base w-[145px] ml-3 lg:w-full lg:h-12 lg:mt-3 lg:ml-0"
           >Subscribe</button>
         </div>
-        <div class="mt-1 lg:mt-5 lg:text-center">We care about your personal data, check our <router-link
+        <div class="mt-1 lg:text-center text-gray-700 font-normal text-sm lg:mt-6 ml-[2px]">We care about your personal data, check our <router-link
             to="#"
             class="text-indigo-500"
           >Privacy policy</router-link>.</div>
