@@ -16,7 +16,10 @@
       <ProductCard />
       <ProductCard />
     </div>
-    <router-link to="#" class="flex justify-center mt-8 rounded-lg border w-[105px] text-md pt-2 pb-2 text-gray-700 ml-2">Browse All</router-link>
+    <router-link
+      to="#"
+      class="flex justify-center mt-8 rounded-lg border w-[105px] text-md pt-2 pb-2 text-gray-700 ml-2"
+    >Browse All</router-link>
   </div>
 </template>
 

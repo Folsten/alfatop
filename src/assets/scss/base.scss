@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.15s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
 @layer base {
   html {
     font-size: 1rem;
