@@ -4,7 +4,7 @@
   >
     <div class="relative flex items-center w-full z-10">
       <HeaderSearchCategory />
-      <hr class="h-full w-[1px] ml-2 mr-2 bg-gray-300">
+      <hr class="h-1/2 w-[1px] ml-2 mr-2 bg-gray-300">
       <HeaderSearchBar />
     </div>
   </div>

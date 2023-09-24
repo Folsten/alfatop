@@ -6,7 +6,7 @@
     <p class="text-lg font-normal ml-2 md:text-md">
       We provide fully transparent deals without any hidden charges
     </p>
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap overflow-x-auto w-full sm:flex-nowrap sm:pb-3">
       <ProductCard />
       <ProductCard />
       <ProductCard />
@@ -18,7 +18,7 @@
     </div>
     <router-link
       to="#"
-      class="flex justify-center mt-8 rounded-lg border w-[105px] text-md pt-2 pb-2 text-gray-700 ml-2"
+      class="flex justify-center mt-8 rounded-lg border w-[105px] text-md pt-2 pb-2 text-gray-700 ml-2 sm:mt-4"
     >Browse All</router-link>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col pr-3 pl-3 mt-8 w-1/4 md:pr-2 md:pl-2" :class="productcardEnvironmentClasses">
+  <div class="flex flex-col pr-3 pl-3 mt-8 w-1/4 min-w-[190px] md:pr-2 md:pl-2" :class="productcardEnvironmentClasses">
     <div class="relative">
       <img
         src="./images/coca.jpg"

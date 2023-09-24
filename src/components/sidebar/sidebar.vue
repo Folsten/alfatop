@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[270px] mr-10 mt-2 md:mr-8 sm:mr-5">
+  <div class="w-[270px] md:w-[250px] mr-10 mt-2 md:mr-8 sm:mr-5 sm:hidden">
     <SidebarCategory />
     <SidebarCategory />
     <SidebarCategory />

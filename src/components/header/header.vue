@@ -6,7 +6,7 @@
         <HeaderLanguage />
       </div>
       <div class="flex items-center h-[72px]">
-        <IconBigLogo />
+        <IconBigLogo class="cursor-pointer" />
         <HeaderSearch />
         <div class="flex ml-auto">
           <HeaderCart />
