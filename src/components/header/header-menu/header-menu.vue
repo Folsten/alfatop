@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-[72px] items-center">
+  <div class="flex h-[72px] items-center md:items-end">
     <HeaderMenuItem />
     <HeaderMenuItem />
     <HeaderMenuItem />

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center ml-2 cursor-pointer relative"
+    class="flex items-center ml-2 cursor-pointer relative z-20"
     @click="isOpen = !isOpen"
   >
     <IconCyprus class="h-[20px] w-[20px] mr-2" />
@@ -10,10 +10,10 @@
     <div class="ml-1">
       <IconArrowDown />
     </div>
-    <Transition>
+    <Transition name="fade">
       <div
         v-if="isOpen"
-        class="cursor-default transition-all"
+        class="cursor-default"
       >
         <div class="fly-window w-[280px] top-8 left-0">
           <div class="mt-3 mb-4 ml-3 mr-3">

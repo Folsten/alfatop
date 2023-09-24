@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 0.15s ease;
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.15s ease-out;
 }
 
-.v-enter-from,
-.v-leave-to {
+.fade-enter-from,
+.fade-leave-to {
   opacity: 0;
 }
 
@@ -18,10 +18,9 @@
   }
 
   body {
-    @apply text-gray-500;
+    @apply text-gray-500 font-normal;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    font-weight: 500;
     font-size: 1rem;
   }
 
@@ -30,7 +29,11 @@
   }
 
   .container {
-    @apply pl-4 pr-4;
+    @apply pl-6 pr-6;
     max-width: 1200px;
+  }
+
+  hr {
+    @apply bg-gray-100;
   }
 }

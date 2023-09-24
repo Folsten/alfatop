@@ -1,19 +1,24 @@
 <template>
   <header>
     <div class="container">
-      <div class="flex items-center justify-between h-[48px]">
+      <div class="flex items-center justify-between h-[48px] md:hidden">
         <HeaderCountry />
         <HeaderLanguage />
       </div>
       <div class="flex items-center h-[72px]">
         <IconBigLogo />
         <HeaderSearch />
-        <HeaderCart />
-        <HeaderAuth />
+        <div class="flex ml-auto">
+          <HeaderCart />
+          <HeaderAuth />
+        </div>
       </div>
+    </div>
+    <hr class="hidden md:flex">
+    <div class="container">
       <HeaderMenu />
     </div>
-    <hr>
+    <hr class="md:hidden">
   </header>
 </template>
 
