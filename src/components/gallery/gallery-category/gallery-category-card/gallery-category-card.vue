@@ -1,6 +1,7 @@
 <template>
   <div
-    class="flex flex-col pr-3 pl-3 mt-8 w-1/4 min-w-[190px] xl:w-1/3 lg:w-1/2 lg:odd:pl-0 lg:even:pr-0 sm:odd:pl-2 sm:even:pr-2 sm:pl-2 sm:pr-2 sm:w-full"
+    class="flex flex-col pr-3 pl-3 mt-8 w-1/4 min-w-[190px] xl:w-1/3 lg:w-1/2 sm:pl-2 sm:pr-2 sm:w-full"
+    :class="{'w-1/5 xl:w-1/4 lg:w-1/3 md:w-1/2': !isSidebarThere}"
   >
     <div class="relative">
       <img
@@ -27,4 +28,17 @@
 
 <script setup lang="ts">
 import IconFavourite from '~/icons/icon-favourite.vue';
+import { inject, onBeforeMount } from 'vue';
+
+const isSidebarThere = inject<string>('isSidebarThere');
+let cardResponseClasses = 'w-[10px]'
+
+// onBeforeMount(() => {
+//   console.log(isSidebarThere);
+//   if (isSidebarThere) {
+//     cardResponseClasses = 'w-[10px]'
+//   } else {
+//     cardResponseClasses = 'w-[10px]'
+//   }
+// })
 </script>
