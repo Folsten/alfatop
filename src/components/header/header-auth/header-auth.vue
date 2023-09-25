@@ -9,7 +9,7 @@
     </div> -->
     <div
       @click="isOpen = !isOpen"
-      class="relative flex items-center text-sm justify-center cursor-pointer md:hidden"
+      class="relative flex items-center text-sm justify-center md:hidden"
     >
       <IconMyAccount class="mr-2" />
       <span class="text-gray-700 font-medium">My account</span>
@@ -30,26 +30,26 @@
           <hr class="text-gray-300 mt-2 mb-2">
           <div class="flex flex-col pl-4 pr-4 pt-2">
             <div class="text-xs pb-2">Account</div>
-            <div class="flex items-center mt-2">
+            <div class="flex items-center mt-2 cursor-pointer">
               <IconOrders />
               <div class="ml-2 text-gray-700 font-medium">Orders</div>
             </div>
-            <div class="flex items-center mt-3">
+            <div class="flex items-center mt-3 cursor-pointer">
               <IconFavourites />
               <div class="ml-2 text-gray-700 font-medium">Favourites</div>
             </div>
-            <div class="flex items-center mt-3">
+            <div class="flex items-center mt-3 cursor-pointer">
               <IconHelpsupport />
               <div class="ml-2 text-gray-700 font-medium">Help & Support</div>
             </div>
-            <div class="flex items-center mt-3">
+            <div class="flex items-center mt-3 cursor-pointer">
               <IconReferral />
               <div class="ml-2 text-gray-700 font-medium">Referral program</div>
             </div>
           </div>
           <hr class="text-gray-300 mt-2 mb-2">
           <div class="flex pl-4 pr-4">
-            <div class="flex items-center mt-3 pb-5">
+            <div class="flex items-center mt-3 pb-5 cursor-pointer">
               <IconLogout />
               <div class="ml-2 text-gray-700 font-medium">Log out</div>
             </div>

@@ -2,7 +2,7 @@
   <router-link
     @click="isMarked = !isMarked"
     to="#"
-    class="text-gray-700 font-medium hover:bg-indigo-50 p-3 pl-4 pr-4 transition-all md:pb-2 md:border-b-2 md:hover:bg-white"
+    class="text-gray-700 font-medium hover:bg-indigo-50 p-3 pl-4 pr-4 transition-all rounded-md md:rounded-none md:pb-2 md:border-b-2 md:hover:bg-white"
     :class="[isMarked ? 'border-b-indigo-500' : '']"
   >Trending</router-link>
 </template>
