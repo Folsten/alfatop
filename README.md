@@ -1,3 +1,7 @@
+#
+
+Node 20.7.0 required.
+
 # alfatop
 
 This template should help get you started developing with Vue 3 in Vite.
