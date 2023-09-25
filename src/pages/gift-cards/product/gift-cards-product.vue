@@ -6,8 +6,8 @@
     <GalleryCategory class="mt-16" />
     <Howitwork class="mt-28 sm:hidden" />
     <Newsletter class="mt-40 mb-40 sm:mt-20 sm:mb-20" />
-    <Footer />
   </div>
+  <Footer />
 
 
 
