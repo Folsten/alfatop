@@ -1,7 +1,6 @@
 <template>
   <div
-    class="flex flex-col pr-3 pl-3 mt-8 w-1/4 min-w-[190px] xl:w-1/3 lg:w-1/2 sm:pl-2 sm:pr-2 sm:w-full"
-    :class="{'w-1/5 xl:w-1/4 lg:w-1/3 md:w-1/2': !isSidebarThere}"
+    class="flex w-full min-w-[190px] flex-col mt-8"
   >
     <div class="relative">
       <img
@@ -9,11 +8,11 @@
         class="rounded-md w-full"
       >
       <div class="absolute w-full top-0 flex">
-        <div class="w-full flex pt-4 pl-4 pr-4 sm:pt-2 sm:pl-2 sm:pr-2">
-          <div class="bg-blue-600 text-gray-25 text-xs font-medium pt-1 pb-1 pl-3 pr-3 rounded-md sm:pl-2 sm:pr-2">New
+        <div class="w-full flex pt-4 pl-4 pr-4">
+          <div class="bg-blue-600 text-gray-25 text-xs font-medium pt-1 pb-1 pl-3 pr-3 rounded-md">New
           </div>
           <div
-            class="bg-orange-400 text-gray-25 text-xs font-medium pt-1 pb-1 pl-3 pr-3 rounded-md ml-2 sm:pl-1 sm:pr-1 sm:pb-1 sm:pt-1"
+            class="bg-orange-400 text-gray-25 text-xs font-medium pt-1 pb-1 pl-3 pr-3 rounded-md ml-2"
           >Popular</div>
           <IconFavourite class="ml-auto cursor-pointer sm:hidden" />
         </div>

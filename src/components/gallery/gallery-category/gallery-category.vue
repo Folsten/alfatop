@@ -6,7 +6,7 @@
     <p class="text-lg font-normal md:text-md">
       We provide fully transparent deals without any hidden charges
     </p>
-    <div class="flex flex-wrap overflow-x-auto w-full sm:flex-nowrap sm:pb-3">
+    <div class="grid-responsive-container-for-cards overflow-x-auto sm:flex sm:flex-nowrap sm:pb-3">
       <GalleryCategoryCard />
       <GalleryCategoryCard />
       <GalleryCategoryCard />
