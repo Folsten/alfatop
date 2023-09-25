@@ -1,6 +1,6 @@
 # Node
 
-Node 20.7.0 required.
+Node 18.18.0 required.
 
 # alfatop
 
