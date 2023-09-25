@@ -3,6 +3,10 @@
   <div class="container mt-4">
     <Crumbs />
     <GiftProduct class="mt-14" />
+    <GalleryCategory class="mt-16" />
+    <Howitwork class="mt-28 sm:hidden" />
+    <Newsletter class="mt-40 mb-40 sm:mt-20 sm:mb-20" />
+    <Footer />
   </div>
 
 
@@ -19,4 +23,6 @@ import Footer from '@/components/footer/footer.vue';
 import Crumbs from '@/components/crumbs/crumbs.vue';
 import Newsletter from '@/components/newsletter/newsletter.vue';
 import GiftProduct from '@/components/giftproduct/giftproduct.vue';
+import GalleryCategory from '@/components/gallery/gallery-category/gallery-category.vue';
+import Howitwork from '@/components/howitwork/howitwork.vue';
 </script>

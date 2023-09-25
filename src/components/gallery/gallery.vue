@@ -8,4 +8,6 @@
 
 <script setup lang="ts">
 import GalleryCategory from './gallery-category/gallery-category.vue';
+import {provide} from 'vue';
+
 </script>
