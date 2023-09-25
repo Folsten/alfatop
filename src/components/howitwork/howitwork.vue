@@ -23,16 +23,16 @@
       </div>
       <div class="w-full rounded-md bg-gray-25 border border-gray-200 mr-10">
         <div class="flex-col items-start w-full p-6">
-          <IconPaper />
-          <h6 class="text-gray-900 text-dh6 font-medium mt-6 sm:text-mh6">Choose your payment method and amount</h6>
-          <p class="text-md mt-4">Select or enter the preferred value for the gift card.</p>
+          <IconMoney />
+          <h6 class="text-gray-900 text-dh6 font-medium mt-6 sm:text-mh6">Pay with the preferred crypto</h6>
+          <p class="text-md mt-4">In most cases, the payment is confirmed within a few minutes.</p>
         </div>
       </div>
       <div class="w-full rounded-md bg-gray-25 border border-gray-200">
         <div class="flex-col items-start w-full p-6">
-          <IconPaper />
-          <h6 class="text-gray-900 text-dh6 font-medium mt-6 sm:text-mh6">Choose your payment method and amount</h6>
-          <p class="text-md mt-4">Select or enter the preferred value for the gift card.</p>
+          <IconConfirm />
+          <h6 class="text-gray-900 text-dh6 font-medium mt-6 sm:text-mh6">That's it, ready to use it!</h6>
+          <p class="text-md mt-4">Redeem the gift card at your chosen retailer according to their instructions.</p>
         </div>
       </div>
     </div>
