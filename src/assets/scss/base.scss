@@ -29,7 +29,7 @@
   }
 
   .container {
-    @apply pl-6 pr-6 md:pl-3 md:pr-3 sm:pl-2 sm:pr-2 xs:pl-1 xs:pr-1;
+    @apply pl-6 pr-6 sm:pl-4 sm:pr-4 xs:pl-2 xs:pr-2;
     max-width: 1200px;
   }
 }
