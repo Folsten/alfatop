@@ -39,7 +39,7 @@
   .grid-responsive-container-for-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-    gap: 16px;
+    gap: 12px;
   }
 
 }
