@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../pages/home.vue';
-import GiftCards from '../pages/gift-cards.vue';
+import Home from '../pages/home.vue'
+import GiftCards from '../pages/gift-cards/gift-cards.vue'
+import GiftCardsProduct from '../pages/gift-cards/product/gift-cards-product.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,6 +16,11 @@ const router = createRouter({
       name: 'gift-cards',
       component: GiftCards
     },
+    {
+      path: '/gift-cards/product',
+      name: 'gift-cards-card',
+      component: GiftCardsProduct
+    }
     // {
     //   path: '/about',
     //   name: 'about',
