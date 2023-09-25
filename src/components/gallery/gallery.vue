@@ -1,8 +1,8 @@
 <template>
   <div class="w-full">
-    <GalleryCategory :is-sidebar-there="true" />
-    <GalleryCategory :is-sidebar-there="true" />
-    <GalleryCategory :is-sidebar-there="true" />
+    <GalleryCategory />
+    <GalleryCategory />
+    <GalleryCategory />
   </div>
 </template>
 

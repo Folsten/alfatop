@@ -25,11 +25,4 @@
 
 <script setup lang="ts">
 import GalleryCategoryCard from './gallery-category-card/gallery-category-card.vue';
-import {provide} from 'vue';
-
-const props = defineProps({
-  isSidebarThere: {type: Boolean, required: true}
-})
-
-provide('isSidebarThere', props.isSidebarThere)
 </script>

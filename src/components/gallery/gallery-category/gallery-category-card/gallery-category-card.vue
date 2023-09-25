@@ -27,17 +27,4 @@
 
 <script setup lang="ts">
 import IconFavourite from '~/icons/icon-favourite.vue';
-import { inject, onBeforeMount } from 'vue';
-
-const isSidebarThere = inject<string>('isSidebarThere');
-let cardResponseClasses = 'w-[10px]'
-
-// onBeforeMount(() => {
-//   console.log(isSidebarThere);
-//   if (isSidebarThere) {
-//     cardResponseClasses = 'w-[10px]'
-//   } else {
-//     cardResponseClasses = 'w-[10px]'
-//   }
-// })
 </script>
