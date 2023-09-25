@@ -4,7 +4,7 @@
     <Welcome />
     <div class="container flex mt-20">
       <Sidebar />
-      <Gallery productcardEnvironment="sidebar" />
+      <Gallery />
     </div>
     <Newsletter class="container mt-40 mb-40 lg:mt-20 lg:mb-20" />
     <Footer />

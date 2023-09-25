@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col mt-20 mb-16">
+  <div class="flex flex-col mb-16">
     <div class="container flex lg:flex-col">
       <div class="flex flex-col lg:items-center sm:items-start">
         <FooterMenu />

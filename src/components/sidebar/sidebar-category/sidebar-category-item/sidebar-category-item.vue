@@ -1,5 +1,5 @@
 <template>
-  <div class="flex mt-4 mb-4 items-center">
+  <div class="flex mt-2 mb-2 pl-4 pr-4 items-center">
     <IconVector class="mr-3" />
     <div class="text-gray-900 text-sm">Retail</div>
     <div class="ml-auto text-gray-400 text-sm">447</div>
