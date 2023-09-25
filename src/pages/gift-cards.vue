@@ -3,7 +3,6 @@
     <Header />
     <div class="container flex flex-col mt-4">
       <Crumbs />
-      <hr class="mt-3">
       <div class="flex mt-14">
         <Sidebar class="mt-6" />
         <Showcase/>
