@@ -13,9 +13,9 @@
 
 <script setup lang="ts">
 import Newsletter from '@/components/newsletter/newsletter.vue';
-import Header from '../components/header/header.vue';
-import Welcome from '../components/welcome/welcome.vue';
-import Sidebar from '../components/sidebar/sidebar.vue';
-import Gallery from '../components/gallery/gallery.vue';
-import Footer from '../components/footer/footer.vue';
+import Header from '@/components/header/header.vue';
+import Welcome from '@/components/welcome/welcome.vue';
+import Sidebar from '@/components/sidebar/sidebar.vue';
+import Gallery from '@/components/gallery/gallery.vue';
+import Footer from '@/components/footer/footer.vue';
 </script>

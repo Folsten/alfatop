@@ -37,7 +37,7 @@ import GalleryCategory from '@/components/gallery/gallery-category/gallery-categ
 
 <style scoped>
 .mobile-bg {
-  background-image: url("../components/images/mobile-bg.png");
+  background-image: url("@/components/images/mobile-bg.png");
   background-size: cover;
   background-position: 50%;
 }
