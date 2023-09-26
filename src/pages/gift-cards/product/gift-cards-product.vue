@@ -4,7 +4,7 @@
     <Crumbs />
     <GiftProduct class="mt-14" />
     <GalleryCategory сlass="mt-16" :card-width="250" />
-    <Mobilehowitwork class="mt-28" />
+    <Giftshowitwork class="mt-28" />
     <Newsletter class="mt-40 mb-40 sm:mt-20 sm:mb-20" />
   </div>
   <Footer />
@@ -24,5 +24,5 @@ import Crumbs from '@/components/crumbs/crumbs.vue';
 import Newsletter from '@/components/newsletter/newsletter.vue';
 import GiftProduct from '@/components/giftproduct/giftproduct.vue';
 import GalleryCategory from '@/components/gallery/gallery-category/gallery-category.vue';
-import Mobilehowitwork from '@/components/mobilehowitwork/mobilehowitwork.vue';
+import Giftshowitwork from '@/components/giftshowitwork/giftshowitwork.vue';
 </script>
