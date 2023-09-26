@@ -5,7 +5,7 @@
     <div class="relative">
       <img
         src="../../../images/coca.jpg"
-        class="rounded-md w-full object-cover max-h-[250px]"
+        class="rounded-md w-full object-cover h-48"
       >
       <div class="absolute w-full top-0 flex">
         <div class="w-full flex pt-4 pl-4 pr-4">

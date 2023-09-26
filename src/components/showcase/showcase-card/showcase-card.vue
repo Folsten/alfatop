@@ -5,7 +5,7 @@
     <div class="relative">
       <img
         src="../../images/playstation.png"
-        class="rounded-md w-full object-cover"
+        class="rounded-md w-full object-cover h-48"
       >
       <div class="absolute w-full top-0 flex xs:hidden">
         <div class="w-full flex pt-4 pl-4 pr-4 sm:pt-2 sm:pl-2 sm:pr-2">
