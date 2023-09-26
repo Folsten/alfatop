@@ -6,7 +6,10 @@
     <p class="text-lg font-normal md:text-md">
       We provide fully transparent deals without any hidden charges
     </p>
-    <div class="grid-responsive-container-for-cards overflow-x-auto sm:flex sm:flex-nowrap sm:pb-3">
+    <div 
+      class="grid-responsive-container-for-cards overflow-x-auto sm:flex sm:flex-nowrap sm:pb-3"
+      :style="{'grid-template-columns': gridCardWidthStyles}"
+    >
       <GalleryCategoryCard />
       <GalleryCategoryCard />
       <GalleryCategoryCard />
@@ -25,4 +28,13 @@
 
 <script setup lang="ts">
 import GalleryCategoryCard from './gallery-category-card/gallery-category-card.vue';
+
+const props = defineProps({
+  cardWidth: {
+    type: Number,
+    default: 190
+  }
+})
+
+let gridCardWidthStyles = `repeat(auto-fit, minmax(${props.cardWidth}px, 1fr))`
 </script>

@@ -3,7 +3,7 @@
   <div class="container mt-4">
     <Crumbs />
     <GiftProduct class="mt-14" />
-    <GalleryCategory сlass="mt-16" />
+    <GalleryCategory сlass="mt-16" :card-width="282" />
     <Howitwork class="mt-28 sm:hidden" />
     <Newsletter class="mt-40 mb-40 sm:mt-20 sm:mb-20" />
   </div>

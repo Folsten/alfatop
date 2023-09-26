@@ -1,11 +1,11 @@
 <template>
   <div
-    class="flex flex-col pr-3 pl-3 mt-8 w-1/4 min-w-[150px] md:pr-2 md:pl-2 xl:w-1/3 lg:w-1/2 md:odd:pl-0 xs:pl-0 xs:pr-0 md:even:pr-0 xs:w-full xs:flex-row"
+    class="flex flex-col mt-8 w-full xs:flex-row"
   >
     <div class="relative">
       <img
         src="../../images/playstation.png"
-        class="rounded-md w-full"
+        class="rounded-md w-full object-cover"
       >
       <div class="absolute w-full top-0 flex xs:hidden">
         <div class="w-full flex pt-4 pl-4 pr-4 sm:pt-2 sm:pl-2 sm:pr-2">
