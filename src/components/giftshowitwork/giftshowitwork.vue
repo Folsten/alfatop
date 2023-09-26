@@ -8,7 +8,7 @@
           restrictions.
         </div>
       </div>
-      <button class="flex self-end items-center p-[10px] shadow-xs border border-gray-300 bg-gray-25 rounded-lg">
+      <button class="flex self-end items-center p-[10px] shadow-xs border border-gray-300 bg-gray-25 rounded-lg ml-2">
         <IconList class="mr-2" />
         <span>FAQ</span>
       </button>

@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../pages/home.vue'
 import GiftCards from '../pages/gift-cards/gift-cards.vue'
 import GiftCardsProduct from '../pages/gift-cards/product/gift-cards-product.vue'
+import Mobile from '../pages/mobile.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,6 +21,11 @@ const router = createRouter({
       path: '/gift-cards/product',
       name: 'gift-cards-card',
       component: GiftCardsProduct
+    },
+    {
+      path: '/mobile',
+      name: 'mobile',
+      component: Mobile
     }
     // {
     //   path: '/about',
