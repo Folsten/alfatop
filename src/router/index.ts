@@ -4,6 +4,7 @@ import GiftCards from '../pages/gift-cards/gift-cards.vue'
 import GiftCardsProduct from '../pages/gift-cards/gift-cards-product/gift-cards-product.vue'
 import Mobile from '../pages/mobile/mobile.vue';
 import MobileCategory from '../pages/mobile/mobile-category/mobile-category.vue';
+import MobileProduct from '../pages/mobile/mobile-product/mobile-product.vue';
 import Cart from '../pages/cart.vue';
 
 const router = createRouter({
@@ -34,11 +35,16 @@ const router = createRouter({
       name: 'mobile-category',
       component: MobileCategory
     },
+    {
+      path: '/mobile/product',
+      name: 'mobile-product',
+      component: MobileProduct
+    },
     { 
       path: '/cart',
       name: 'cart',
       component: Cart
-    }
+    },
     // {
     //   path: '/about',
     //   name: 'about',

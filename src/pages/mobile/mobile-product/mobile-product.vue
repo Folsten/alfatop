@@ -2,7 +2,7 @@
   <Header />
   <div class="container mt-4">
     <Crumbs />
-    <Giftproduct class="mt-14" />
+    <Mobileproduct class="mt-14" />
     <GalleryCategory сlass="mt-16" :card-width="250" />
     <Giftshowitwork class="mt-28" />
     <Newsletter class="mt-40 mb-40 sm:mt-20 sm:mb-20" />
@@ -15,7 +15,7 @@ import Header from '@/components/header/header.vue';
 import Footer from '@/components/footer/footer.vue';
 import Crumbs from '@/components/crumbs/crumbs.vue';
 import Newsletter from '@/components/newsletter/newsletter.vue';
-import Giftproduct from '@/components/giftproduct/giftproduct.vue';
+import Mobileproduct from '@/components/mobileproduct/mobileproduct.vue';
 import GalleryCategory from '@/components/gallery/gallery-category/gallery-category.vue';
 import Giftshowitwork from '@/components/giftshowitwork/giftshowitwork.vue';
 </script>
