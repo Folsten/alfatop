@@ -18,11 +18,11 @@
         <div class="flex w-full border-gray-100 border-b p-4 sm:flex-col">
           <div class="flex flex-col w-full mr-2 sm:mr-0">
             <div class="text-sm text-gray-700">Select plan or enter exact amount:</div>
-            <Customselect />
+            <Selectcustom />
           </div>
           <div class="flex flex-col w-full ml-2 sm:ml-0 sm:mt-4">
             <div class="text-sm text-gray-700">Choose crypto to pay with</div>
-            <Customselect />
+            <Selectcustom />
           </div>
         </div>
         <div class="flex w-full justify-between p-4">
@@ -81,7 +81,7 @@
 
 <script setup lang="ts">
 // Components
-import Customselect from '@/components/customselect/customselect.vue';
+import Selectcustom from '@/components/selectcustom/selectcustom.vue';
 // Icons
 import IconFavouriteAdded from '@/components/icons/icon-favourite-added.vue';
 import IconReference from '@/components/icons/icon-reference.vue';

@@ -239,7 +239,7 @@ input[type="checkbox"] {
 
 <script setup lang="ts">
 // Components
-import Customselect from '@/components/customselect/customselect.vue';
+import Selectcustom from '@/components/selectcustom/selectcustom.vue';
 // Icons
 import IconFavouriteAdded from '@/components/icons/icon-favourite-added.vue';
 import IconReference from '@/components/icons/icon-reference.vue';
