@@ -2,4 +2,22 @@
 
 @layer utilities {
 
+  // -----> BUTTONS <-----
+
+  .button-neutral {
+    @apply bg-gray-25 text-gray-700 border border-gray-300 shadow-xs ;
+  }
+
+  .button-orange {
+    @apply bg-orange-400 text-orange-25;
+  }
+
+  .button-success {
+    @apply bg-success-500text-success-25 ;
+  }
+
+  .button-indigo {
+    @apply bg-indigo-500 text-gray-25;
+  }
+
 }

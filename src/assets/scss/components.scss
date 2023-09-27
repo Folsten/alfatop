@@ -1,6 +1,7 @@
 @tailwind components;
 
 @layer components {
+  // Изменить на flyWindow
   .fly-window {
     @apply absolute bg-gray-25 rounded-md border border-gray-300 shadow-xs z-10;
   }
@@ -9,6 +10,7 @@
     @apply text-gray-500 font-normal;
   }
 
+  // изменить на scrollCustom
   .scroll-custom {
     overflow-y: auto;
 
@@ -32,14 +34,21 @@
     @apply text-gray-100 bg-gray-100 border-gray-100;
   }
 
-  .search-main {
-    
-  }
-
+  // изменить на cardsGridLayout
   .grid-responsive-container-for-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     gap: 12px;
   }
 
+  // -----> BUTTONS <-----
+
+  .button {
+    @apply flex justify-center items-center rounded-md font-medium text-md;
+  }
+
+  // -----> INPUTS <-----
+
+  .inputText {
+  }
 }
