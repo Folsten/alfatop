@@ -6,6 +6,7 @@ import Mobile from '../pages/mobile/mobile.vue';
 import MobileCategory from '../pages/mobile/mobile-category/mobile-category.vue';
 import MobileProduct from '../pages/mobile/mobile-product/mobile-product.vue';
 import Cart from '../pages/cart.vue';
+import Support from '../pages/support.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -45,6 +46,11 @@ const router = createRouter({
       name: 'cart',
       component: Cart
     },
+    {
+      path: '/support',
+      name: 'support',
+      component: Support
+    }
     // {
     //   path: '/about',
     //   name: 'about',
