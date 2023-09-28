@@ -9,6 +9,7 @@
     <!-- <div class="flex items-center justify-center w-28 text-gray-700 h-10 rounded-lg text-sm border-2 cursor-pointer sm:hidden">
       <div class="mr-3">Log in</div>
       <IconLogin />
+      <SvgIcon name="icon-login" class="w-5 h-5 text-gray-700">
     </div> -->
     <div
       @click="isOpen = !isOpen"
@@ -17,7 +18,7 @@
       <div class="flex items-center cursor-pointer">
         <SvgIcon
           name="icon-my-account"
-          class="w-4 h-4 mr-2"
+          class="w-5 h-5 text-gray-700 mr-2"
         />
         <span class="text-gray-700 font-medium text-sm">My account</span>
         <SvgIcon
