@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div class="gallery w-full">
     <GalleryCategory />
     <GalleryCategory />
     <GalleryCategory />

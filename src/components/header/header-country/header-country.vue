@@ -1,10 +1,10 @@
 <template>
   <div
-    class="flex items-center ml-2 cursor-pointer relative z-20"
+    class="header-country flex items-center ml-2 cursor-pointer relative z-20"
     @click="isOpen = !isOpen"
   >
     <SvgIcon name="icon-cyprus" class="w-5 h-5 mr-2 text-gray-300" />
-    <div class="text-gray-500 text-sm font-medium">
+    <div class="header-country__selected-name text-gray-500 text-sm font-medium">
       Cyprus
     </div>
     <div class="ml-1">
@@ -13,21 +13,21 @@
     <Transition name="fade">
       <div
         v-if="isOpen"
-        class="cursor-default"
+        class="header-country__fly-window-wrapper cursor-default"
       >
-        <div class="flyWindow w-[280px] top-8 left-0">
-          <div class="mt-3 mb-4 ml-3 mr-3">
-            <div class="flex justify-start">
+        <div class="header-country__fly-window fly-window w-[280px] top-8 left-0">
+          <div class="header-country__fly-window-internal-wrapper mt-3 mb-4 ml-3 mr-3">
+            <div class="header-country__fly-window-header flex justify-start">
               <SvgIcon name="icon-cyprus" class="w-5 h-5 text-gray-300" />
-              <div class="flex flex-col pl-2 items-start">
-                <span class="text-gray-900 text-sm font-medium">International</span>
-                <span class="text-gray-500 text-xs font-normal">Browse products available globally</span>
+              <div class="header-country__fly-window-header-info flex flex-col pl-2 items-start">
+                <span class="header-country__fly-window-header-where-title text-gray-900 text-sm font-medium">International</span>
+                <span class="header-country__fly-window-header-where-subtitle text-gray-500 text-xs font-normal">Browse products available globally</span>
               </div>
             </div>
-            <hr class="mt-2 mb-2">
-            <div class="flex flex-col">
+            <hr class="header-country__hr mt-2 mb-2">
+            <div class="header-country__search-wrapper flex flex-col">
               <HeaderCountrySearch />
-              <div class="relative flex flex-col max-h-28 mt-4 scrollCustom">
+              <div class="header-country__items-wrapper relative flex flex-col max-h-28 mt-4 scrollCustom">
                 <HeaderCountryItem />
                 <HeaderCountryItem />
                 <HeaderCountryItem />

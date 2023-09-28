@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-10 first:mt-0">
+  <div class="gallery-category mt-10 first:mt-0">
     <h4 class="text-gray-900 font-semibold text-dh4 md:text-mh4">
       Trending products in your country
     </h4>

@@ -1,11 +1,11 @@
 <template>
-  <header>
+  <header class="header">
     <div class="container">
-      <div class="flex items-center justify-between h-[48px] md:hidden">
+      <div class="header__top-nav flex items-center justify-between h-[48px] md:hidden">
         <HeaderCountry />
         <HeaderLanguage />
       </div>
-      <div class="flex items-center h-[72px]">
+      <div class="header__mid-nav flex items-center h-[72px]">
         <router-link to="/">
           <SvgIcon
             name="icon-big-logo"
@@ -19,11 +19,11 @@
         </div>
       </div>
     </div>
-    <hr class="hidden md:flex">
+    <hr class="header__hr1 hidden md:flex">
     <div class="container">
       <HeaderMenu />
     </div>
-    <hr class="md:hidden">
+    <hr class="header__hr2 md:hidden">
   </header>
 </template>
 

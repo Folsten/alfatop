@@ -47,7 +47,7 @@
                     name="icon-arrow-down"
                     class="w-4 h-4 mr-2"
                   />
-                  <div class="flyWindow flex flex-col left-0 top-10 w-full p-3 cursor-pointer">
+                  <div class="fly-window flex flex-col left-0 top-10 w-full p-3 cursor-pointer">
                     <div class="flex items-center">
                       <SvgIcon
                         name="icon-cyprus"

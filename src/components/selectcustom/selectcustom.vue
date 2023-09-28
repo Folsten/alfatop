@@ -4,7 +4,7 @@
   >
     <span class="text-md font-medium text-gray-900">400 EUR</span>
     <IconArrowDown />
-    <div class="flyWindow flex flex-col w-full top-12 left-0">
+    <div class="fly-window flex flex-col w-full top-12 left-0">
       <div class="text-sm font-medium text-gray-700 pl-4 pr-4 pt-2 pb-2 transition-all cursor-pointer hover:bg-indigo-50">
         100 EUR
       </div>
@@ -28,7 +28,7 @@
     <SvgIcon name="icon-arrow-down" class="w-4 h-4"/>
     <div
       v-if="isOpen"
-      class="flyWindow flex flex-col w-full top-12 left-0"
+      class="fly-window flex flex-col w-full top-12 left-0"
     >
       <div class="flex items-center pl-4 pr-4 pt-2 pb-2 transition-all cursor-pointer hover:bg-indigo-50">
         <img

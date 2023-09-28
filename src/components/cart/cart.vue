@@ -46,7 +46,10 @@
           <div class="flex justify-between">
             <div class="flex items-center">
               <div class="mr-2 text-gray-900 text-md font-medium">Total estimate</div>
-              <Svgicon name="icon-attention" class="w-4 h-4" />
+              <Svgicon
+                name="icon-attention"
+                class="w-4 h-4"
+              />
             </div>
             <div class="flex items-center text-dh5 font-semibold text-gray-900 sm:text-mh5 xs:text-md ">
               0.01622017 BTC

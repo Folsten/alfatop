@@ -1,7 +1,7 @@
 <template>
   <div
     @click="isOpen = !isOpen"
-    class="flex items-center text-gray-500 font-medium text-sm whitespace-nowrap cursor-pointer overflow-y pt-2 pb-2 pl-3"
+    class="header-search-category flex items-center text-gray-500 font-medium text-sm whitespace-nowrap cursor-pointer overflow-y pt-2 pb-2 pl-3"
   >
     <div>Choose category</div>
     <SvgIcon
@@ -11,9 +11,9 @@
     <Transition name="fade">
       <div
         v-if="isOpen"
-        class="flyWindow w-full left-0 top-12"
+        class="header-search-category__fly-window fly-window w-full left-0 top-12"
       >
-        <div class="flex flex-col pl-3 pr-3 mb-4 mt-3 scrollCustom max-h-[360px]">
+        <div class="header-search-category__categories-container flex flex-col pl-3 pr-3 mb-4 mt-3 scrollCustom max-h-[360px]">
           <HeaderSearchCategoryGroup />
           <HeaderSearchCategoryGroup />
           <HeaderSearchCategoryGroup />

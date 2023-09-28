@@ -1,84 +1,84 @@
 <template>
-  <div class="flex items-center justify-center ml-2">
-    <div class="hidden items-center p-2 rounded-[3px] shadow-md md:flex cursor-pointer">
+  <div class="header-auth flex items-center justify-center ml-2">
+    <div class="header-auth__burger-button hidden items-center p-2 rounded-[3px] shadow-md md:flex cursor-pointer">
       <SvgIcon
         name="icon-group"
         class="w-4 h-4"
       />
     </div>
-    <!-- <div class="flex items-center justify-center w-28 text-gray-700 h-10 rounded-lg text-sm border-2 cursor-pointer sm:hidden">
+    <!-- <div class="header-auth__log-in-button flex items-center justify-center w-28 text-gray-700 h-10 rounded-lg text-sm border-2 cursor-pointer sm:hidden">
       <div class="mr-3">Log in</div>
       <IconLogin />
-      <SvgIcon name="icon-login" class="w-5 h-5 text-gray-700">
+      <SvgIcon name="icon-login" class="auth__log-in-icon w-5 h-5 text-gray-700">
     </div> -->
     <div
       @click="isOpen = !isOpen"
-      class="relative flex items-center justify-center md:hidden"
+      class="header-auth__main-container relative flex items-center justify-center md:hidden"
     >
-      <div class="flex items-center cursor-pointer">
+      <div class="header-auth__my-account-button flex items-center cursor-pointer">
         <SvgIcon
           name="icon-my-account"
-          class="w-5 h-5 text-gray-700 mr-2"
+          class="header-auth__my-account-icon w-5 h-5 text-gray-700 mr-2"
         />
-        <span class="text-gray-700 font-medium text-sm">My account</span>
+        <span class="header-auth__my-account-text text-gray-700 font-medium text-sm">My account</span>
         <SvgIcon
           name="icon-arrow-down"
-          class="w-4 h-4 ml-2"
+          class="header-auth__my-account-arrow w-4 h-4 ml-2"
         />
       </div>
       <Transition name="fade">
         <div
           v-if="isOpen"
-          class="flyWindow top-10 right-0 w-64"
+          class="header-auth__fly-window fly-window top-10 right-0 w-64"
         >
-          <div class="flex flex-col pl-4 pr-4 pt-5 pb-2">
-            <div class="text-gray-900 font-medium text-sm">
+          <div class="header-auth__fly-window-header flex flex-col pl-4 pr-4 pt-5 pb-2">
+            <div class="header-auth__fly-window-my-account text-gray-900 font-medium text-sm">
               My account
             </div>
-            <div class="text-xs">
+            <div class="header-auth__fly-window-my-email text-xs">
               myworkingemail@gmail.com
             </div>
           </div>
-          <hr class="text-gray-300 mt-2 mb-2">
-          <div class="flex flex-col pl-4 pr-4 pt-2">
-            <div class="text-xs pb-2">Account</div>
-            <div class="flex items-center mt-2 cursor-pointer">
+          <hr class="header-auth__hr1 text-gray-300 mt-2 mb-2">
+          <div class="header-auth__fly-window-content-container flex flex-col pl-4 pr-4 pt-2">
+            <div class="header-auth__fly-window-account-text text-xs pb-2">Account</div>
+            <div class="header-auth__fly-window-row flex items-center mt-2 cursor-pointer">
               <SvgIcon
                 name="icon-orders"
-                class="w-5 h-5 text-gray-700"
+                class="header-auth__orders-icon w-5 h-5 text-gray-700"
               />
-              <div class="ml-2 text-gray-700 font-medium">Orders</div>
+              <div class="header-auth__orders-text ml-2 text-gray-700 font-medium">Orders</div>
             </div>
-            <div class="flex items-center mt-3 cursor-pointer">
+            <div class="header-auth__fly-window-row flex items-center mt-3 cursor-pointer">
               <SvgIcon
                 name="icon-favourites2"
-                class="w-5 h-5 text-gray-700"
+                class="header-auth__favourites-icon w-5 h-5 text-gray-700"
               />
-              <div class="ml-2 text-gray-700 font-medium">Favourites</div>
+              <div class="header-auth__favourites-text ml-2 text-gray-700 font-medium">Favourites</div>
             </div>
-            <div class="flex items-center mt-3 cursor-pointer">
+            <div class="header-auth__fly-window-row flex items-center mt-3 cursor-pointer">
               <SvgIcon
                 name="icon-helpsupport"
-                class="w-5 h-5 text-gray-700"
+                class="header-auth__icon-helpsupport w-5 h-5 text-gray-700"
               />
-              <div class="ml-2 text-gray-700 font-medium">Help & Support</div>
+              <div class="header-auth__text-helpsupport ml-2 text-gray-700 font-medium">Help & Support</div>
             </div>
-            <div class="flex items-center mt-3 cursor-pointer">
+            <div class="header-auth__fly-window-row flex items-center mt-3 cursor-pointer">
               <SvgIcon
                 name="icon-referral"
-                class="w-5 h-5 text-gray-700"
+                class="header-auth__icon-referral w-5 h-5 text-gray-700"
               />
-              <div class="ml-2 text-gray-700 font-medium">Referral program</div>
+              <div class="header-auth__text-referral ml-2 text-gray-700 font-medium">Referral program</div>
             </div>
           </div>
-          <hr class="text-gray-300 mt-2 mb-2">
-          <div class="flex pl-4 pr-4">
-            <div class="flex items-center mt-3 pb-5 cursor-pointer">
+          <hr class="header-auth__hr2 text-gray-300 mt-2 mb-2">
+          <div class="header-auth__fly-window-bottom flex pl-4 pr-4">
+            <div class="header-auth__fly-window-bottom-internal-container flex items-center mt-3 pb-5 cursor-pointer">
               <SvgIcon
                 name="icon-logout"
-                class="w-5 h-5 text-gray-700"
+                class="header-auth__icon-logout w-5 h-5 text-gray-700"
               />
-              <div class="ml-2 text-gray-700 font-medium">Log out</div>
+              <div class="header-auth__text-logout ml-2 text-gray-700 font-medium">Log out</div>
             </div>
           </div>
         </div>
