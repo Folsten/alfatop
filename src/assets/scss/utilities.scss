@@ -20,4 +20,10 @@
     @apply bg-indigo-500 text-gray-25;
   }
 
+  // -----> INPUTS <-----
+
+  .inputText-border {
+    @apply border border-gray-300 rounded-md;
+  }
+
 }

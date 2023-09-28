@@ -48,5 +48,6 @@
   // -----> INPUTS <-----
 
   .inputText {
+    @apply flex items-center bg-gray-25 shadow-xs;
   }
 }
