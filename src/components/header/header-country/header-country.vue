@@ -3,12 +3,12 @@
     class="flex items-center ml-2 cursor-pointer relative z-20"
     @click="isOpen = !isOpen"
   >
-    <IconCyprus class="h-[20px] w-[20px] mr-2" />
+    <SvgIcon name="icon-cyprus" class="w-5 h-5 mr-2 text-gray-300" />
     <div class="text-gray-500 text-sm font-medium">
       Cyprus
     </div>
     <div class="ml-1">
-      <IconArrowDown />
+      <SvgIcon name="icon-arrow-down" class="w-5 h-5 text-gray-300" />
     </div>
     <Transition name="fade">
       <div
@@ -18,7 +18,7 @@
         <div class="flyWindow w-[280px] top-8 left-0">
           <div class="mt-3 mb-4 ml-3 mr-3">
             <div class="flex justify-start">
-              <IconCyprus class="h-[20px] w-[20px]" />
+              <SvgIcon name="icon-cyprus" class="w-5 h-5 text-gray-300" />
               <div class="flex flex-col pl-2 items-start">
                 <span class="text-gray-900 text-sm font-medium">International</span>
                 <span class="text-gray-500 text-xs font-normal">Browse products available globally</span>
@@ -45,9 +45,6 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-// Icons
-import IconCyprus from '~/icons/icon-cyprus.vue'
-import IconArrowDown from '../../icons/icon-arrow-down.vue';
 import HeaderCountrySearch from './header-country-search.vue/header-country-search.vue';
 import HeaderCountryItem from './header-country-item.vue/header-country-item.vue';
 

@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex flex-col mt-8 w-full xs:flex-row"
-  >
+  <div class="flex flex-col mt-8 w-full xs:flex-row">
     <div class="relative">
       <img
         src="../../images/playstation.png"
@@ -15,6 +13,10 @@
             class="bg-orange-400 text-gray-25 text-xs font-medium pt-1 pb-1 pl-3 pr-3 rounded-md ml-2 sm:pl-1 sm:pr-1 sm:pb-1 sm:pt-1"
           >Popular</div>
           <IconFavourite class="ml-auto cursor-pointer sm:hidden" />
+          <SvgIcon
+            name="icon-favourite"
+            class="w-4 h-4 ml-auto cursor-pointer sm:hidden"
+          />
         </div>
       </div>
     </div>
@@ -38,5 +40,4 @@
 </template>
 
 <script setup lang="ts">
-import IconFavourite from '~/icons/icon-favourite.vue';
 </script>

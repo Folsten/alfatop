@@ -22,7 +22,7 @@
             <br class="lg:hidden">and more</span>
             <div class="flex mt-5 sm:flex-wrap">
               <div class="relative w-2/3 sm:w-full sm:mb-3">
-                <IconCyprus class="absolute left-3 h-[20px] w-[20px] top-[calc(50%-10px)]" />
+                <SvgIcon name="icon-cyprus" class="w-5 h-5 text-gray-300 absolute left-3 top-[calc(50%-10px)]" />
                 <input
                   type="tel"
                   class="h-9 w-full text-gray-700 flex justify-center items-start bg-gray-25 rounded-md pl-10"
@@ -74,5 +74,4 @@
 </style>
 
 <script setup lang="ts">
-import IconCyprus from '~/icons/icon-cyprus.vue';
 </script>

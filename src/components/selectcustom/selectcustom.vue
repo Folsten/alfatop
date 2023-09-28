@@ -25,7 +25,7 @@
     class="relative flex items-center justify-between w-full mt-1 pl-3 pr-3 pt-2 pb-2 bg-gray-25 border border-gray-300 rounded-md cursor-pointer"
   >
     <span class="text-md font-medium text-gray-900">400 EUR</span>
-    <IconArrowDown />
+    <SvgIcon name="icon-arrow-down" class="w-4 h-4"/>
     <div
       v-if="isOpen"
       class="flyWindow flex flex-col w-full top-12 left-0"
@@ -57,7 +57,6 @@
 </template>
 
 <script setup lang="ts">
-import IconArrowDown from '@/components/icons/icon-arrow-down.vue';
 import { ref } from 'vue';
 
 let isOpen = ref(false);

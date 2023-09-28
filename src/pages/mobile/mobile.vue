@@ -12,7 +12,7 @@ import GalleryCategory from '@/components/gallery/gallery-category/gallery-categ
             </span>
             <div class="flex w-1/3 justify-center mt-6 xl:w-1/2 md:flex-col sm:w-2/3 xs:w-full">
               <div class="relative w-full">
-                <IconCyprus class="absolute left-3 h-[20px] w-[20px] top-[calc(50%-10px)]" />
+                <SvgIcon name="icon-cyprus" class="w-5 h-5 text-gray-300 absolute left-3 top-[calc(50%-10px)]" />
                 <input
                   type="tel"
                   class="h-12 w-full text-gray-700 flex justify-center items-start bg-gray-25 rounded-md pl-10"
@@ -47,7 +47,6 @@ import GalleryCategory from '@/components/gallery/gallery-category/gallery-categ
 import GalleryCategory from '@/components/gallery/gallery-category/gallery-category.vue';
 import Mobilehowitwork from '@/components/mobilehowitwork/mobilehowitwork.vue';
 import Header from '@/components/header/header.vue';
-import IconCyprus from '@/components/icons/icon-cyprus.vue';
 import Newsletter from '@/components/newsletter/newsletter.vue';
 import Footer from '@/components/footer/footer.vue';
 </script>

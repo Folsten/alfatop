@@ -17,7 +17,10 @@
         <h6 class="text-gray-900 text-dh6 font-medium">Order summary</h6>
         <div class="flex justify-between items-baseline mt-4">
           <div class="flex items-center mr-4">
-            <IconItemsToPay class="mr-2" />
+            <SvgIcon
+              name="icon-items-to-pay"
+              class="mr-2 w-4 h-4"
+            />
             <span class="text-sm text-gray-900 font-medium">Items to pay</span>
           </div>
           <div class="flex flex-col">
@@ -27,7 +30,10 @@
         </div>
         <div class="flex justify-between items-baseline mt-3 sm:mt-1">
           <div class="flex items-center mr-4">
-            <IconPercentage class="mr-2" />
+            <SvgIcon
+              name="icon-percentage"
+              class="mr-2 w-4 h-4"
+            />
             <span class="text-sm text-gray-900 font-medium">Items to pay</span>
           </div>
           <div class="flex flex-col">
@@ -40,7 +46,7 @@
           <div class="flex justify-between">
             <div class="flex items-center">
               <div class="mr-2 text-gray-900 text-md font-medium">Total estimate</div>
-              <IconAttention />
+              <Svgicon name="icon-attention" class="w-4 h-4" />
             </div>
             <div class="flex items-center text-dh5 font-semibold text-gray-900 sm:text-mh5 xs:text-md ">
               0.01622017 BTC
@@ -104,8 +110,4 @@
 
 <script setup lang="ts">
 import CartItem from './cart-item/cart-item.vue';
-// Icons
-import IconItemsToPay from '@/components/icons/icon-items-to-pay.vue';
-import IconPercentage from '@/components/icons/icon-percentage.vue';
-import IconAttention from '@/components/icons/icon-attention.vue';
 </script>

@@ -1,7 +1,13 @@
 <template>
-  <div @click="isOpen = !isOpen" class="flex items-center text-gray-500 font-medium text-sm whitespace-nowrap cursor-pointer overflow-y pt-2 pb-2 pl-3">
+  <div
+    @click="isOpen = !isOpen"
+    class="flex items-center text-gray-500 font-medium text-sm whitespace-nowrap cursor-pointer overflow-y pt-2 pb-2 pl-3"
+  >
     <div>Choose category</div>
-    <IconArrowDown class="text-md ml-2" />
+    <SvgIcon
+      name="icon-arrow-down"
+      class="w-4 h-4 text-md ml-2"
+    />
     <Transition name="fade">
       <div
         v-if="isOpen"
@@ -23,8 +29,6 @@
 </template>
 
 <script setup lang="ts">
-// Icons
-import IconArrowDown from '@/components/icons/icon-arrow-down.vue';
 // Components
 import HeaderSearchCategoryGroup from './header-search-category-group/header-search-category-group.vue';
 // Dependencies

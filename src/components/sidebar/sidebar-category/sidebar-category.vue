@@ -10,7 +10,7 @@
         >
         <span class="font-medium">Gift cards</span>
       </div>
-      <IconArrowUp />
+      <SvgIcon name="icon-arrow-up" class="w-2 h-2 text-gray-900" />
     </div>
     <SidebarCategoryItem />
     <SidebarCategoryItem />
@@ -22,6 +22,5 @@
 </template>
 
 <script setup lang="ts">
-import IconArrowUp from '@/components/icons/icon-arrow-up.vue';
 import SidebarCategoryItem from './sidebar-category-item/sidebar-category-item.vue';
 </script>

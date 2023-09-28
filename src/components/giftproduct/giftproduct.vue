@@ -10,7 +10,7 @@
       <div class="flex w-full justify-between lg:mt-4">
         <h4 class="text-dh4 font-semibold text-gray-900 sm:text-mh4">Netflix EUR Gift Card</h4>
         <button class="flex items-center pt-2 pb-2 pl-3 pr-3 border border-gray-300 rounded-md sm:hidden">
-          <IconFavouriteAdded class="mr-2" />
+          <SvgIcon name="icon-favourite-added" class="w-4 h-4 mr-2" />
           <div class="text-gray-700 text-sm font-medium">Add to favourites</div>
         </button>
       </div>
@@ -28,7 +28,7 @@
         <div class="flex w-full justify-between p-4">
           <div class="flex items-center">
             <div class="mr-2 text-md text-gray-900 font-medium">Total estimate</div>
-            <IconReference />
+            <SvgIcon name="icon-reference" class="w-4 h-4 text-gray-700" />
           </div>
           <div class="text-dh5 font-semibold text-gray-900 text-right sm:text-mh5">0.01622017 BTC</div>
         </div>
@@ -37,15 +37,15 @@
         <button
           class="hidden items-center pt-2 pb-2 pl-3 pr-3 border border-gray-300 rounded-md sm:flex sm:justify-center"
         >
-          <IconFavouriteAdded class="mr-2" />
+          <SvgIcon name="icon-favourite-added" class="w-4 h-4 mr-2" />
           <div class="text-gray-700 text-sm font-medium">Add to favourites</div>
         </button>
         <button class="flex items-center bg-indigo-50 rounded-md pt-2 pb-2 pl-5 pr-5 sm:justify-center sm:mt-4">
-          <IconGift class="mr-2" />
+          <SvgIcon name="icon-gift" class="w-4 h-4 mr-2 text-indigo-500" />
           <span class="text-md font-medium text-indigo-500">Purchase as gift</span>
         </button>
         <button class="flex items-center bg-success-500 rounded-md pt-2 pb-2 pl-5 pr-5 sm:justify-center sm:mt-4">
-          <IconCartPlus class="mr-2" />
+          <SvgIcon name="icon-cart-plus" class="w-4 h-4 mr-2 text-success-25" />
           <span class="text-md font-medium text-success-25">Add to cart</span>
         </button>
       </div>
@@ -72,7 +72,7 @@
         <li class="ml-4">How to redeem</li>
       </ul>
       <div class="flex w-full items-center mt-6 shadow-xs bg-error-300 rounded-md pl-4 pr-4 pt-3 pb-3">
-        <IconAttention class="mr-2" />
+        <SvgIcon name="icon-attention" class="w-4 h-4 mr-2 text-gray-900" />
         <div class="text-sm font-medium text-error-25">This gift card is redeemable on the e-commerce platform</div>
       </div>
     </div>
@@ -82,10 +82,4 @@
 <script setup lang="ts">
 // Components
 import Selectcustom from '@/components/selectcustom/selectcustom.vue';
-// Icons
-import IconFavouriteAdded from '@/components/icons/icon-favourite-added.vue';
-import IconReference from '@/components/icons/icon-reference.vue';
-import IconGift from '@/components/icons/icon-gift.vue';
-import IconCartPlus from '@/components/icons/icon-cart-plus.vue';
-import IconAttention from '@/components/icons/icon-attention.vue';
 </script>

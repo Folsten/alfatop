@@ -30,7 +30,7 @@
       <div
         class="flex items-center justify-center rounded-md border border-gray-300 bg-gray-25 shadow-xs p-3 sm:w-full cursor-pointer"
       >
-        <IconLoader1 class="mr-2 sm:hidden" />
+        <SvgIcon name="icon-loader-1" class="w-4 h-4 mr-2 sm:hidden text-gray-700"/>
         <span class="font-medium text-md text-gray-700">Load more</span>
       </div>
     </div>
@@ -38,6 +38,5 @@
 </template>
 
 <script setup lang="ts">
-import IconLoader1 from '../icons/icon-loader-1.vue';
 import ShowcaseCard from './showcase-card/showcase-card.vue';
 </script>

@@ -14,7 +14,7 @@
           <div
             class="bg-orange-400 text-gray-25 text-xs font-medium pt-1 pb-1 pl-3 pr-3 rounded-md ml-2"
           >Popular</div>
-          <IconFavourite class="ml-auto cursor-pointer sm:hidden" />
+          <SvgIcon name="icon-favourite" class="w-4 h-4 ml-auto cursor-pointer text-warning-300 sm:hidden" />
         </div>
       </div>
     </div>
@@ -26,5 +26,4 @@
 </template>
 
 <script setup lang="ts">
-import IconFavourite from '~/icons/icon-favourite.vue';
 </script>

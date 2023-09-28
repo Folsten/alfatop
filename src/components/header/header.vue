@@ -7,7 +7,10 @@
       </div>
       <div class="flex items-center h-[72px]">
         <router-link to="/">
-          <IconBigLogo />
+          <SvgIcon
+            name="icon-big-logo"
+            class="w-[104px] h-8"
+          />
         </router-link>
         <HeaderSearch />
         <div class="flex ml-auto">
@@ -31,6 +34,4 @@ import HeaderSearch from './header-search/header-search.vue';
 import HeaderCart from './header-cart/header-cart.vue';
 import HeaderAuth from './header-auth/header-auth.vue';
 import HeaderMenu from './header-menu/header-menu.vue';
-// Icons
-import IconBigLogo from '~/icons/icon-big-logo.vue';
 </script>

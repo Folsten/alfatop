@@ -12,9 +12,9 @@
         <div class="hidden items-center sm:flex h-full">
           <div class="flex rounded-md border border-gray-300 bg-gray-25 w-24 sm:h-8 sm:self-end">
             <div class="flex w-full justify-between items-center pl-3 pr-3 pt-2 pb-2">
-              <IconRemoveUnit class="cursor-pointer" />
+              <SvgIcon name="icon-remove-unit" class="cursor-pointer w-4 h-4" />
               <span class="pl-2 pr-2 text-gray-900 font-medium text-sm">1</span>
-              <IconAddUnit class="cursor-pointer" />
+              <SvgIcon name="icon-add-unit" class="cursor-pointer w-4 h-4" />
             </div>
           </div>
         </div>
@@ -23,18 +23,15 @@
     <div class="flex items-center sm:hidden">
       <div class="flex rounded-md border border-gray-300 bg-gray-25 mr-6 w-24">
         <div class="flex w-full justify-between items-center pl-3 pr-3 pt-2 pb-2">
-          <IconRemoveUnit class="cursor-pointer" />
+          <SvgIcon name="icon-remove-unit" class="cursor-pointer w-4 h-4" />
           <span class="pl-2 pr-2 text-gray-900 font-medium text-sm">1</span>
-          <IconAddUnit class="cursor-pointer" />
+          <SvgIcon name="icon-add-unit" class="cursor-pointer w-4 h-4" />
         </div>
       </div>
-      <IconRecycle class="cursor-pointer" />
+      <SvgIcon name="icon-recycle" class="cursor-pointer w-4 h-4 text-gray-900" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import IconRemoveUnit from '@/components/icons/icon-remove-unit.vue';
-import IconAddUnit from '@/components/icons/icon-add-unit.vue';
-import IconRecycle from '@/components/icons/icon-recycle.vue';
 </script>
