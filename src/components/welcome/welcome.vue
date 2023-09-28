@@ -5,7 +5,7 @@
     </div>
     <div class="flex sm:flex-wrap">
       <div class="flex w-full items-center mr-5 rounded-lg overflow-hidden h-[224px] sm:mb-5 lg:mr-2">
-        <div class="mobile-and-crypto-card h-full w-full">
+        <div class="mobileCard h-full w-full">
           <div class="p-8 flex flex-col justify-center h-full md:p-4">
             <span class="text-white leading-10 sm:text-center text-dh4 md:text-mh4">Recharge your mobile <br class="lg:hidden">with crypto</span>
             <router-link
@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="flex w-full items-center ml-5 rounded-lg overflow-hidden h-[224px] sm:mt-5 lg:ml-2">
-        <div class="gift-cards-and-more h-full w-full">
+        <div class="giftsCard h-full w-full">
           <div class="p-8 flex flex-col h-full justify-center md:p-4">
             <span class="text-white leading-10 sm:text-center text-dh4 md:text-mh4">Shop exclusive gift cards
             <br class="lg:hidden">and more</span>
@@ -41,14 +41,34 @@
   </div>
 </template>
 
-<style scoped>
-.mobile-and-crypto-card {
-  background: url('./images/recharge-your-mobile-and-crypto.png');
+<style lang="scss" scoped>
+.mobileCard {
+  background-image: url('./images/mobileCardBg.png');
+  background-image: -webkit-image-set(
+    url("./images/mobileCardBg.png") 2x,
+    url("./images/mobileCardBg.png") 1x
+  );
+  background-image: image-set(
+    url('./images/mobileCardBg.webp') type("image/webp") 2x,
+    url('./images/mobileCardBg.webp') type("image/webp") 1x,
+    url('./images/mobileCardBg.png') 2x,
+    url('./images/mobileCardBg.png') 1x
+  );
   background-size: cover;
 }
 
-.gift-cards-and-more {
-  background: url('./images/shop-exclusive-gift-cards-and-more.png');
+.giftsCard {
+  background-image: url('./images/giftsCardBg.png');
+  background-image: -webkit-image-set(
+    url("./images/giftsCardBg.png") 2x,
+    url("./images/giftsCardBg.png") 1x
+  );
+  background-image: image-set(
+    url('./images/giftsCardBg.webp') type("image/webp") 2x,
+    url('./images/giftsCardBg.webp') type("image/webp") 1x,
+    url('./images/giftsCardBg.png') 2x,
+    url('./images/giftsCardBg.png') 1x
+  );
   background-size: cover;
 }
 </style>

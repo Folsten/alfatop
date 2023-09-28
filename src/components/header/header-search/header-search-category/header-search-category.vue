@@ -5,9 +5,9 @@
     <Transition name="fade">
       <div
         v-if="isOpen"
-        class="fly-window w-full left-0 top-12"
+        class="flyWindow w-full left-0 top-12"
       >
-        <div class="flex flex-col pl-3 pr-3 mb-4 mt-3 scroll-custom max-h-[360px]">
+        <div class="flex flex-col pl-3 pr-3 mb-4 mt-3 scrollCustom max-h-[360px]">
           <HeaderSearchCategoryGroup />
           <HeaderSearchCategoryGroup />
           <HeaderSearchCategoryGroup />

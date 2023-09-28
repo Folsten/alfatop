@@ -9,15 +9,17 @@
     </div> -->
     <div
       @click="isOpen = !isOpen"
-      class="relative flex items-center text-sm justify-center md:hidden"
+      class="relative flex items-center justify-center md:hidden"
     >
-      <IconMyAccount class="mr-2" />
-      <span class="text-gray-700 font-medium">My account</span>
-      <IconArrowDown class="ml-2" />
+      <div class="flex items-center cursor-pointer">
+        <IconMyAccount class="mr-2" />
+        <span class="text-gray-700 font-medium text-sm">My account</span>
+        <IconArrowDown class="ml-2" />
+      </div>
       <Transition name="fade">
         <div
           v-if="isOpen"
-          class="fly-window top-10 right-0 w-64"
+          class="flyWindow top-10 right-0 w-64"
         >
           <div class="flex flex-col pl-4 pr-4 pt-5 pb-2">
             <div class="text-gray-900 font-medium text-sm">

@@ -38,7 +38,7 @@
                   <IconCyprus class="mr-2" />
                   <div class="text-gray-500 font-medium text-sm mr-2">+375</div>
                   <IconArrowDown class="mr-2" />
-                  <div class="fly-window flex flex-col left-0 top-10 w-full p-3 cursor-pointer">
+                  <div class="flyWindow flex flex-col left-0 top-10 w-full p-3 cursor-pointer">
                     <div class="flex items-center">
                       <IconCyprus />
                       <span class="pl-2 text-sm font-medium">+915</span>

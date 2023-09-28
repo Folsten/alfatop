@@ -15,7 +15,7 @@
         v-if="isOpen"
         class="cursor-default"
       >
-        <div class="fly-window w-[280px] top-8 left-0">
+        <div class="flyWindow w-[280px] top-8 left-0">
           <div class="mt-3 mb-4 ml-3 mr-3">
             <div class="flex justify-start">
               <IconCyprus class="h-[20px] w-[20px]" />
@@ -27,7 +27,7 @@
             <hr class="mt-2 mb-2">
             <div class="flex flex-col">
               <HeaderCountrySearch />
-              <div class="relative flex flex-col max-h-28 mt-4 scroll-custom">
+              <div class="relative flex flex-col max-h-28 mt-4 scrollCustom">
                 <HeaderCountryItem />
                 <HeaderCountryItem />
                 <HeaderCountryItem />
