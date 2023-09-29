@@ -3,7 +3,7 @@
   <div class="faq-article-page container mt-4">
     <Crumbs/>
     <SelectCustom class="mt-10 hidden sm:flex"/>
-    <div class="flex mt-36 lg:flex-col sm:mt-10">
+    <div class="flex mt-32 lg:flex-col sm:mt-10">
       <FaqChapters/>
       <FaqArticle/>
     </div>
