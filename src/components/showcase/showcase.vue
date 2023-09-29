@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col w-full">
     <div 
-      class="cardsGridLayout sm:pb-3"
+      class="cards-grid-layout sm:pb-3"
     >
       <ShowcaseCard />
       <ShowcaseCard />

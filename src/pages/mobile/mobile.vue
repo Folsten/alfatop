@@ -29,7 +29,7 @@ import GalleryCategory from '@/components/gallery/gallery-category/gallery-categ
       </div>
     </div>
     <GalleryCategory class="mt-20 lg:mt-10" />
-    <Mobilehowitwork class="mt-32 lg:mt-16" />
+    <MobileHowItWork class="mt-32 lg:mt-16" />
     <Newsletter class="mt-40 mb-40 lg:mt-20 lg:mb-20"/>
     <Footer />
   </div>
@@ -45,7 +45,7 @@ import GalleryCategory from '@/components/gallery/gallery-category/gallery-categ
 
 <script setup lang="ts">
 import GalleryCategory from '@/components/gallery/gallery-category/gallery-category.vue';
-import Mobilehowitwork from '@/components/mobilehowitwork/mobilehowitwork.vue';
+import MobileHowItWork from '@/components/mobile-how-it-work/mobile-how-it-work.vue';
 import Header from '@/components/header/header.vue';
 import Newsletter from '@/components/newsletter/newsletter.vue';
 import Footer from '@/components/footer/footer.vue';

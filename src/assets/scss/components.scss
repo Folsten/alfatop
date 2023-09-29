@@ -10,7 +10,7 @@
     @apply text-gray-500 font-normal;
   }
 
-  .scrollCustom {
+  .scroll-custom {
     overflow-y: auto;
 
     &::-webkit-scrollbar {
@@ -33,7 +33,7 @@
     @apply text-gray-100 bg-gray-100 border-gray-100;
   }
 
-  .cardsGridLayout {
+  .cards-grid-layout {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     gap: 12px;
@@ -41,13 +41,13 @@
 
   // -----> BUTTONS <-----
 
-  .button {
+  .btn {
     @apply flex justify-center items-center rounded-md font-medium text-md;
   }
 
   // -----> INPUTS <-----
 
-  .inputText {
+  .input-text {
     @apply flex items-center bg-gray-25 shadow-xs;
   }
 }

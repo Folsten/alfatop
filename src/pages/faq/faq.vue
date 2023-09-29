@@ -2,7 +2,7 @@
   <Header />
   <div class="container mt-4">
     <Crumbs />
-    <Internalsearch class="mt-12 hidden sm:flex" />
+    <SearchInternal class="mt-12 hidden sm:flex" />
     <div class="flex mt-36 lg:flex-col">
       <div class="flex flex-col w-1/3 mr-20 xl:mr-14 lg:mr-0 lg:hidden">
         <h3 class="text-gray-900 font-medium text-dh3 sm:text-mh3">FAQs</h3>
@@ -85,5 +85,5 @@ import Header from '@/components/header/header.vue';
 import Crumbs from '@/components/crumbs/crumbs.vue';
 import Newsletter from '@/components/newsletter/newsletter.vue';
 import Footer from '@/components/footer/footer.vue';
-import Internalsearch from '@/components/internalsearch/internalsearch.vue';
+import SearchInternal from '@/components/search-internal/search-internal.vue';
 </script>

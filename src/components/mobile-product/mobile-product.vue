@@ -32,7 +32,7 @@
           <div class="flex pl-4 pr-4 sm:flex-col">
             <div class="flex flex-col w-full mr-2 sm:mr-0">
               <div class="text-sm text-gray-700">Select plan or enter exact amount:</div>
-              <Selectcustom />
+              <SelectCustom />
             </div>
             <div class="flex flex-col w-full ml-2 sm:ml-0 sm:mt-4">
               <div class="text-sm text-gray-700">Enter phone number:</div>
@@ -87,7 +87,7 @@
           </div>
           <div class="flex flex-col pl-4 pr-4 mt-8">
             <div class="text-sm text-gray-700">Select plan or enter exact amount:</div>
-            <Selectcustom />
+            <SelectCustom />
           </div>
           <div class="flex w-full justify-between mt-8 pl-4 pr-4">
             <div class="flex items-center">
@@ -166,7 +166,7 @@
           </div>
           <div class="flex flex-col pl-4 pr-4 mt-8 sm:ml-0 sm:mt-4">
             <div class="text-sm text-gray-700">Choose crypto to pay with</div>
-            <Selectcustom />
+            <SelectCustom />
           </div>
           <div class="flex w-full justify-between mt-8 pl-4 pr-4">
             <div class="flex items-center">
@@ -211,11 +211,11 @@
           <div class="flex pl-4 pr-4 sm:flex-col">
             <div class="flex flex-col w-full mr-2 sm:mr-0">
               <div class="text-sm text-gray-700">Select plan or enter exact amount:</div>
-              <Selectcustom />
+              <SelectCustom />
             </div>
             <div class="flex flex-col w-full ml-2 sm:ml-0 sm:mt-4">
               <div class="text-sm text-gray-700">Choose crypto to pay with</div>
-              <Selectcustom />
+              <SelectCustom />
             </div>
           </div>
           <div class="flex w-full justify-between mt-8 pl-4 pr-4">
@@ -268,5 +268,5 @@ input[type="checkbox"] {
 </style>
 
 <script setup lang="ts">
-import Selectcustom from '@/components/selectcustom/selectcustom.vue';
+import SelectCustom from '@/components/select-custom/select-custom.vue';
 </script>

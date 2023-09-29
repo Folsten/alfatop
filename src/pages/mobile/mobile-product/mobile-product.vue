@@ -2,9 +2,9 @@
   <Header />
   <div class="container mt-4">
     <Crumbs />
-    <Mobileproduct class="mt-14" />
+    <MobileProduct class="mt-14" />
     <GalleryCategory сlass="mt-16" :card-width="250" />
-    <Mobilehowitwork class="mt-28" />
+    <MobileHowItWork class="mt-28" />
     <Newsletter class="mt-40 mb-40 sm:mt-20 sm:mb-20" />
   </div>
   <Footer />
@@ -15,7 +15,7 @@ import Header from '@/components/header/header.vue';
 import Footer from '@/components/footer/footer.vue';
 import Crumbs from '@/components/crumbs/crumbs.vue';
 import Newsletter from '@/components/newsletter/newsletter.vue';
-import Mobileproduct from '@/components/mobileproduct/mobileproduct.vue';
+import MobileProduct from '@/components/mobile-product/mobile-product.vue';
 import GalleryCategory from '@/components/gallery/gallery-category/gallery-category.vue';
-import Mobilehowitwork from '@/components/mobilehowitwork/mobilehowitwork.vue';
+import MobileHowItWork from '@/components/mobile-how-it-work/mobile-how-it-work.vue';
 </script>

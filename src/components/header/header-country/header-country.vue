@@ -27,7 +27,7 @@
             <hr class="header-country__hr mt-2 mb-2">
             <div class="header-country__search-wrapper flex flex-col">
               <HeaderCountrySearch />
-              <div class="header-country__items-wrapper relative flex flex-col max-h-28 mt-4 scrollCustom">
+              <div class="header-country__items-wrapper relative flex flex-col max-h-28 mt-4 scroll-custom">
                 <HeaderCountryItem />
                 <HeaderCountryItem />
                 <HeaderCountryItem />

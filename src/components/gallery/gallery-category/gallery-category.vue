@@ -7,7 +7,7 @@
       We provide fully transparent deals without any hidden charges
     </p>
     <div 
-      class="cardsGridLayout overflow-x-auto sm:flex sm:flex-nowrap sm:pb-3"
+      class="cards-grid-layout overflow-x-auto sm:flex sm:flex-nowrap sm:pb-3"
       :style="{'grid-template-columns': gridCardWidthStyles}"
     >
       <GalleryCategoryCard />

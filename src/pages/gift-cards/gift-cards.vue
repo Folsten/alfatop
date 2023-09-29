@@ -3,7 +3,7 @@
     <Header />
     <div class="container flex flex-col mt-4">
       <Crumbs />
-      <Internalsearch class="hidden mt-6 md:flex" />
+      <SearchInternal class="hidden mt-6 md:flex" />
       <div class="flex">
         <Sidebar class="mt-6" />
         <Showcase />
@@ -21,5 +21,5 @@ import Crumbs from '@/components/crumbs/crumbs.vue';
 import Sidebar from '@/components/sidebar/sidebar.vue';
 import Showcase from '@/components/showcase/showcase.vue';
 import Newsletter from '@/components/newsletter/newsletter.vue';
-import Internalsearch from '@/components/internalsearch/internalsearch.vue';
+import SearchInternal from '@/components/search-internal/search-internal.vue';
 </script>
