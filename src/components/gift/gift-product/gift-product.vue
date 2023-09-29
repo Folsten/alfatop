@@ -1,17 +1,27 @@
+<!--
+Здесь классы по БЭМ прописаны не везде,
+на данный момент не целесообразно,
+т.к очень вероятно объединение с другим компонентом в один
+src/mobile/mobile-product/mobile-product.vue
+Также будет комплексное деление на независимые компоненты, но на данном этапе
+не очевидно как это будет по итогу.
+-->
+
 <template>
   <div class="flex lg:flex-col lg:items-center lg:max-w-2xl lg:ml-auto lg:mr-auto">
     <div class="flex items-center justify-center w-2/3 h-96 mr-10 lg:w-full lg:mr-0">
       <img
         src="./images/netflix.png"
         class="object-cover w-full h-full lg:mr-0"
+        alt="netflix"
       >
     </div>
     <div class="flex flex-col w-full lg:items-center">
       <div class="flex w-full justify-between lg:mt-4">
         <h4 class="text-dh4 font-semibold text-gray-900 sm:text-mh4">Netflix EUR Gift Card</h4>
-        <button class="flex items-center pt-2 pb-2 pl-3 pr-3 border border-gray-300 rounded-md sm:hidden">
-          <SvgIcon name="icon-favourite-added" class="w-4 h-4 mr-2" />
-          <div class="text-gray-700 text-sm font-medium">Add to favourites</div>
+        <button class="flex items-center pt-2 pb-2 pl-3 pr-3 border border-gray-300 rounded-md text-gray-700 text-sm font-medium sm:hidden">
+          <SvgIcon name="icon-favourite-filled" class="w-4 h-4 mr-2" />
+          Add to favourites
         </button>
       </div>
       <div class="mt-10 bg-gray-50 border border-gray-100 rounded-md w-full">
@@ -41,7 +51,7 @@
           <div class="text-gray-700 text-sm font-medium">Add to favourites</div>
         </button>
         <button class="flex items-center bg-indigo-50 rounded-md pt-2 pb-2 pl-5 pr-5 sm:justify-center sm:mt-4">
-          <SvgIcon name="icon-gift" class="w-4 h-4 mr-2 text-indigo-500" />
+          <SvgIcon name="icon-gift-bold" class="w-4 h-4 mr-2 text-indigo-500" />
           <span class="text-md font-medium text-indigo-500">Purchase as gift</span>
         </button>
         <button class="flex items-center bg-success-500 rounded-md pt-2 pb-2 pl-5 pr-5 sm:justify-center sm:mt-4">
@@ -81,5 +91,5 @@
 
 <script setup lang="ts">
 // Components
-import SelectCustom from '@/components/select-custom/select-custom.vue';
+import SelectCustom from '~/select-custom/select-custom.vue';
 </script>

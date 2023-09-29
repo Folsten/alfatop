@@ -25,10 +25,10 @@
     <div class="footer__bottom-container container mt-10">
       <div class="footer__bottom-wrapper flex items-end lg:items-center sm:items-start lg:flex-col">
         <SvgIcon name="icon-logo-light" class="w-20 h-6" />
-        <div class="footer__discplaimer text-gray-500 text-xs ml-6 lg:ml-0 lg:mt-5">© 2023 ALFAtop, All rights reserved.</div>
+        <div class="footer__disclaimer text-gray-500 text-xs ml-6 lg:ml-0 lg:mt-5">© 2023 ALFAtop, All rights reserved.</div>
         <div class="footer__trustpilot-wrapper ml-auto flex items-center lg:ml-0 lg:mt-10">
           <div class="footer__leave-a-review text-gray-500 text-xs mr-2">Leave a review</div>
-          <SvgIcon name="icon-trustpilot" class="w-24 h-6" />
+          <SvgIcon name="icon-trustpilot" class="footer__trustpilot w-24 h-6" />
         </div>
       </div>
     </div>

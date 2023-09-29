@@ -2,26 +2,26 @@
   <header class="header">
     <div class="container">
       <div class="header__top-nav flex items-center justify-between h-[48px] md:hidden">
-        <HeaderCountry />
-        <HeaderLanguage />
+        <HeaderCountry/>
+        <HeaderLanguage/>
       </div>
       <div class="header__mid-nav flex items-center h-[72px]">
         <router-link to="/">
           <SvgIcon
-            name="icon-big-logo"
-            class="w-[104px] h-8"
+              name="icon-big-logo"
+              class="w-[104px] h-8"
           />
         </router-link>
-        <HeaderSearch />
+        <HeaderSearch/>
         <div class="flex ml-auto">
-          <HeaderCart />
-          <HeaderAuth />
+          <HeaderCart/>
+          <HeaderAuth/>
         </div>
       </div>
     </div>
     <hr class="header__hr1 hidden md:flex">
     <div class="container">
-      <HeaderMenu />
+      <HeaderMenu/>
     </div>
     <hr class="header__hr2 md:hidden">
   </header>

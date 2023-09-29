@@ -2,7 +2,7 @@
   <div>
     <Header />
     <Welcome />
-    <div class="container flex mt-20">
+    <div class="home-page container flex mt-20">
       <Sidebar />
       <Gallery />
     </div>

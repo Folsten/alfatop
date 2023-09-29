@@ -1,13 +1,13 @@
 <template>
   <div class="gallery-category mt-10 first:mt-0">
-    <h4 class="text-gray-900 font-semibold text-dh4 md:text-mh4">
+    <h4 class="gallery-category__title text-gray-900 font-semibold text-dh4 md:text-mh4">
       Trending products in your country
     </h4>
-    <p class="text-lg font-normal md:text-md">
+    <p class="gallery-category__subtitle text-lg font-normal md:text-md">
       We provide fully transparent deals without any hidden charges
     </p>
     <div 
-      class="cards-grid-layout overflow-x-auto sm:flex sm:flex-nowrap sm:pb-3"
+      class="gallery-category__cards-container cards-grid-layout overflow-x-auto sm:flex sm:flex-nowrap sm:pb-3"
       :style="{'grid-template-columns': gridCardWidthStyles}"
     >
       <GalleryCategoryCard />
@@ -21,7 +21,7 @@
     </div>
     <router-link
       to="#"
-      class="flex justify-center mt-8 rounded-lg border w-[105px] text-md pt-2 pb-2 text-gray-700 shadow-xs sm:mt-4 sm:ml-0 sm:w-full"
+      class="gallery-category__btn-browse-all btn btn-neutral mt-8 w-[105px] pt-2 pb-2 sm:mt-4 sm:ml-0 sm:w-full"
     >Browse All</router-link>
   </div>
 </template>

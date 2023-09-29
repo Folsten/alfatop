@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="gift-cards-page">
     <Header />
-    <div class="container flex flex-col mt-4">
+    <div class="gift-cards-page__container-main container flex flex-col mt-4">
       <Crumbs />
       <SearchInternal class="hidden mt-6 md:flex" />
-      <div class="flex">
+      <div class="gift-cards-page__container-content flex">
         <Sidebar class="mt-6" />
         <Showcase />
       </div>

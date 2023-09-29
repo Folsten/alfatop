@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <div class="container mt-4">
+  <div class="cart-page container mt-4">
     <Crumbs />
     <SearchInternal class="hidden mt-10 mb-10 md:flex" />
     <Cart />

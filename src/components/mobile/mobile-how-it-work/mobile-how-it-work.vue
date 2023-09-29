@@ -1,3 +1,10 @@
+<!--
+Здесь классы по БЭМ прописаны не везде,
+на данный момент не целесообразно,
+т.к наиболее вероятно объединение с другим компонентом в один
+src/gift/gift-how-it-work/gift-how-it-work
+-->
+
 <template>
   <div class="flex-col">
     <div class="flex justify-between">
