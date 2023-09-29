@@ -66,7 +66,7 @@ const router = createRouter({
     },
     {
       path: '/faq/article',
-      name: 'faq-article',
+      name: 'faq-articles',
       component: FaqArticle
     },
 
