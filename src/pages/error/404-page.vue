@@ -16,7 +16,10 @@
         </router-link>
       </div>
       <div class="flex flex-1 lg:hidden">
-        <img src="./images/404-bg.png">
+        <picture>
+          <source srcset="./images/404-bg.webp" type="image/webp">
+          <img src="./images/404-bg.png" alt="page not found">
+        </picture>
       </div>
     </div>
     <Footer class="lg:mt-20"/>

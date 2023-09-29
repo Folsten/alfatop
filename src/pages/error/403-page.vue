@@ -14,7 +14,10 @@
         </router-link>
       </div>
       <div class="flex flex-1 lg:hidden">
-        <img src="./images/403-bg.png">
+        <picture>
+          <source srcset="./images/403-bg.webp" type="image/webp">
+          <img src="./images/403-bg.png" alt="no permissions">
+        </picture>
       </div>
     </div>
     <Footer class="lg:mt-20"/>

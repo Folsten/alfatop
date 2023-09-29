@@ -29,7 +29,10 @@
         </div>
       </div>
       <div class="flex flex-1 lg:hidden">
-        <img src="./images/404-bg.png">
+        <picture>
+          <source srcset="./images/503-bg.webp" type="image/webp">
+          <img src="./images/503-bg.png" alt="maintenance">
+        </picture>
       </div>
     </div>
   </div>

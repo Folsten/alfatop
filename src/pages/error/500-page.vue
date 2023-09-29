@@ -12,7 +12,10 @@
         <div class="text-lg text-gray-500 mt-4 lg:text-center sm:text-left">We’ll be back online shortly!</div>
       </div>
       <div class="flex flex-1 lg:hidden">
-        <img src="./images/500-bg.png">
+        <picture>
+          <source srcset="./images/500-bg.webp" type="image/webp">
+          <img src="./images/500-bg.png" alt="maintenance">
+        </picture>
       </div>
     </div>
     <Footer class="lg:mt-20"/>
