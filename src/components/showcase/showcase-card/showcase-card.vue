@@ -2,7 +2,7 @@
   <div class="showcase-card flex flex-col mt-8 w-full xs:flex-row">
     <div class="showcase-card__header-container relative">
       <img
-        src="../../images/playstation.png"
+        src="../../../assets/images/playstation.png"
         class="showcase-card__header-img rounded-md w-full object-cover h-48"
         alt="playstation"
       >

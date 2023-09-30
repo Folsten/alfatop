@@ -4,7 +4,7 @@
   >
     <div class="relative">
       <img
-        src="../../../images/coca.jpg"
+        src="../../../../assets/images/coca.jpg"
         class="rounded-md w-full object-cover h-48"
       >
       <div class="absolute w-full top-0 flex">
