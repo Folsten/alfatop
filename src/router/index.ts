@@ -9,13 +9,14 @@ import Cart from '../pages/cart/cart.vue'
 import Support from '../pages/support/support.vue'
 import Faq from '../pages/faq/faq.vue'
 import FaqArticle from '../pages/faq/faq-article/faq-article.vue'
+import Register from '../pages/register/register.vue'
+import LogIn from '../pages/log-in/log-in.vue'
 // Error pages
 import Error403 from '../pages/error/403.vue'
 import Error404 from '../pages/error/404.vue'
 import Error500 from '../pages/error/500.vue'
 import Error503 from '../pages/error/503.vue'
 import ErrorComingSoon from '../pages/error/coming-soon.vue'
-import Register from '../pages/register/register.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -100,7 +101,13 @@ const router = createRouter({
     },
     {
       path: '/register',
+      name: 'register',
       component: Register
+    },
+    {
+      path: '/log-in',
+      name: 'log-in',
+      component: LogIn
     }
   ]
 })

@@ -16,8 +16,8 @@ import RegisterFinish from '@/pages/register/components/register-finish.vue'
 import { ref, shallowRef } from 'vue'
 
 let currentWindow = shallowRef(RegisterStart)
-let counter = ref(0)
-let componentsList = [RegisterWithEmail, RegisterFinish]
+let counter = ref(1)
+let componentsList = [RegisterStart, RegisterWithEmail, RegisterFinish]
 let isFinished = ref(false)
 
 function changeWindow() {
@@ -25,6 +25,9 @@ function changeWindow() {
   if (counter.value == componentsList.length - 1) {
     let isFinished = true
   }
-  counter.value++
+  ++counter.value
+  if (counter.value == componentsList.length) {
+    counter.value = 0
+  }
 }
 </script>
