@@ -7,5 +7,5 @@
 </template>
 
 <script setup lang="ts">
-import GalleryCategory from './gallery-category/gallery-category.vue';
+import GalleryCategory from './gallery-category/gallery-category.vue'
 </script>

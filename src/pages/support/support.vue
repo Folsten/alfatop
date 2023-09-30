@@ -8,8 +8,8 @@
 </template>
 
 <script setup lang="ts">
-import Header from '~/header/header.vue';
-import Crumbs from '~/crumbs/crumbs.vue';
-import Newsletter from '~/newsletter/newsletter.vue';
-import Footer from '~/footer/footer.vue';
+import Header from '~/header/header.vue'
+import Crumbs from '~/crumbs/crumbs.vue'
+import Newsletter from '~/newsletter/newsletter.vue'
+import Footer from '~/footer/footer.vue'
 </script>

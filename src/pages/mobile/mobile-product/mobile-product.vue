@@ -11,11 +11,11 @@
 </template>
 
 <script setup lang="ts">
-import Header from '@/components/header/header.vue';
-import Footer from '@/components/footer/footer.vue';
-import Crumbs from '@/components/crumbs/crumbs.vue';
-import Newsletter from '@/components/newsletter/newsletter.vue';
-import MobileProduct from '../components/mobile-product/mobile-product.vue';
-import GalleryCategory from '@/components/gallery/gallery-category/gallery-category.vue';
-import MobileHowItWork from '../components/mobile-product/mobile-product.vue';
+import Header from '@/components/header/header.vue'
+import Footer from '@/components/footer/footer.vue'
+import Crumbs from '@/components/crumbs/crumbs.vue'
+import Newsletter from '@/components/newsletter/newsletter.vue'
+import MobileProduct from '../components/mobile-product/mobile-product.vue'
+import GalleryCategory from '@/components/gallery/gallery-category/gallery-category.vue'
+import MobileHowItWork from '../components/mobile-product/mobile-product.vue'
 </script>

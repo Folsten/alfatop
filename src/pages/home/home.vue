@@ -12,10 +12,10 @@
 </template>
 
 <script setup lang="ts">
-import Newsletter from '~/newsletter/newsletter.vue';
-import Header from '~/header/header.vue';
-import Welcome from '@/pages/home/components/welcome.vue';
-import Sidebar from '~/sidebar/sidebar.vue';
-import Gallery from '~/gallery/gallery.vue';
-import Footer from '~/footer/footer.vue';
+import Newsletter from '~/newsletter/newsletter.vue'
+import Header from '~/header/header.vue'
+import Welcome from '@/pages/home/components/welcome.vue'
+import Sidebar from '~/sidebar/sidebar.vue'
+import Gallery from '~/gallery/gallery.vue'
+import Footer from '~/footer/footer.vue'
 </script>

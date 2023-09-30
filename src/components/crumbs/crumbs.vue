@@ -9,5 +9,5 @@
     </div>
     <h6 class="crumbs__title text-gray-900 text-dh6 sm:text-mh6 font-medium mt-4">Gaming</h6>
   </div>
-  <hr class="mt-3 sm:hidden">
+  <hr class="mt-3 sm:hidden" />
 </template>

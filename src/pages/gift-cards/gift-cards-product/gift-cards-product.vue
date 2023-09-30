@@ -11,11 +11,11 @@
 </template>
 
 <script setup lang="ts">
-import Header from '@/components/header/header.vue';
-import Footer from '@/components/footer/footer.vue';
-import Crumbs from '@/components/crumbs/crumbs.vue';
-import Newsletter from '@/components/newsletter/newsletter.vue';
-import GiftProduct from '@/pages/gift-cards/components/gift-product/gift-product.vue';
-import GalleryCategory from '@/components/gallery/gallery-category/gallery-category.vue';
-import GiftHowItWork from '@/pages/gift-cards/components/gift-how-it-work/gift-how-it-work.vue';
+import Header from '@/components/header/header.vue'
+import Footer from '@/components/footer/footer.vue'
+import Crumbs from '@/components/crumbs/crumbs.vue'
+import Newsletter from '@/components/newsletter/newsletter.vue'
+import GiftProduct from '@/pages/gift-cards/components/gift-product/gift-product.vue'
+import GalleryCategory from '@/components/gallery/gallery-category/gallery-category.vue'
+import GiftHowItWork from '@/pages/gift-cards/components/gift-how-it-work/gift-how-it-work.vue'
 </script>

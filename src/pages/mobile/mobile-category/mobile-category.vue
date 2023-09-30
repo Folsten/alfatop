@@ -16,12 +16,12 @@
 </template>
 
 <script setup lang="ts">
-import Header from '@/components/header/header.vue';
-import Crumbs from '@/components/crumbs/crumbs.vue';
-import Sidebar from '@/components/sidebar/sidebar.vue';
-import Showcase from '@/components/showcase/showcase.vue';
-import InternalSearch from '@/components/search-internal/search-internal.vue';
-import MobileHowItWork from "../components/mobile-how-it-work/mobile-how-it-work.vue";
-import Newsletter from '@/components/newsletter/newsletter.vue';
-import Footer from '@/components/footer/footer.vue';
+import Header from '@/components/header/header.vue'
+import Crumbs from '@/components/crumbs/crumbs.vue'
+import Sidebar from '@/components/sidebar/sidebar.vue'
+import Showcase from '@/components/showcase/showcase.vue'
+import InternalSearch from '@/components/search-internal/search-internal.vue'
+import MobileHowItWork from '../components/mobile-how-it-work/mobile-how-it-work.vue'
+import Newsletter from '@/components/newsletter/newsletter.vue'
+import Footer from '@/components/footer/footer.vue'
 </script>

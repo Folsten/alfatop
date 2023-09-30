@@ -9,5 +9,5 @@
 </template>
 
 <script setup lang="ts">
-import FooterMenuItem from './footer-menu-item/footer-menu-item.vue';
+import FooterMenuItem from './footer-menu-item/footer-menu-item.vue'
 </script>

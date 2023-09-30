@@ -6,9 +6,9 @@
     <p class="gallery-category__subtitle text-lg font-normal md:text-md">
       We provide fully transparent deals without any hidden charges
     </p>
-    <div 
+    <div
       class="gallery-category__cards-container cards-grid-layout overflow-x-auto sm:flex sm:flex-nowrap sm:pb-3"
-      :style="{'grid-template-columns': gridCardWidthStyles}"
+      :style="{ 'grid-template-columns': gridCardWidthStyles }"
     >
       <GalleryCategoryCard />
       <GalleryCategoryCard />
@@ -22,12 +22,13 @@
     <router-link
       to="#"
       class="gallery-category__btn-browse-all btn btn-neutral mt-8 w-[105px] pt-2 pb-2 sm:mt-4 sm:ml-0 sm:w-full"
-    >Browse All</router-link>
+      >Browse All</router-link
+    >
   </div>
 </template>
 
 <script setup lang="ts">
-import GalleryCategoryCard from './gallery-category-card/gallery-category-card.vue';
+import GalleryCategoryCard from './gallery-category-card/gallery-category-card.vue'
 
 const props = defineProps({
   cardWidth: {

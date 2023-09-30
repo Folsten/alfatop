@@ -1,10 +1,9 @@
 <template>
   <div class="header-auth flex items-center justify-center ml-2">
-    <div class="header-auth__burger-button hidden items-center p-2 rounded-[3px] shadow-md md:flex cursor-pointer">
-      <SvgIcon
-        name="icon-group"
-        class="w-4 h-4"
-      />
+    <div
+      class="header-auth__burger-button hidden items-center p-2 rounded-[3px] shadow-md md:flex cursor-pointer"
+    >
+      <SvgIcon name="icon-group" class="w-4 h-4" />
     </div>
     <!-- <div class="header-auth__log-in-button flex items-center justify-center w-28 text-gray-700 h-10 rounded-lg text-sm border-2 cursor-pointer sm:hidden">
       <div class="mr-3">Log in</div>
@@ -20,33 +19,24 @@
           name="icon-my-account"
           class="header-auth__my-account-icon w-5 h-5 text-gray-700 mr-2"
         />
-        <span class="header-auth__my-account-text text-gray-700 font-medium text-sm">My account</span>
-        <SvgIcon
-          name="icon-arrow-down"
-          class="header-auth__my-account-arrow w-4 h-4 ml-2"
-        />
+        <span class="header-auth__my-account-text text-gray-700 font-medium text-sm"
+          >My account</span
+        >
+        <SvgIcon name="icon-arrow-down" class="header-auth__my-account-arrow w-4 h-4 ml-2" />
       </div>
       <Transition name="fade">
-        <div
-          v-if="isOpen"
-          class="header-auth__fly-window fly-window top-10 right-0 w-64"
-        >
+        <div v-if="isOpen" class="header-auth__fly-window fly-window top-10 right-0 w-64">
           <div class="header-auth__fly-window-header flex flex-col pl-4 pr-4 pt-5 pb-2">
             <div class="header-auth__fly-window-my-account text-gray-900 font-medium text-sm">
               My account
             </div>
-            <div class="header-auth__fly-window-my-email text-xs">
-              myworkingemail@gmail.com
-            </div>
+            <div class="header-auth__fly-window-my-email text-xs">myworkingemail@gmail.com</div>
           </div>
-          <hr class="header-auth__hr1 text-gray-300 mt-2 mb-2">
+          <hr class="header-auth__hr1 text-gray-300 mt-2 mb-2" />
           <div class="header-auth__fly-window-content-container flex flex-col pl-4 pr-4 pt-2">
             <div class="header-auth__fly-window-account-text text-xs pb-2">Account</div>
             <div class="header-auth__fly-window-row flex items-center mt-2 cursor-pointer">
-              <SvgIcon
-                name="icon-orders"
-                class="header-auth__orders-icon w-5 h-5 text-gray-700"
-              />
+              <SvgIcon name="icon-orders" class="header-auth__orders-icon w-5 h-5 text-gray-700" />
               <div class="header-auth__orders-text ml-2 text-gray-700 font-medium">Orders</div>
             </div>
             <div class="header-auth__fly-window-row flex items-center mt-3 cursor-pointer">
@@ -54,30 +44,35 @@
                 name="icon-favourites2"
                 class="header-auth__favourites-icon w-5 h-5 text-gray-700"
               />
-              <div class="header-auth__favourites-text ml-2 text-gray-700 font-medium">Favourites</div>
+              <div class="header-auth__favourites-text ml-2 text-gray-700 font-medium">
+                Favourites
+              </div>
             </div>
             <div class="header-auth__fly-window-row flex items-center mt-3 cursor-pointer">
               <SvgIcon
                 name="icon-helpsupport"
                 class="header-auth__icon-helpsupport w-5 h-5 text-gray-700"
               />
-              <div class="header-auth__text-helpsupport ml-2 text-gray-700 font-medium">Help & Support</div>
+              <div class="header-auth__text-helpsupport ml-2 text-gray-700 font-medium">
+                Help & Support
+              </div>
             </div>
             <div class="header-auth__fly-window-row flex items-center mt-3 cursor-pointer">
               <SvgIcon
                 name="icon-referral"
                 class="header-auth__icon-referral w-5 h-5 text-gray-700"
               />
-              <div class="header-auth__text-referral ml-2 text-gray-700 font-medium">Referral program</div>
+              <div class="header-auth__text-referral ml-2 text-gray-700 font-medium">
+                Referral program
+              </div>
             </div>
           </div>
-          <hr class="header-auth__hr2 text-gray-300 mt-2 mb-2">
+          <hr class="header-auth__hr2 text-gray-300 mt-2 mb-2" />
           <div class="header-auth__fly-window-bottom flex pl-4 pr-4">
-            <div class="header-auth__fly-window-bottom-internal-container flex items-center mt-3 pb-5 cursor-pointer">
-              <SvgIcon
-                name="icon-logout"
-                class="header-auth__icon-logout w-5 h-5 text-gray-700"
-              />
+            <div
+              class="header-auth__fly-window-bottom-internal-container flex items-center mt-3 pb-5 cursor-pointer"
+            >
+              <SvgIcon name="icon-logout" class="header-auth__icon-logout w-5 h-5 text-gray-700" />
               <div class="header-auth__text-logout ml-2 text-gray-700 font-medium">Log out</div>
             </div>
           </div>
@@ -88,7 +83,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from 'vue'
 
-let isOpen = ref(false);
+let isOpen = ref(false)
 </script>

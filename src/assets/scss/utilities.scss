@@ -1,11 +1,10 @@
 @tailwind utilities;
 
 @layer utilities {
-
   // -----> BUTTONS <-----
 
   .btn-neutral {
-    @apply bg-gray-25 text-gray-700 border border-gray-300 shadow-xs ;
+    @apply bg-gray-25 text-gray-700 border border-gray-300 shadow-xs;
   }
 
   .btn-orange {
@@ -13,7 +12,7 @@
   }
 
   .btn-success {
-    @apply bg-success-500 text-success-25 ;
+    @apply bg-success-500 text-success-25;
   }
 
   .btn-indigo {
@@ -25,5 +24,4 @@
   .input-text_border {
     @apply border border-gray-300 rounded-md;
   }
-
 }

@@ -15,11 +15,11 @@
 </template>
 
 <script setup lang="ts">
-import Header from '@/components/header/header.vue';
-import Footer from '@/components/footer/footer.vue';
-import Crumbs from '@/components/crumbs/crumbs.vue';
-import Sidebar from '@/components/sidebar/sidebar.vue';
-import Showcase from '@/components/showcase/showcase.vue';
-import Newsletter from '@/components/newsletter/newsletter.vue';
-import SearchInternal from '@/components/search-internal/search-internal.vue';
+import Header from '@/components/header/header.vue'
+import Footer from '@/components/footer/footer.vue'
+import Crumbs from '@/components/crumbs/crumbs.vue'
+import Sidebar from '@/components/sidebar/sidebar.vue'
+import Showcase from '@/components/showcase/showcase.vue'
+import Newsletter from '@/components/newsletter/newsletter.vue'
+import SearchInternal from '@/components/search-internal/search-internal.vue'
 </script>

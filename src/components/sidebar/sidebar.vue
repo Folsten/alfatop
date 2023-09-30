@@ -8,5 +8,5 @@
 </template>
 
 <script setup lang="ts">
-import SidebarCategory from './sidebar-category/sidebar-category.vue';
+import SidebarCategory from './sidebar-category/sidebar-category.vue'
 </script>
