@@ -15,6 +15,7 @@ import Error404 from '../pages/error/404-page.vue';
 import Error500 from '../pages/error/500-page.vue';
 import Error503 from '../pages/error/503-page.vue';
 import ErrorComingSoon from '../pages/error/coming-soon-page.vue';
+import Register from "../pages/register/register.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -96,6 +97,10 @@ const router = createRouter({
       path: '/error/coming-soon',
       name: 'error-coming-soon',
       component: ErrorComingSoon
+    },
+    {
+      path: '/register',
+      component: Register
     }
   ]
 })
