@@ -50,10 +50,8 @@
 <script setup lang="ts">
 import Header from '~/header/header.vue'
 import Crumbs from '~/crumbs/crumbs.vue'
-import SearchInternal from '~/search-internal/search-internal.vue'
 import FaqChapters from '@/pages/faq/components/faq-chapters/faq-chapters.vue'
 import Footer from '~/footer/footer.vue'
 import Newsletter from '~/newsletter/newsletter.vue'
-import FaqArticle from '@/pages/faq/components/faq-article/faq-article.vue'
 import SelectCustom from '~/select-custom/select-custom.vue'
 </script>
