@@ -34,7 +34,7 @@
         class="select-custom__row flex items-center pl-4 pr-4 pt-2 pb-2 transition-all cursor-pointer hover:bg-indigo-50"
       >
         <img
-          src="@/components/images/bitcoin-badge.png"
+          src="@/assets/images/bitcoin-badge.png"
           class="select-custom__row-icon w-4 h-4 mr-[6px]"
           alt="bitcoin"
         />
@@ -45,7 +45,7 @@
         class="select-custom__row flex items-center pl-4 pr-4 pt-2 pb-2 transition-all cursor-pointer hover:bg-indigo-50"
       >
         <img
-          src="@/components/images/bitcoin-badge.png"
+          src="@/assets/images/bitcoin-badge.png"
           class="select-custom__row-icon w-4 h-4 mr-[6px]"
           alt="bitcoin"
         />
