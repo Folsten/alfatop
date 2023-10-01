@@ -68,7 +68,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-let isOpen = ref(false)
+let isOpen = ref(true)
 </script>
 
 <style lang="scss" scoped>
