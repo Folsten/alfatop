@@ -12,6 +12,16 @@
   opacity: 0;
 }
 
+.fade-007-enter-active,
+.fade-007-leave-active {
+  transition: all 0.07s ease-out;
+}
+
+.fade-007-enter-from,
+.fade-007-leave-to {
+  opacity: 0
+}
+
 @layer base {
   html {
     font-size: 16px;
