@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header flex flex-col">
     <div class="container">
       <div class="header__top-nav flex items-center justify-between h-[48px] md:hidden">
         <HeaderCountry />
@@ -17,7 +17,7 @@
       </div>
     </div>
     <hr class="header__hr1 hidden md:flex" />
-    <div class="container">
+    <div class="container" v-if="isMenuVisible">
       <HeaderMenu />
     </div>
     <hr class="header__hr2 md:hidden" />
@@ -31,4 +31,8 @@ import HeaderSearch from './header-search/header-search.vue'
 import HeaderCart from './header-cart/header-cart.vue'
 import HeaderAuth from './header-auth/header-auth.vue'
 import HeaderMenu from './header-menu/header-menu.vue'
+
+const props = defineProps({
+  isMenuVisible: Boolean
+})
 </script>

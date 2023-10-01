@@ -1,9 +1,9 @@
 <template>
   <div
-    class="sidebar flex flex-col justify-start items-start h-screen w-[66px] border border-gray-100 bg-gray-25 shadow-[4px_0px_8px_0px_rgba(0,0,0,0.02)]"
+    class="sidebar flex flex-col justify-start items-start min-h-screen w-16 border border-gray-100 bg-gray-25 shadow-[4px_0px_8px_0px_rgba(0,0,0,0.02)] md:hidden"
     :class="{ 'sidebar-open-core': isOpen }"
   >
-    <div class="relative flex items-center w-full mt-4 mb-6">
+    <div class="relative flex items-center w-full border-b border-gray-100 mb-6">
       <div class="cursor-pointer flex justify-center items-center w-16 h-16">
         <SvgIcon name="icon-logo-no-text" class="transition-all w-8 h-8 flex" />
       </div>
@@ -21,7 +21,7 @@
       :class="{ 'w-[278px] !pl-2': isOpen }"
       class="transition-all cursor-pointer flex justify-start items-center h-16 p-2 pl-3"
     >
-      <div class="w-full flex p-2 hover:bg-gray-100 hover:rounded-lg">
+      <div v-tooltip.right="'Orders'" class="w-full flex p-2 hover:bg-gray-100 hover:rounded-lg">
         <SvgIcon name="icon-orders" class="w-6 h-6 self-center text-gray-700" />
         <Transition name="fade-007">
           <div v-if="isOpen" class="ml-2 text-sm text-gray-700 font-medium">Orders</div>
@@ -32,7 +32,7 @@
       :class="{ 'w-[278px] !pl-2': isOpen }"
       class="transition-all cursor-pointer flex justify-start items-center h-16 p-2 pl-3"
     >
-      <div class="w-full flex p-2 hover:bg-gray-100 hover:rounded-lg">
+      <div v-tooltip.right="'Favourites'" class="w-full flex p-2 hover:bg-gray-100 hover:rounded-lg">
         <SvgIcon name="icon-favourite-bag" class="w-6 h-6 self-center text-gray-700" />
         <Transition name="fade-007">
           <div v-if="isOpen" class="ml-2 text-sm text-gray-700 font-medium">Favourites</div>
@@ -43,7 +43,7 @@
       :class="{ 'w-[278px] !pl-2': isOpen }"
       class="transition-all cursor-pointer flex justify-start items-center h-16 p-2 pl-3"
     >
-      <div class="w-full flex p-2 hover:bg-gray-100 hover:rounded-lg">
+      <div v-tooltip.right="'Referrals'" class="w-full flex p-2 hover:bg-gray-100 hover:rounded-lg">
         <SvgIcon name="icon-referral" class="w-6 h-6 self-center text-gray-700" />
         <Transition name="fade-007">
           <div v-if="isOpen" class="ml-2 text-sm text-gray-700 font-medium">Referral program</div>
@@ -67,6 +67,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import Header from "~/header/header.vue";
 
 let isOpen = ref(true)
 </script>
@@ -78,8 +79,6 @@ let isOpen = ref(true)
 
 .sidebar-open-core {
   width: 312px !important;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 .sidebar-open-row {
