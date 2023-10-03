@@ -6,21 +6,21 @@
     >
       <div
         :class="{ 'xl:!items-start': isUltraResponsive }"
-        class="footer__menu-wrapper flex flex-col lg:items-center sm:items-start"
+        class="footer__menu-wrapper flex flex-col lg:items-start"
       >
         <FooterMenu />
       </div>
       <div
-        :class="{ 'xl:!items-start ml-10 xl:ml-0 xl:mt-10': isUltraResponsive }"
-        class="footer__menu-wrapper flex flex-col ml-20 lg:ml-0 lg:mt-10 lg:items-center sm:items-start"
+        :class="{ 'xl:!items-start !ml-10 xl:!ml-0 xl:mt-10': isUltraResponsive }"
+        class="footer__menu-wrapper flex flex-col ml-16 lg:ml-0 lg:mt-10 lg:items-start"
       >
         <FooterMenu />
       </div>
       <div
         :class="{ 'xl:!justify-start xl:mt-6 xl:ml-0': isUltraResponsive }"
-        class="footer__socials-wrapper flex ml-auto lg:ml-0 lg:mt-6 items-baseline lg:justify-center sm:justify-start"
+        class="footer__socials-wrapper flex ml-auto lg:ml-0 lg:mt-6 items-baseline lg:justify-start"
       >
-        <router-link to="#" :class="{ 'xl:!ml-0': isUltraResponsive }" class="ml-4 mr-4 sm:ml-0">
+        <router-link to="#" :class="{ 'xl:!ml-0': isUltraResponsive }" class="ml-4 mr-4 lg:ml-0">
           <SvgIcon name="icon-telegram" class="w-6 h-6" />
         </router-link>
         <router-link to="#" class="ml-4 mr-4">
@@ -34,10 +34,10 @@
         </router-link>
       </div>
     </div>
-    <div :class="{ 'ml-0 mr-0 pl-0 pr-0 w-full max-w-[100%]': isUltraResponsive }" class="footer__bottom-container container mt-10">
-      <div :class="{ 'xl:!flex-col xl:!items-start': isUltraResponsive }" class="footer__bottom-wrapper flex items-end lg:items-center sm:items-start lg:flex-col">
+    <div :class="{ 'ml-0 mr-0 pl-0 pr-0 w-full max-w-[100%]': isUltraResponsive }" class="footer__bottom-wrapper container mt-10">
+      <div :class="{ 'xl:!flex-col xl:!items-start': isUltraResponsive }" class="footer__bottom-container flex items-end lg:items-start lg:flex-col">
         <SvgIcon name="icon-logo-light" class="w-20 h-6" />
-        <div :class="{ 'mt-5 ml-0': isUltraResponsive }" class="footer__disclaimer text-gray-500 text-xs ml-6 lg:ml-0 lg:mt-5">
+        <div :class="{ 'xl:!mt-5 xl:!ml-0': isUltraResponsive }" class="footer__disclaimer text-gray-500 text-xs ml-6 lg:ml-0 lg:mt-5">
           © 2023 ALFAtop, All rights reserved.
         </div>
         <div :class="{ 'xl:ml-0 xl:mt-10': isUltraResponsive }" class="footer__trustpilot-wrapper ml-auto flex items-center lg:ml-0 lg:mt-10">
