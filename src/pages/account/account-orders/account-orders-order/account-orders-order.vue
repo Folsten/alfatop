@@ -8,36 +8,19 @@
         <AccountCrumbs class="mt-4" />
         <div class="flex w-full mt-8">
           <div
-            class="flex flex-col items-center w-full border border-gray-100 bg-gray-25 p-6 mr-10"
+            class="flex flex-col items-center w-[60%] border border-gray-100 bg-gray-25 p-6 mr-10"
           >
-            <div class="text-gray-900 text-md font-medium text-left w-full">Product list</div>
-            <div class="flex w-full items-center mt-8">
-              <div class="text-gray-700 text-sm font-medium text-left mr-1">Gift cards</div>
-              <div
-                class="rounded-md bg-gray-100 pt-0.5 pb-0.5 pl-1.5 pr-1.5 text-[10px] font-semibold"
-              >
-                2
-              </div>
-            </div>
-            <div class="flex w-full items-center mt-6">
-              <img class="w-10 h-10 rounded-md mr-4" src="@/assets/images/playstation.png" />
-              <div class="flex flex-col mr-4">
-                <div class="text-sm leading-5 text-gray-900 font-medium">Amazon.es Spain</div>
-                <div class="text-sm leading-5 font-medium text-gray-700">20 EUR</div>
-              </div>
-              <div class="text-gray-900 font-medium ml-auto mr-auto">1</div>
-              <div class="flex items-center ml-auto mr-auto">
-                <SvgIcon name="icon-lightning-green" class="w-4 h-4 mr-2" />
-                <div class="text-sm font-semibold text-gray-900">Completed</div>
-                <button class="btn btn-neutral"></button>
-              </div>
-              <button class="btn btn-neutral h-[42px] pl-3 pr-3 pt-1.5 pb-1.5">
-                <SvgIcon name="icon-favourite-filled" class="w-4 h-4 mr-2" />
-                <span class="flex text-sm">Add to favourites</span>
-              </button>
-            </div>
+            <div class="text-gray-900 text-md font-medium text-left w-full mb-8">Product list</div>
+            <AccountOrdersOrderCategory />
+            <AccountOrdersOrderProduct />
+            <AccountOrdersOrderProduct />
+            <AccountOrdersOrderProduct />
+            <hr class="w-full h-[1px] mb-5 mt-5">
+            <AccountOrdersOrderCategory />
+            <AccountOrdersOrderProduct />
+            <AccountOrdersOrderProduct />
           </div>
-          <div class="flex flex-col w-full border border-gray-100 bg-gray-50 p-6">
+          <div class="flex flex-col self-baseline w-[40%] border border-gray-100 bg-gray-50 p-6">
             <div class="flex mb-6">Payment details</div>
             <div class="flex flex-col border-b border-gray-100 pb-6">
               <div class="flex justify-between items-center mt-4">
@@ -74,6 +57,10 @@
                 </div>
               </div>
             </div>
+            <button class="btn btn-success flex self-end mt-6 p-2.5 h-[42px]">
+              <SvgIcon name="icon-cart-with-arrow-down" class="w-4 h-4 text-success-25 mr-2" />
+              <span class="text-sm">Create new order</span>
+            </button>
           </div>
         </div>
       </div>
@@ -86,4 +73,6 @@ import AccountSidebar from '@/pages/account/components/account-sidebar.vue'
 import AccountHeaderLine from '@/pages/account/components/account-header-line.vue'
 import AccountCrumbs from '@/pages/account/components/account-crumbs.vue'
 import SvgIcon from '~/svg-icon/svg-icon.vue'
+import AccountOrdersOrderProduct from '@/pages/account/account-orders/account-orders-order/components/account-orders-order-product.vue'
+import AccountOrdersOrderCategory from '@/pages/account/account-orders/account-orders-order/components/account-orders-order-category.vue'
 </script>

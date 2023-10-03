@@ -4,7 +4,7 @@ import './assets/scss/global.scss'
 // Импортирование компонентов
 import SvgIcon from '@/components/svg-icon/svg-icon.vue'
 // Импортирование директив
-import { TooltipDirective } from './directives/tooltip.ts'
+import { TooltipDirective } from './directives/tooltip'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
