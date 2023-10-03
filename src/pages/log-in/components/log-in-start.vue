@@ -27,7 +27,11 @@
         placeholder="Enter email specified at registration"
       />
       <div class="log-in-start__password-wrapper input-text w-full mt-4">
-        <input type="text" placeholder="Enter password" class="log-in-start__password-input w-full text-sm text-gray-900 mr-4" />
+        <input
+          type="text"
+          placeholder="Enter password"
+          class="log-in-start__password-input w-full text-sm text-gray-900 mr-4"
+        />
         <SvgIcon name="icon-crossed-eye" class="log-in-start__eye-icon w-7 h-7 text-gray-500" />
       </div>
       <div class="log-in-start__bottom-container mt-4 flex justify-between w-full">
@@ -35,10 +39,14 @@
           <input type="checkbox" class="log-in-start__checkbox mr-2" />
           <span class="log-in-start__remember-me text-sm text-gray-900">Remember me</span>
         </div>
-        <router-link to="#" class="log-in-start__forgot-password text-indigo-500 text-sm">Forgot the password?</router-link>
+        <router-link to="#" class="log-in-start__forgot-password text-indigo-500 text-sm"
+          >Forgot the password?</router-link
+        >
       </div>
       <button class="log-in-start__btn btn btn-success w-full h-10 mt-4 rounded">Log in</button>
-      <div class="log-in-start__have-an-account register-start__have-an-account text-sm text-gray-900 mt-4">
+      <div
+        class="log-in-start__have-an-account register-start__have-an-account text-sm text-gray-900 mt-4"
+      >
         Already have an account?
         <router-link to="#" class="text-indigo-500 font-medium">Register</router-link>
       </div>

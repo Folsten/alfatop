@@ -8,5 +8,4 @@
     <div class="text-gray-900 text-lg font-medium mt-2">Order 12345 Details</div>
   </div>
 </template>
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>

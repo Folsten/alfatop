@@ -7,7 +7,7 @@
       class="account-sidebar__header relative flex items-center w-full border-b border-gray-100 mb-6"
     >
       <div
-        class="account-sidebar__header-container cursor-pointer flex justify-center items-center w-[60px] h-[60px]"
+        class="account-sidebar__header-container cursor-pointer flex justify-center items-center w-[60px] h-[64px]"
       >
         <SvgIcon
           name="icon-logo-no-text"
@@ -27,10 +27,10 @@
         </div>
       </Transition>
     </div>
-<!--    <div class="p-2 pl-5">Account</div>-->
+    <!--    <div class="p-2 pl-5">Account</div>-->
     <div
-      :class="{ 'w-[278px] !pl-2': isOpen }"
-      class="account-sidebar__menu-item-wrapper transition-all cursor-pointer flex justify-start items-center h-16 p-2 pl-3"
+      :class="{ 'w-[278px]': isOpen }"
+      class="account-sidebar__menu-item-wrapper transition-all cursor-pointer flex justify-start items-center h-16 p-2"
     >
       <div
         v-tooltip.right="'Orders'"
@@ -51,8 +51,8 @@
       </div>
     </div>
     <div
-      :class="{ 'w-[278px] !pl-2': isOpen }"
-      class="account-sidebar__menu-item-wrapper transition-all cursor-pointer flex justify-start items-center h-16 p-2 pl-3"
+      :class="{ 'w-[278px]': isOpen }"
+      class="account-sidebar__menu-item-wrapper transition-all cursor-pointer flex justify-start items-center h-16 p-2"
     >
       <div
         v-tooltip.right="'Favourites'"
@@ -73,8 +73,8 @@
       </div>
     </div>
     <div
-      :class="{ 'w-[278px] !pl-2': isOpen }"
-      class="account-sidebar__menu-item-wrapper transition-all cursor-pointer flex justify-start items-center h-16 p-2 pl-3"
+      :class="{ 'w-[278px]': isOpen }"
+      class="account-sidebar__menu-item-wrapper transition-all cursor-pointer flex justify-start items-center h-16 p-2"
     >
       <div
         v-tooltip.right="'Referrals'"

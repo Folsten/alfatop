@@ -31,7 +31,9 @@
         class="home-welcome__wrapper-gifts-card flex w-full items-center ml-5 rounded-lg overflow-hidden h-[224px] sm:mt-5 lg:ml-2"
       >
         <div class="home-welcome__gifts-card h-full w-full">
-          <div class="home-welcome__gifts-card-container p-8 flex flex-col h-full justify-center md:p-4">
+          <div
+            class="home-welcome__gifts-card-container p-8 flex flex-col h-full justify-center md:p-4"
+          >
             <span
               class="home-welcome__gifts-card-title text-white leading-10 sm:text-center text-dh4 md:text-mh4"
               >Shop exclusive gift cards <br class="lg:hidden" />and more</span
