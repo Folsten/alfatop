@@ -127,7 +127,7 @@
 
   // -----> BUTTONS <-----
   .btn {
-    @apply flex justify-center items-center rounded-md font-medium text-md;
+    @apply flex justify-center items-center rounded-md font-medium text-md h-[42px];
   }
 
   // -----> INPUTS <-----

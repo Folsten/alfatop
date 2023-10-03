@@ -49,13 +49,13 @@
         >
           © 2023 ALFAtop, All rights reserved.
         </div>
-        <div
+        <a href="#"
           :class="{ 'xl:ml-0 xl:mt-10': isUltraResponsive }"
           class="footer__trustpilot-wrapper ml-auto flex items-center lg:ml-0 lg:mt-10"
         >
           <div class="footer__leave-a-review text-gray-500 text-xs mr-2">Leave a review</div>
           <SvgIcon name="icon-trustpilot" class="footer__trustpilot w-24 h-6" />
-        </div>
+        </a>
       </div>
     </div>
   </footer>
