@@ -32,10 +32,20 @@
       :class="{ 'w-[278px]': isOpen }"
       class="account-sidebar__menu-item-wrapper transition-all cursor-pointer flex justify-start items-center h-16 p-2"
     >
-      <div
-        v-tooltip.right="'Orders'"
-        class="account-sidebar__menu-item-container w-full flex p-2 hover:bg-gray-100 hover:rounded-lg"
+      <router-link
+        @mouseover.self="orderTooltip = true"
+        @mouseleave.self="orderTooltip = false"
+        to="#"
+        class="relative account-sidebar__menu-item-container w-full flex p-2 hover:bg-gray-100 hover:rounded-lg"
       >
+        <Transition name="fade">
+          <div
+            v-if="orderTooltip && !isOpen"
+            class="sidebar-tooltip-custom absolute left-[52px] top-[-4px] bg-gray-900 font-medium text-sm text-gray-100 p-3 rounded-lg"
+          >
+            Orders
+          </div>
+        </Transition>
         <SvgIcon
           name="icon-orders"
           class="account-sidebar__menu-item-icon w-6 h-6 self-center text-gray-700"
@@ -48,16 +58,26 @@
             Orders
           </div>
         </Transition>
-      </div>
+      </router-link>
     </div>
     <div
       :class="{ 'w-[278px]': isOpen }"
       class="account-sidebar__menu-item-wrapper transition-all cursor-pointer flex justify-start items-center h-16 p-2"
     >
-      <div
-        v-tooltip.right="'Favourites'"
-        class="account-sidebar__menu-item-container w-full flex p-2 hover:bg-gray-100 hover:rounded-lg"
+      <router-link
+        @mouseover.self="favouritesTooltip = true"
+        @mouseleave.self="favouritesTooltip = false"
+        to="#"
+        class="relative account-sidebar__menu-item-container w-full flex p-2 hover:bg-gray-100 hover:rounded-lg"
       >
+        <Transition name="fade">
+          <div
+            v-if="favouritesTooltip && !isOpen"
+            class="sidebar-tooltip-custom absolute left-[52px] top-[-4px] bg-gray-900 font-medium text-sm text-gray-100 p-3 rounded-lg"
+          >
+            Favourites
+          </div>
+        </Transition>
         <SvgIcon
           name="icon-favourite-bag"
           class="account-sidebar__menu-item-icon w-6 h-6 self-center text-gray-700"
@@ -70,16 +90,26 @@
             Favourites
           </div>
         </Transition>
-      </div>
+      </router-link>
     </div>
     <div
       :class="{ 'w-[278px]': isOpen }"
       class="account-sidebar__menu-item-wrapper transition-all cursor-pointer flex justify-start items-center h-16 p-2"
     >
-      <div
-        v-tooltip.right="'Referrals'"
-        class="account-sidebar__menu-item-container w-full flex p-2 hover:bg-gray-100 hover:rounded-lg"
+      <router-link
+        @mouseover.self="referralTooltip = true"
+        @mouseleave.self="referralTooltip = false"
+        to="#"
+        class="relative account-sidebar__menu-item-container w-full flex p-2 hover:bg-gray-100 hover:rounded-lg"
       >
+        <Transition name="fade">
+          <div
+            v-if="referralTooltip && !isOpen"
+            class="sidebar-tooltip-custom absolute left-[52px] top-[-4px] bg-gray-900 font-medium text-sm text-gray-100 p-3 rounded-lg"
+          >
+            Favourites
+          </div>
+        </Transition>
         <SvgIcon
           name="icon-referral"
           class="account-sidebar__menu-item-icon w-6 h-6 self-center text-gray-700"
@@ -92,7 +122,7 @@
             Referral program
           </div>
         </Transition>
-      </div>
+      </router-link>
     </div>
     <div
       @click="isOpen = !isOpen"
@@ -113,9 +143,11 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import Header from '~/header/header.vue'
 
 let isOpen = ref(true)
+let orderTooltip = ref(false)
+let favouritesTooltip = ref(false)
+let referralTooltip = ref(false)
 </script>
 
 <style lang="scss" scoped>
@@ -130,5 +162,20 @@ let isOpen = ref(true)
 .sidebar-open-row {
   justify-content: flex-start;
   width: 100%;
+}
+
+.sidebar-tooltip-custom {
+  &::before {
+    opacity: 1;
+    top: calc(50% - 8px);
+    left: -16px;
+    content: '';
+    border-width: 8px;
+    border-style: solid;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    border-color: transparent rgb(16, 24, 40) transparent transparent;
+  }
 }
 </style>

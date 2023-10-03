@@ -73,6 +73,26 @@ const router = createRouter({
       name: 'faq-articles',
       component: FaqArticle
     },
+    {
+      path: '/register',
+      name: 'register',
+      component: Register
+    },
+    {
+      path: '/log-in',
+      name: 'log-in',
+      component: LogIn
+    },
+    {
+      path: '/account/orders',
+      name: 'account-orders',
+      component: AccountOrders
+    },
+    {
+      path: '/account/orders/order',
+      name: 'accounts-orders-order',
+      component: AccountOrdersOrder
+    },
 
     // Error pages
 
@@ -100,26 +120,6 @@ const router = createRouter({
       path: '/error/coming-soon',
       name: 'error-coming-soon',
       component: ErrorComingSoon
-    },
-    {
-      path: '/register',
-      name: 'register',
-      component: Register
-    },
-    {
-      path: '/log-in',
-      name: 'log-in',
-      component: LogIn
-    },
-    {
-      path: '/account/orders',
-      name: 'account-orders',
-      component: AccountOrders
-    },
-    {
-      path: '/account/orders/order',
-      name: 'accounts-orders-order',
-      component: AccountOrdersOrder
     }
   ]
 })

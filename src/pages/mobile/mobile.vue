@@ -49,7 +49,17 @@ import GalleryCategory from '@/components/gallery/gallery-category/gallery-categ
 
 <style scoped>
 .mobile__bg {
-  background-image: url('./images/mobile-bg.png');
+  background-image: url('images/mobile-bg.png');
+  background-image: -webkit-image-set(
+    url('images/mobile-bg.png') 2x,
+    url('images/mobile-bg.png') 1x
+  );
+  background-image: image-set(
+    url('images/mobile-bg.webp') type('image/webp') 2x,
+    url('images/mobile-bg.webp') type('image/webp') 1x,
+    url('images/mobile-bg.png') 2x,
+    url('images/mobile-bg.png') 1x
+  );
   background-size: cover;
   background-position: 50%;
 }
