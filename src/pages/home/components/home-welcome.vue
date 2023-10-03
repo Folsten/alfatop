@@ -63,7 +63,7 @@
 </template>
 
 <style lang="scss" scoped>
-.welcome__mobile-card {
+.home-welcome__mobile-card {
   background-image: url('images/mobileCardBg.png');
   background-image: -webkit-image-set(
     url('images/mobileCardBg.png') 2x,
@@ -78,7 +78,7 @@
   background-size: cover;
 }
 
-.welcome__gifts-card {
+.home-welcome__gifts-card {
   background-image: url('images/giftsCardBg.png');
   background-image: -webkit-image-set(
     url('images/giftsCardBg.png') 2x,

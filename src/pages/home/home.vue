@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <Welcome />
+    <HomeWelcome />
     <div class="home-page container flex mt-20">
       <Sidebar />
       <Gallery />
@@ -14,7 +14,7 @@
 <script setup lang="ts">
 import Newsletter from '~/newsletter/newsletter.vue'
 import Header from '~/header/header.vue'
-import Welcome from '@/pages/home/components/home-welcome.vue'
+import HomeWelcome from '@/pages/home/components/home-welcome.vue'
 import Sidebar from '~/sidebar/sidebar.vue'
 import Gallery from '~/gallery/gallery.vue'
 import Footer from '~/footer/footer.vue'
