@@ -34,7 +34,7 @@
         />
         <button
           :class="{ 'xl:!w-full xl:!h-12 xl:!mt-3 xl:!ml-0': isUltraResponsive }"
-          class="newsletter__action-btn btn btn-orange w-[145px] ml-3 md:w-full md:h-12 md:mt-3 md:ml-0"
+          class="newsletter__action-btn btn btn-orange w-[145px] ml-3 md:w-full h-12 md:mt-3 md:ml-0"
         >
           Subscribe
         </button>
