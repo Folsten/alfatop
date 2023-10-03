@@ -20,7 +20,7 @@
         <div
           class="w-full flex justify-center items-center bg-gray-50 rounded-lg pb-10 pt-10 min-h-[304px] mt-20 mb-10 pl-16 pr-16 md:mt-10 sm:pl-8 sm:pr-8"
         >
-          <Newsletter :is-ultra-responsive="true" class="xl:flex-wrap" />
+          <Newsletter :is-ultra-responsive="true" />
         </div>
         <Footer :is-ultra-responsive="true" class="w-full mb-5" />
       </div>

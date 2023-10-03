@@ -38,7 +38,7 @@
         to="#"
         class="relative account-sidebar__menu-item-container w-full flex p-2 hover:bg-gray-100 hover:rounded-lg"
       >
-        <Transition name="fade">
+        <Transition name="fade-004">
           <div
             v-if="orderTooltip && !isOpen"
             class="sidebar-tooltip-custom absolute left-[52px] top-[-4px] bg-gray-900 font-medium text-sm text-gray-100 p-3 rounded-lg"
@@ -50,7 +50,7 @@
           name="icon-orders"
           class="account-sidebar__menu-item-icon w-6 h-6 self-center text-gray-700"
         />
-        <Transition name="fade-007">
+        <Transition name="fade-004">
           <div
             v-if="isOpen"
             class="account-sidebar__menu-item-text ml-2 text-sm text-gray-700 font-medium"
@@ -70,7 +70,7 @@
         to="#"
         class="relative account-sidebar__menu-item-container w-full flex p-2 hover:bg-gray-100 hover:rounded-lg"
       >
-        <Transition name="fade">
+        <Transition name="fade-004">
           <div
             v-if="favouritesTooltip && !isOpen"
             class="sidebar-tooltip-custom absolute left-[52px] top-[-4px] bg-gray-900 font-medium text-sm text-gray-100 p-3 rounded-lg"
@@ -82,7 +82,7 @@
           name="icon-favourite-bag"
           class="account-sidebar__menu-item-icon w-6 h-6 self-center text-gray-700"
         />
-        <Transition name="fade-007">
+        <Transition name="fade-004">
           <div
             v-if="isOpen"
             class="account-sidebar__menu-item-text ml-2 text-sm text-gray-700 font-medium"
@@ -102,19 +102,19 @@
         to="#"
         class="relative account-sidebar__menu-item-container w-full flex p-2 hover:bg-gray-100 hover:rounded-lg"
       >
-        <Transition name="fade">
+        <Transition name="fade-004">
           <div
             v-if="referralTooltip && !isOpen"
             class="sidebar-tooltip-custom absolute left-[52px] top-[-4px] bg-gray-900 font-medium text-sm text-gray-100 p-3 rounded-lg"
           >
-            Favourites
+            Referral
           </div>
         </Transition>
         <SvgIcon
           name="icon-referral"
           class="account-sidebar__menu-item-icon w-6 h-6 self-center text-gray-700"
         />
-        <Transition name="fade-007">
+        <Transition name="fade-004">
           <div
             v-if="isOpen"
             class="account-sidebar__menu-item-text ml-2 text-sm text-gray-700 font-medium"

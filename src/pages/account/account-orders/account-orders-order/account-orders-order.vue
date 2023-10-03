@@ -8,19 +8,21 @@
         <AccountCrumbs class="mt-4" />
         <div class="flex w-full mt-8">
           <div
-            class="flex flex-col items-center w-[60%] border border-gray-100 bg-gray-25 p-6 mr-10"
+            class="flex flex-col items-center w-[60%] border border-gray-100 bg-gray-25 p-6 mr-10 xl:w-full xl:mr-0"
           >
             <div class="text-gray-900 text-md font-medium text-left w-full mb-8">Product list</div>
             <AccountOrdersOrderCategory />
             <AccountOrdersOrderProduct />
             <AccountOrdersOrderProduct />
             <AccountOrdersOrderProduct />
-            <hr class="w-full h-[1px] mb-5 mt-5">
+            <hr class="w-full h-[1px] mb-5 mt-5" />
             <AccountOrdersOrderCategory />
             <AccountOrdersOrderProduct />
             <AccountOrdersOrderProduct />
           </div>
-          <div class="flex flex-col self-baseline w-[40%] border border-gray-100 bg-gray-50 p-6">
+          <div
+            class="flex flex-col self-baseline w-[40%] border border-gray-100 bg-gray-50 p-6 xl:hidden"
+          >
             <div class="flex mb-6">Payment details</div>
             <div class="flex flex-col border-b border-gray-100 pb-6">
               <div class="flex justify-between items-center mt-4">
@@ -64,6 +66,8 @@
           </div>
         </div>
       </div>
+      <Newsletter :is-ultra-responsive="true" class="container mt-40 mb-40" />
+      <Footer/>
     </div>
   </div>
 </template>
@@ -75,4 +79,6 @@ import AccountCrumbs from '@/pages/account/components/account-crumbs.vue'
 import SvgIcon from '~/svg-icon/svg-icon.vue'
 import AccountOrdersOrderProduct from '@/pages/account/account-orders/account-orders-order/components/account-orders-order-product.vue'
 import AccountOrdersOrderCategory from '@/pages/account/account-orders/account-orders-order/components/account-orders-order-category.vue'
+import Newsletter from '~/newsletter/newsletter.vue'
+import Footer from "~/footer/footer.vue";
 </script>
