@@ -51,7 +51,7 @@
               <router-link
                 to="#"
                 tag="button"
-                class="home-welcome__gifts-card-btn btn btn-orange h-10 pl-3 pr-3 ml-4 rounded-md lg:text-sm sm:w-full sm:ml-0"
+                class="home-welcome__gifts-card-btn btn btn-orange w-20 h-10 pl-3 pr-3 ml-4 rounded-md lg:text-sm sm:w-full sm:ml-0"
                 >Top up
               </router-link>
             </div>

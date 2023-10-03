@@ -11,7 +11,8 @@ import Faq from '../pages/faq/faq.vue'
 import FaqArticle from '../pages/faq/faq-article/faq-article.vue'
 import Register from '../pages/register/register.vue'
 import LogIn from '../pages/log-in/log-in.vue'
-import AccountOrders from "@/pages/account/orders/account-orders.vue";
+import AccountOrders from "@/pages/account/account-orders/account-orders.vue";
+import AccountOrdersOrder from "@/pages/account/account-orders/account-orders-order/account-orders-order.vue";
 // Error pages
 import Error403 from '../pages/error/403.vue'
 import Error404 from '../pages/error/404.vue'
@@ -114,6 +115,11 @@ const router = createRouter({
       path: '/account/orders',
       name: 'account-orders',
       component: AccountOrders
+    },
+    {
+      path: '/account/orders/order',
+      name: 'accounts-orders-order',
+      component: AccountOrdersOrder
     }
   ]
 })

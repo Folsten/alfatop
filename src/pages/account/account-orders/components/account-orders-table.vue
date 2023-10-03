@@ -41,8 +41,8 @@
   </div>
 </template>
 <script setup lang="ts">
-import AccountOrdersTableItem from '@/pages/account/orders/components/account-orders-table-item.vue'
-import AccountOrdersTableDate from '@/pages/account/orders/components/account-orders-table-date.vue'
+import AccountOrdersTableItem from '@/pages/account/account-orders/components/account-orders-table-item.vue'
+import AccountOrdersTableDate from '@/pages/account/account-orders/components/account-orders-table-date.vue'
 import AccountTablePagination from '@/pages/account/components/account-table-pagination.vue'
 import SvgIcon from "~/svg-icon/svg-icon.vue";
 </script>
