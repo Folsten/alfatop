@@ -1,14 +1,14 @@
 <template>
   <div class="header-auth flex items-center justify-center ml-2">
 
-<!--  MOBILE MENU START  -->
+<!--  MOBILE MENU START-->
 
-<!--    <div-->
-<!--      @click="isMobileMenuOpen = !isMobileMenuOpen"-->
-<!--      class="header-auth__burger-button hidden items-center p-2 rounded-[3px] shadow-md md:flex cursor-pointer"-->
-<!--    >-->
-<!--      <SvgIcon name="icon-group" class="w-4 h-4" />-->
-<!--    </div>-->
+    <div
+      @click="isMobileMenuOpen = !isMobileMenuOpen"
+      class="header-auth__burger-button hidden items-center p-2 rounded-[3px] shadow-md md:flex cursor-pointer"
+    >
+      <SvgIcon name="icon-group" class="w-4 h-4" />
+    </div>
 <!--    <div-->
 <!--      :class="{ '!left-0': isMobileMenuOpen }"-->
 <!--      class="mobile-menu absolute w-screen h-screen bg-white top-[73px] left-[100%] text-gray-900 z-10"-->
