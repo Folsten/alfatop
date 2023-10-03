@@ -3,6 +3,8 @@ import 'virtual:svg-icons-register'
 import './assets/scss/global.scss'
 // Импортирование компонентов
 import SvgIcon from '@/components/svg-icon/svg-icon.vue'
+import VueCustomTooltip from '@adamdehaven/vue-custom-tooltip'
+import type { TooltipOptions } from '@adamdehaven/vue-custom-tooltip'
 // Импортирование директив
 import { TooltipDirective } from './directives/tooltip'
 
@@ -20,6 +22,15 @@ app.directive('tooltip', TooltipDirective)
 // Глобальная регистрация компонента
 app.component('SvgIcon', SvgIcon)
 
+const opt: TooltipOptions = {
+  name: 'VueCustomTooltip',
+  color: '#FCFCFD',
+  background: '#101828',
+  borderRadius: 6,
+  fontWeight: 500
+}
+
+app.use(VueCustomTooltip, opt)
 app.use(createPinia())
 app.use(router)
 

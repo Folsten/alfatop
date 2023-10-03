@@ -19,6 +19,7 @@ import Error404 from '../pages/error/404.vue'
 import Error500 from '../pages/error/500.vue'
 import Error503 from '../pages/error/503.vue'
 import ErrorComingSoon from '../pages/error/coming-soon.vue'
+import AccountFavourites from '@/pages/account/account-favourites/account-favourites.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -92,6 +93,11 @@ const router = createRouter({
       path: '/account/orders/order',
       name: 'accounts-orders-order',
       component: AccountOrdersOrder
+    },
+    {
+      path: '/account/favourites',
+      name: 'account-favourites',
+      component: AccountFavourites
     },
 
     // Error pages
