@@ -1,10 +1,25 @@
 <template>
   <div class="header-auth flex items-center justify-center ml-2">
     <div
+      @click="isMobileMenuOpen = !isMobileMenuOpen"
       class="header-auth__burger-button hidden items-center p-2 rounded-[3px] shadow-md md:flex cursor-pointer"
     >
       <SvgIcon name="icon-group" class="w-4 h-4" />
     </div>
+    <div
+      :class="{ '!left-0': isMobileMenuOpen }"
+      class="mobile-menu absolute w-screen h-screen bg-white top-[73px] left-[100%] text-gray-900 z-10"
+    >
+      <div class="flex flex-col items-start pl-6 pr-6 mt-4">
+        <router-link to="#" class="">Account</router-link>
+        <router-link to="#" class="pl-2 pr-2 pt-1.5 pb-1.5">Dashboard</router-link>
+        <router-link to="#" class="pl-2 pr-2 pt-1.5 pb-1.5">Orders</router-link>
+        <router-link to="#" class="pl-2 pr-2 pt-1.5 pb-1.5">Favourites</router-link>
+        <router-link to="#" class="pl-2 pr-2 pt-1.5 pb-1.5">Support</router-link>
+        <router-link to="#" class="pl-2 pr-2 pt-1.5 pb-1.5">Referral program</router-link>
+      </div>
+    </div>
+
     <!-- <div class="header-auth__log-in-button flex items-center justify-center w-28 text-gray-700 h-10 rounded-lg text-sm border-2 cursor-pointer sm:hidden">
       <div class="mr-3">Log in</div>
       <IconLogin />
@@ -41,7 +56,7 @@
             </div>
             <div class="header-auth__fly-window-row flex items-center mt-3 cursor-pointer">
               <SvgIcon
-                name="icon-favourites2"
+                name="icon-favourite-bag"
                 class="header-auth__favourites-icon w-5 h-5 text-gray-700"
               />
               <div class="header-auth__favourites-text ml-2 text-gray-700 font-medium">
@@ -50,10 +65,10 @@
             </div>
             <div class="header-auth__fly-window-row flex items-center mt-3 cursor-pointer">
               <SvgIcon
-                name="icon-helpsupport"
-                class="header-auth__icon-helpsupport w-5 h-5 text-gray-700"
+                name="icon-help-support"
+                class="header-auth__icon-help-support w-5 h-5 text-gray-700"
               />
-              <div class="header-auth__text-helpsupport ml-2 text-gray-700 font-medium">
+              <div class="header-auth__text-help-support ml-2 text-gray-700 font-medium">
                 Help & Support
               </div>
             </div>
@@ -72,7 +87,7 @@
             <div
               class="header-auth__fly-window-bottom-internal-container flex items-center mt-3 pb-5 cursor-pointer"
             >
-              <SvgIcon name="icon-logout" class="header-auth__icon-logout w-5 h-5 text-gray-700" />
+              <SvgIcon name="icon-log-out" class="header-auth__icon-logout w-5 h-5 text-gray-700" />
               <div class="header-auth__text-logout ml-2 text-gray-700 font-medium">Log out</div>
             </div>
           </div>
@@ -82,8 +97,16 @@
   </div>
 </template>
 
+<style lang="scss" scoped>
+.mobile-menu {
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+</style>
+
 <script setup lang="ts">
 import { ref } from 'vue'
 
 let isOpen = ref(false)
+let isMobileMenuOpen = ref(false)
 </script>
