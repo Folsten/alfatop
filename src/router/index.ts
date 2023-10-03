@@ -20,6 +20,7 @@ import Error500 from '../pages/error/500.vue'
 import Error503 from '../pages/error/503.vue'
 import ErrorComingSoon from '../pages/error/coming-soon.vue'
 import AccountFavourites from '@/pages/account/account-favourites/account-favourites.vue'
+import AccountReferral from "@/pages/account/account-referral/account-referral.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -126,6 +127,11 @@ const router = createRouter({
       path: '/error/coming-soon',
       name: 'error-coming-soon',
       component: ErrorComingSoon
+    },
+    {
+      path: '/account/referral',
+      name: 'account-referral',
+      component: AccountReferral
     }
   ]
 })
