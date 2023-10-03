@@ -1,30 +1,39 @@
 <template>
   <div class="header-auth flex items-center justify-center ml-2">
-    <div
-      @click="isMobileMenuOpen = !isMobileMenuOpen"
-      class="header-auth__burger-button hidden items-center p-2 rounded-[3px] shadow-md md:flex cursor-pointer"
-    >
-      <SvgIcon name="icon-group" class="w-4 h-4" />
-    </div>
-    <div
-      :class="{ '!left-0': isMobileMenuOpen }"
-      class="mobile-menu absolute w-screen h-screen bg-white top-[73px] left-[100%] text-gray-900 z-10"
-    >
-      <div class="flex flex-col items-start pl-6 pr-6 mt-4">
-        <router-link to="#" class="">Account</router-link>
-        <router-link to="#" class="pl-2 pr-2 pt-1.5 pb-1.5">Dashboard</router-link>
-        <router-link to="#" class="pl-2 pr-2 pt-1.5 pb-1.5">Orders</router-link>
-        <router-link to="#" class="pl-2 pr-2 pt-1.5 pb-1.5">Favourites</router-link>
-        <router-link to="#" class="pl-2 pr-2 pt-1.5 pb-1.5">Support</router-link>
-        <router-link to="#" class="pl-2 pr-2 pt-1.5 pb-1.5">Referral program</router-link>
-      </div>
-    </div>
 
+<!--  MOBILE MENU START  -->
+
+<!--    <div-->
+<!--      @click="isMobileMenuOpen = !isMobileMenuOpen"-->
+<!--      class="header-auth__burger-button hidden items-center p-2 rounded-[3px] shadow-md md:flex cursor-pointer"-->
+<!--    >-->
+<!--      <SvgIcon name="icon-group" class="w-4 h-4" />-->
+<!--    </div>-->
+<!--    <div-->
+<!--      :class="{ '!left-0': isMobileMenuOpen }"-->
+<!--      class="mobile-menu absolute w-screen h-screen bg-white top-[73px] left-[100%] text-gray-900 z-10"-->
+<!--    >-->
+<!--      <div class="flex flex-col items-start pl-6 pr-6 mt-4">-->
+<!--        <router-link to="#" class="">Account</router-link>-->
+<!--        <router-link to="#" class="pl-2 pr-2 pt-1.5 pb-1.5">Dashboard</router-link>-->
+<!--        <router-link to="#" class="pl-2 pr-2 pt-1.5 pb-1.5">Orders</router-link>-->
+<!--        <router-link to="#" class="pl-2 pr-2 pt-1.5 pb-1.5">Favourites</router-link>-->
+<!--        <router-link to="#" class="pl-2 pr-2 pt-1.5 pb-1.5">Support</router-link>-->
+<!--        <router-link to="#" class="pl-2 pr-2 pt-1.5 pb-1.5">Referral program</router-link>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--  MOBILE MENU END  -->
+
+<!--  LOGIN BUTTON START  -->
     <!-- <div class="header-auth__log-in-button flex items-center justify-center w-28 text-gray-700 h-10 rounded-lg text-sm border-2 cursor-pointer sm:hidden">
       <div class="mr-3">Log in</div>
       <IconLogin />
       <SvgIcon name="icon-login" class="auth__log-in-icon w-5 h-5 text-gray-700">
     </div> -->
+
+<!--  LOGIN BUTTON END -->
+
     <div
       @click="isOpen = !isOpen"
       class="header-auth__main-container relative flex items-center justify-center md:hidden"
