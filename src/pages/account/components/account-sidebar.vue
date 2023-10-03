@@ -7,7 +7,7 @@
       class="account-sidebar__header relative flex items-center w-full border-b border-gray-100 mb-6"
     >
       <div
-        class="account-sidebar__header-container cursor-pointer flex justify-center items-center w-16 h-16"
+        class="account-sidebar__header-container cursor-pointer flex justify-center items-center w-[60px] h-[60px]"
       >
         <SvgIcon
           name="icon-logo-no-text"
