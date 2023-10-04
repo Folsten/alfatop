@@ -21,6 +21,8 @@ import Error503 from '../pages/error/503.vue'
 import ErrorComingSoon from '../pages/error/coming-soon.vue'
 import AccountFavourites from '@/pages/account/account-favourites/account-favourites.vue'
 import AccountReferral from "@/pages/account/account-referral/account-referral.vue";
+import CartCheckout from "@/pages/cart/cart-checkout/cart-checkout.vue";
+import CartCheckoutInvoice from "@/pages/cart/cart-checkout/cart-checkout-invoice/cart-checkout-invoice.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -132,6 +134,16 @@ const router = createRouter({
       path: '/account/referral',
       name: 'account-referral',
       component: AccountReferral
+    },
+    {
+      path: '/cart/checkout',
+      name: 'cart-checkout',
+      component: CartCheckout
+    },
+    {
+      path: '/cart/checkout/invoice',
+      name: 'cart-checkout-invoice',
+      component: CartCheckoutInvoice
     }
   ]
 })
