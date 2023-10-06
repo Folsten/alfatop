@@ -14,7 +14,7 @@ src/components/components-product/components-product.vue
     >
       <img
         src="./images/netflix.png"
-        class="mobile-product__image object-cover w-full h-full lg:mr-0"
+        class="mobile-product__image object-cover w-full h-full rounded-md lg:mr-0"
         alt="netflix"
       />
     </div>

@@ -10,7 +10,7 @@ src/components/components-product/components-product.vue
 <template>
   <div class="flex lg:flex-col lg:items-center lg:max-w-2xl lg:ml-auto lg:mr-auto">
     <div class="flex items-center justify-center w-2/3 h-96 mr-10 lg:w-full lg:mr-0">
-      <img src="./images/netflix.png" class="object-cover w-full h-full lg:mr-0" alt="netflix" />
+      <img src="./images/netflix.png" class="object-cover w-full h-full rounded-md lg:mr-0" alt="netflix" />
     </div>
     <div class="flex flex-col w-full lg:items-center">
       <div class="flex w-full justify-between lg:mt-4">
