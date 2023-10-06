@@ -104,7 +104,7 @@
               <div class="account-referral__referral-link-title text-gray-900 text-sm mb-1">Your referral link using code</div>
               <div class="input-text cursor-pointer">
                 <span
-                  class="account-referral__referral-link-subtitle w-full inline-block text-indigo-500 font-normal text-ellipsis overflow-hidden xl:w-[300px] lg:w-[200px]"
+                  class="account-referral__referral-link-subtitle w-full inline-block text-indigo-500 font-normal text-ellipsis overflow-hidden whitespace-nowrap xl:w-[300px] lg:w-[200px]"
                   >https://dev.cpay.io/$ref_4A34RF00078XL</span
                 >
                 <SvgIcon name="icon-copy" class="account-referral__referral-link-icon w-6 h-6 text-indigo-500 ml-auto" />
