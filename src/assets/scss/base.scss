@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.fade-030-enter-active,
+.fade-030-leave-active {
+  transition: all 0.3s ease-out;
+}
+
+.fade-030-enter-from,
+.fade-030-leave-to {
+  opacity: 0;
+  transition: 0s;
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: all 0.15s ease-out;

@@ -66,8 +66,10 @@
           </div>
         </div>
       </div>
-      <Newsletter :is-ultra-responsive="true" class="container mt-40 mb-40" />
-      <Footer/>
+      <div class="container">
+        <Newsletter :is-ultra-responsive="true" class="container mt-40 mb-40 lg:mt-20 lg:mb-20" />
+        <Footer :is-ultra-responsive="true" />
+      </div>
     </div>
   </div>
 </template>
@@ -80,5 +82,5 @@ import SvgIcon from '~/svg-icon/svg-icon.vue'
 import AccountOrdersOrderProduct from '@/pages/account/account-orders/account-orders-order/components/account-orders-order-product.vue'
 import AccountOrdersOrderCategory from '@/pages/account/account-orders/account-orders-order/components/account-orders-order-category.vue'
 import Newsletter from '~/newsletter/newsletter.vue'
-import Footer from "~/footer/footer.vue";
+import Footer from '~/footer/footer.vue'
 </script>

@@ -45,7 +45,7 @@
         </div>
 
         <div
-          class="account-favourites__newsletter-container w-full flex justify-center items-center bg-gray-50 rounded-lg pb-10 pt-10 min-h-[304px] mt-20 mb-10 pl-16 pr-16 md:mt-10 sm:pl-8 sm:pr-8"
+          class="account-favourites__newsletter-container w-full flex justify-center items-center bg-gray-50 rounded-lg min-h-[304px] mt-20 mb-20  sm:pl-8 sm:pr-8"
         >
           <Newsletter :is-ultra-responsive="true" />
         </div>

@@ -1,4 +1,3 @@
-import GalleryCategory from '@/components/gallery/gallery-category/gallery-category.vue';
 <template>
   <Header />
   <div class="mobile-page container mt-10">
@@ -11,13 +10,13 @@ import GalleryCategory from '@/components/gallery/gallery-category/gallery-categ
             class="mobile-page__container-content p-8 flex flex-col justify-center items-center h-full md:p-4"
           >
             <span
-              class="mobile-page__title text-white leading-10 text-center font-semibold text-dh4 sm:text-mh4 xs:text-mh5 w-2/3"
+              class="mobile-page__title text-white leading-10 text-center font-semibold text-dh4 sm:text-mh4 w-2/3 md:w-3/4 sm:w-full"
             >
               Top up prepaid mobile phones with Bitcoin and other cryptocurrencies from anywhere in
               the world
             </span>
             <div
-              class="mobile-page__wrapper-inputs flex w-1/3 justify-center mt-6 xl:w-1/2 md:flex-col sm:w-2/3 xs:w-full"
+              class="mobile-page__wrapper-inputs flex w-1/3 justify-center mt-6 xl:w-1/2 md:w-3/4 xs:flex-col sm:w-[100%]"
             >
               <div class="mobile-page__phone-number relative w-full">
                 <SvgIcon
@@ -32,7 +31,7 @@ import GalleryCategory from '@/components/gallery/gallery-category/gallery-categ
               </div>
               <router-link
                 to="#"
-                class="mobile-page__btn-proceed flex items-center justify-center bg-orange-400 text-orange-25 h-12 font-medium rounded-md text-md pl-4 pr-4 pt-3 pb-3 ml-4 lg:text-sm sm:w-full md:ml-0 md:mt-4"
+                class="mobile-page__btn-proceed flex items-center justify-center bg-orange-400 text-orange-25 h-12 font-medium rounded-md text-md pl-4 pr-4 pt-3 pb-3 ml-4 lg:text-sm xs:w-full xs:ml-0 xs:mt-4"
                 >Proceed</router-link
               >
             </div>

@@ -2,7 +2,7 @@
   <Header :isMenuVisible="false" class="hidden md:flex" />
   <div class="w-full flex">
     <AccountSidebar />
-    <div class="flex flex-col w-full">
+    <div class="flex flex-col self-center w-full ml-auto mr-auto">
       <AccountHeaderLine />
       <div class="container flex flex-col pl-6 pr-6 md:mt-10">
         <div class="flex flex-col w-full mt-4">
@@ -17,8 +17,9 @@
           <div class="mt-2 text-center">There are no orders to be displayed here.</div>
         </div>
         <AccountOrdersTable />
+        <div class="mt-2.5 cursor-pointer text-indigo-500 text-sm">Load more</div>
         <div
-          class="w-full flex justify-center items-center bg-gray-50 rounded-lg mt-40 mb-40 md:mt-10 md:mb-20 sm:pl-8 sm:pr-8"
+          class="w-full flex justify-center items-center bg-gray-50 rounded-lg mt-40 mb-40 lg:mt-20 lg:mb-20 sm:pl-8 sm:pr-8"
         >
           <Newsletter :is-ultra-responsive="true" />
         </div>

@@ -1,141 +1,143 @@
 <template>
   <div
-    class="account-sidebar flex flex-col justify-start items-start min-h-screen w-16 border border-gray-100 bg-gray-25 shadow-[4px_0px_8px_0px_rgba(0,0,0,0.02)] md:hidden"
+    class="account-sidebar relative flex flex-col justify-start items-start min-h-screen min-w-[64px] border border-gray-100 bg-gray-25 shadow-[4px_0px_8px_0px_rgba(0,0,0,0.02)] md:hidden"
     :class="{ 'sidebar-open-core': isOpen }"
   >
-    <div
-      class="account-sidebar__header relative flex items-center w-full border-b border-gray-100 mb-6"
-    >
+    <div class="fixed flex flex-col h-full">
       <div
-        class="account-sidebar__header-container cursor-pointer flex justify-center items-center w-[60px] h-[64px]"
+        class="account-sidebar__header relative flex items-center w-full border-b border-gray-100 mb-6"
       >
-        <SvgIcon
-          name="icon-logo-no-text"
-          class="account-sidebar__header-logo transition-all w-8 h-8 flex"
-        />
-      </div>
-      <Transition name="fade-007">
         <div
-          v-if="isOpen"
-          @click="isOpen = !isOpen"
-          class="account-sidebar__header-icon-wrapper absolute right-0 flex justify-center items-center cursor-pointer p-2 hover:bg-gray-100 hover:rounded-lg mr-2"
+          class="account-sidebar__header-container cursor-pointer flex justify-center items-center w-[60px] h-[64px]"
         >
           <SvgIcon
-            name="icon-sidebar-right"
-            class="account-sidebar__header-icon w-6 h-6 rotate-180 text-gray-700"
-          ></SvgIcon>
+            name="icon-logo-no-text"
+            class="account-sidebar__header-logo transition-all w-8 h-8 flex"
+          />
         </div>
-      </Transition>
-    </div>
-    <!--    <div class="p-2 pl-5">Account</div>-->
-    <div
-      :class="{ 'w-[278px]': isOpen }"
-      class="account-sidebar__menu-item-wrapper transition-all cursor-pointer flex justify-start items-center h-16 p-2"
-    >
-      <router-link
-        @mouseover.self="orderTooltip = true"
-        @mouseleave.self="orderTooltip = false"
-        to="#"
-        class="relative account-sidebar__menu-item-container w-full flex p-2 hover:bg-gray-100 hover:rounded-lg"
-      >
-        <Transition name="fade-004">
+        <Transition name="fade-030">
           <div
-            v-if="orderTooltip && !isOpen"
-            class="sidebar-tooltip-custom absolute left-[52px] top-[-4px] bg-gray-900 font-medium text-sm text-gray-100 p-3 rounded-lg"
+            v-show="isOpen"
+            @click="isOpen = !isOpen"
+            class="account-sidebar__header-icon-wrapper absolute left-[200px] flex justify-center items-center cursor-pointer p-2 hover:bg-gray-100 hover:rounded-lg mr-2"
           >
-            Orders
+            <SvgIcon
+              name="icon-sidebar-right"
+              class="account-sidebar__header-icon w-6 h-6 rotate-180 text-gray-700"
+            ></SvgIcon>
           </div>
         </Transition>
-        <SvgIcon
-          name="icon-orders"
-          class="account-sidebar__menu-item-icon w-6 h-6 self-center text-gray-700"
-        />
-        <Transition name="fade-004">
-          <div
-            v-if="isOpen"
-            class="account-sidebar__menu-item-text ml-2 text-sm text-gray-700 font-medium"
-          >
-            Orders
-          </div>
-        </Transition>
-      </router-link>
-    </div>
-    <div
-      :class="{ 'w-[278px]': isOpen }"
-      class="account-sidebar__menu-item-wrapper transition-all cursor-pointer flex justify-start items-center h-16 p-2"
-    >
-      <router-link
-        @mouseover.self="favouritesTooltip = true"
-        @mouseleave.self="favouritesTooltip = false"
-        to="#"
-        class="relative account-sidebar__menu-item-container w-full flex p-2 hover:bg-gray-100 hover:rounded-lg"
-      >
-        <Transition name="fade-004">
-          <div
-            v-if="favouritesTooltip && !isOpen"
-            class="sidebar-tooltip-custom absolute left-[52px] top-[-4px] bg-gray-900 font-medium text-sm text-gray-100 p-3 rounded-lg"
-          >
-            Favourites
-          </div>
-        </Transition>
-        <SvgIcon
-          name="icon-favourite-bag"
-          class="account-sidebar__menu-item-icon w-6 h-6 self-center text-gray-700"
-        />
-        <Transition name="fade-004">
-          <div
-            v-if="isOpen"
-            class="account-sidebar__menu-item-text ml-2 text-sm text-gray-700 font-medium"
-          >
-            Favourites
-          </div>
-        </Transition>
-      </router-link>
-    </div>
-    <div
-      :class="{ 'w-[278px]': isOpen }"
-      class="account-sidebar__menu-item-wrapper transition-all cursor-pointer flex justify-start items-center h-16 p-2"
-    >
-      <router-link
-        @mouseover.self="referralTooltip = true"
-        @mouseleave.self="referralTooltip = false"
-        to="#"
-        class="relative account-sidebar__menu-item-container w-full flex p-2 hover:bg-gray-100 hover:rounded-lg"
-      >
-        <Transition name="fade-004">
-          <div
-            v-if="referralTooltip && !isOpen"
-            class="sidebar-tooltip-custom absolute left-[52px] top-[-4px] bg-gray-900 font-medium text-sm text-gray-100 p-3 rounded-lg"
-          >
-            Referral
-          </div>
-        </Transition>
-        <SvgIcon
-          name="icon-referral"
-          class="account-sidebar__menu-item-icon w-6 h-6 self-center text-gray-700"
-        />
-        <Transition name="fade-004">
-          <div
-            v-if="isOpen"
-            class="account-sidebar__menu-item-text ml-2 text-sm text-gray-700 font-medium"
-          >
-            Referral program
-          </div>
-        </Transition>
-      </router-link>
-    </div>
-    <div
-      @click="isOpen = !isOpen"
-      class="account-sidebar__bottom-sidebar-icon-wrapper cursor-pointer flex justify-start items-center h-16 p-2 pl-2 mt-auto"
-    >
+      </div>
+      <!--    <div class="p-2 pl-5">Account</div>-->
       <div
-        class="account-sidebar__bottom-sidebar-icon-container w-full flex p-2 hover:bg-gray-100 hover:rounded-lg"
+        :class="{ 'w-[258px]': isOpen }"
+        class="account-sidebar__menu-item-wrapper local-transition cursor-pointer flex justify-start items-center h-16 p-2"
       >
-        <SvgIcon
-          :class="{ 'rotate-180': isOpen }"
-          name="icon-sidebar-right"
-          class="account-sidebar__bottom-sidebar-icon w-6 h-6 self-center text-gray-700"
-        />
+        <router-link
+          @mouseover.self="orderTooltip = true"
+          @mouseleave.self="orderTooltip = false"
+          to="#"
+          class="relative account-sidebar__menu-item-container w-full flex p-2 hover:bg-gray-100 hover:rounded-lg"
+        >
+          <Transition name="fade-004">
+            <div
+              v-if="orderTooltip && !isOpen"
+              class="sidebar-tooltip-custom absolute left-[52px] top-[-4px] bg-gray-900 font-medium text-sm text-gray-100 p-3 rounded-lg"
+            >
+              Orders
+            </div>
+          </Transition>
+          <SvgIcon
+            name="icon-orders"
+            class="account-sidebar__menu-item-icon w-6 h-6 self-center text-gray-700"
+          />
+          <Transition name="fade-004">
+            <div
+              v-if="isOpen"
+              class="account-sidebar__menu-item-text ml-2 text-sm text-gray-700 font-medium"
+            >
+              Orders
+            </div>
+          </Transition>
+        </router-link>
+      </div>
+      <div
+        :class="{ 'w-[258px]': isOpen }"
+        class="account-sidebar__menu-item-wrapper local-transition cursor-pointer flex justify-start items-center h-16 p-2"
+      >
+        <router-link
+          @mouseover.self="favouritesTooltip = true"
+          @mouseleave.self="favouritesTooltip = false"
+          to="#"
+          class="relative account-sidebar__menu-item-container w-full flex p-2 hover:bg-gray-100 hover:rounded-lg"
+        >
+          <Transition name="fade-004">
+            <div
+              v-if="favouritesTooltip && !isOpen"
+              class="sidebar-tooltip-custom absolute left-[52px] top-[-4px] bg-gray-900 font-medium text-sm text-gray-100 p-3 rounded-lg"
+            >
+              Favourites
+            </div>
+          </Transition>
+          <SvgIcon
+            name="icon-favourite-bag"
+            class="account-sidebar__menu-item-icon w-6 h-6 self-center text-gray-700"
+          />
+          <Transition name="fade-004">
+            <div
+              v-if="isOpen"
+              class="account-sidebar__menu-item-text ml-2 text-sm text-gray-700 font-medium"
+            >
+              Favourites
+            </div>
+          </Transition>
+        </router-link>
+      </div>
+      <div
+        :class="{ 'w-[258px]': isOpen }"
+        class="account-sidebar__menu-item-wrapper local-transition cursor-pointer flex justify-start items-center trans h-16 p-2"
+      >
+        <router-link
+          @mouseover.self="referralTooltip = true"
+          @mouseleave.self="referralTooltip = false"
+          to="#"
+          class="relative account-sidebar__menu-item-container w-full flex p-2 hover:bg-gray-100 hover:rounded-lg"
+        >
+          <Transition name="fade-004">
+            <div
+              v-if="referralTooltip && !isOpen"
+              class="sidebar-tooltip-custom absolute left-[52px] top-[-4px] bg-gray-900 font-medium text-sm text-gray-100 p-3 rounded-lg"
+            >
+              Referral
+            </div>
+          </Transition>
+          <SvgIcon
+            name="icon-referral"
+            class="account-sidebar__menu-item-icon w-6 h-6 self-center text-gray-700"
+          />
+          <Transition name="fade-004">
+            <div
+              v-if="isOpen"
+              class="account-sidebar__menu-item-text ml-2 text-sm text-gray-700 font-medium"
+            >
+              Referral program
+            </div>
+          </Transition>
+        </router-link>
+      </div>
+      <div
+        @click="isOpen = !isOpen"
+        class="account-sidebar__bottom-sidebar-icon-wrapper cursor-pointer flex justify-start items-center h-16 p-2 pl-2 mt-auto"
+      >
+        <div
+          class="account-sidebar__bottom-sidebar-icon-container flex p-2 hover:bg-gray-100 hover:rounded-lg"
+        >
+          <SvgIcon
+            :class="{ 'rotate-180': isOpen }"
+            name="icon-sidebar-right"
+            class="account-sidebar__bottom-sidebar-icon w-6 h-6 self-center text-gray-700"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -155,8 +157,13 @@ let referralTooltip = ref(false)
   transition: all 0.25s;
 }
 
+.local-transition {
+  transition: all 0.25s;
+  transition-property: all;
+}
+
 .sidebar-open-core {
-  width: 312px !important;
+  min-width: 260px !important;
 }
 
 .sidebar-open-row {

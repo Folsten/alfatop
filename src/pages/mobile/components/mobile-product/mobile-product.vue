@@ -35,7 +35,7 @@ src/components/components-product/components-product.vue
           class="mobile-product__radio-wrapper flex justify-between items-center h-20 pt-4 pb-4 border-b border-gray-100 cursor-pointer"
         >
           <div class="mobile-product__radio-container flex items-center">
-            <input type="radio" class="mobile-product__radio-input mr-3" />
+            <RadioCustom class="mr-3" />
             <span class="mobile-product__radio-title text-gray-900 font-medium text-dh6 sm:text-mh6"
               >Phone PIN refill</span
             >
@@ -108,7 +108,7 @@ src/components/components-product/components-product.vue
           <div class="flex mt-2 text-md text-gray-900 pl-4 pb-4 pr-4">
             Pay on Netflix EUR with Crypto. Buy Netflix EUR Gift Cards with Bitcoin, Lightning,
             Ethereum, Binance Pay, USDT, USDC, Dogecoin, Litecoin, Dash. Instant email delivery. No
-            account required. Start living on crypto!
+            account red. Start living on crypto!
           </div>
         </div>
         <!-- END INFO -->
@@ -116,34 +116,34 @@ src/components/components-product/components-product.vue
           class="flex justify-between items-center h-20 pt-4 pb-4 border-b border-gray-100 cursor-pointer"
         >
           <div class="flex items-center">
-            <input type="radio" class="mr-3" />
+            <RadioCustom class="mr-3" />
             <span class="text-gray-900 font-medium text-dh6 sm:text-mh6">Phone PIN refill</span>
           </div>
         </div>
         <!-- START INFO -->
         <div class="flex-col pt-4 rounded-md bg-gray-50">
           <div class="flex m-4 border border-gray-300 bg-gray-25 rounded-md h-10 items-center">
-            <input type="checkbox" class="checkbox mr-4 ml-3 h-10" />
+            <CheckboxCustom class="mr-4 ml-3" />
+            <div class="text-gray-900 items-center font-medium">10 GB, 30 days 50</div>
+          </div>
+          <div class="flex m-4 border border-gray-300 bg-gray-25 rounded-md h-10 items-center">
+            <CheckboxCustom class="mr-4 ml-3" />
             <div class="text-gray-900 font-medium">10 GB, 30 days 50</div>
           </div>
           <div class="flex m-4 border border-gray-300 bg-gray-25 rounded-md h-10 items-center">
-            <input type="checkbox" class="checkbox mr-4 ml-3 h-10" />
+            <CheckboxCustom class="mr-4 ml-3" />
             <div class="text-gray-900 font-medium">10 GB, 30 days 50</div>
           </div>
           <div class="flex m-4 border border-gray-300 bg-gray-25 rounded-md h-10 items-center">
-            <input type="checkbox" class="checkbox mr-4 ml-3 h-10" />
+            <CheckboxCustom class="mr-4 ml-3" />
             <div class="text-gray-900 font-medium">10 GB, 30 days 50</div>
           </div>
           <div class="flex m-4 border border-gray-300 bg-gray-25 rounded-md h-10 items-center">
-            <input type="checkbox" class="checkbox mr-4 ml-3 h-10" />
+            <CheckboxCustom class="mr-4 ml-3" />
             <div class="text-gray-900 font-medium">10 GB, 30 days 50</div>
           </div>
           <div class="flex m-4 border border-gray-300 bg-gray-25 rounded-md h-10 items-center">
-            <input type="checkbox" class="checkbox mr-4 ml-3 h-10" />
-            <div class="text-gray-900 font-medium">10 GB, 30 days 50</div>
-          </div>
-          <div class="flex m-4 border border-gray-300 bg-gray-25 rounded-md h-10 items-center">
-            <input type="checkbox" class="checkbox mr-4 ml-3 h-10" />
+            <CheckboxCustom class="mr-4 ml-3" />
             <div class="text-gray-900 font-medium">10 GB, 30 days 50</div>
           </div>
           <div class="flex flex-col pl-4 pr-4 mt-8 sm:ml-0 sm:mt-4">
@@ -171,14 +171,14 @@ src/components/components-product/components-product.vue
         <!-- END INFO -->
         <div class="flex justify-between items-center h-20 pt-4 pb-4 cursor-pointer">
           <div class="flex items-center">
-            <input type="radio" class="mr-3" />
+            <RadioCustom class="mr-3" />
             <span class="text-gray-900 font-medium text-dh6 sm:text-mh6">Phone PIN refill</span>
           </div>
         </div>
         <!-- START INFO -->
         <div class="flex-col pt-4 rounded-md bg-gray-50">
           <div class="flex m-4 border border-gray-300 bg-gray-25 rounded-md h-10 items-center">
-            <input type="checkbox" class="checkbox mr-4 ml-3 h-10" />
+            <CheckboxCustom class="mr-4 ml-3" />
             <div class="text-gray-900 font-medium">10 GB, 30 days 50</div>
           </div>
           <div class="flex pl-4 pr-4 sm:flex-col">
@@ -235,15 +235,11 @@ src/components/components-product/components-product.vue
   </div>
 </template>
 
-<style lang="scss" scoped>
-input[type='checkbox'] {
-  width: 16px;
-}
-</style>
-
 <script setup lang="ts">
 import SelectCustom from '~/select-custom/select-custom.vue'
 import { ref } from 'vue'
+import CheckboxCustom from '~/checkbox-custom/checkbox-custom.vue'
+import RadioCustom from '~/radio-custom/radio-custom.vue'
 
 let isCountryNumbersOpen = ref(false)
 
