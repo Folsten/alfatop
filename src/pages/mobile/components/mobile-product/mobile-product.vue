@@ -34,16 +34,27 @@ src/components/components-product/components-product.vue
         <div
           class="mobile-product__radio-wrapper flex justify-between items-center h-20 pt-4 pb-4 border-b border-gray-100 cursor-pointer"
         >
-          <div class="mobile-product__radio-container flex items-center">
-            <RadioCustom class="mr-3" />
-            <span class="mobile-product__radio-title text-gray-900 font-medium text-dh6 sm:text-mh6"
-              >Phone PIN refill</span
+          <div
+            @click="accordionHandler"
+            class="mobile-product__radio-container flex items-center w-full"
+          >
+            <div class="flex items-center">
+              <RadioCustom class="mr-3" />
+              <span
+                class="mobile-product__radio-title text-gray-900 font-medium text-dh6 sm:text-mh6"
+                >Phone PIN refill</span
+              >
+            </div>
+            <div
+              class="flex justify-center items-center w-6 h-6 p-1 rounded-sm border border-gray-200 ml-auto"
             >
+              <SvgIcon name="icon-arrow-right" :class="{'!rotate-[90deg]': isAccordionOpen}" class="w-6 h-6 text-indigo-600 rotate-[-90deg] local-transition" />
+            </div>
           </div>
         </div>
         <!-- START INFO -->
-        <div class="flex-col pt-4 rounded-md bg-gray-50">
-          <div class="flex pl-4 pr-4 sm:flex-col">
+        <div class="flex-col rounded-md bg-gray-50 overflow-hidden local-transition" ref="accordion">
+          <div class="flex pl-4 pr-4 pt-4 sm:flex-col">
             <div class="flex flex-col w-full mr-2 sm:mr-0">
               <div class="text-sm text-gray-700">Select plan or enter exact amount:</div>
               <SelectCustom />
@@ -113,11 +124,19 @@ src/components/components-product/components-product.vue
         </div>
         <!-- END INFO -->
         <div
-          class="flex justify-between items-center h-20 pt-4 pb-4 border-b border-gray-100 cursor-pointer"
+          class="mobile-product__radio-container flex items-center w-full h-20 pt-4 pb-4 border-b border-gray-100 cursor-pointer"
         >
           <div class="flex items-center">
             <RadioCustom class="mr-3" />
-            <span class="text-gray-900 font-medium text-dh6 sm:text-mh6">Phone PIN refill</span>
+            <span
+              class="mobile-product__radio-title text-gray-900 font-medium text-dh6 sm:text-mh6"
+            >Phone PIN refill</span
+            >
+          </div>
+          <div
+            class="flex justify-center items-center w-6 h-6 p-1 rounded-sm border border-gray-200 ml-auto"
+          >
+            <SvgIcon name="icon-arrow-right" class="w-6 h-6 text-indigo-600 rotate-[-90deg] local-transition" />
           </div>
         </div>
         <!-- START INFO -->
@@ -169,10 +188,20 @@ src/components/components-product/components-product.vue
           </div>
         </div>
         <!-- END INFO -->
-        <div class="flex justify-between items-center h-20 pt-4 pb-4 cursor-pointer">
+        <div
+          class="mobile-product__radio-container flex items-center h-20 pt-4 pb-4 cursor-pointer w-full"
+        >
           <div class="flex items-center">
             <RadioCustom class="mr-3" />
-            <span class="text-gray-900 font-medium text-dh6 sm:text-mh6">Phone PIN refill</span>
+            <span
+              class="mobile-product__radio-title text-gray-900 font-medium text-dh6 sm:text-mh6"
+            >Phone PIN refill</span
+            >
+          </div>
+          <div
+            class="flex justify-center items-center w-6 h-6 p-1 rounded-sm border border-gray-200 ml-auto"
+          >
+            <SvgIcon name="icon-arrow-right" class="w-6 h-6 text-indigo-600 rotate-[-90deg] local-transition" />
           </div>
         </div>
         <!-- START INFO -->
@@ -235,13 +264,39 @@ src/components/components-product/components-product.vue
   </div>
 </template>
 
+<style scoped>
+.local-transition {
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+</style>
+
 <script setup lang="ts">
 import SelectCustom from '~/select-custom/select-custom.vue'
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import CheckboxCustom from '~/checkbox-custom/checkbox-custom.vue'
 import RadioCustom from '~/radio-custom/radio-custom.vue'
 
 let isCountryNumbersOpen = ref(false)
+let isAccordionOpen = ref(true)
+let accordion = ref()
+let accordionHeight = ''
+
+onMounted(() => {
+  accordionHeight = accordion.value.offsetHeight
+  accordion.value.style.height = accordionHeight + 'px'
+})
+
+function accordionHandler() {
+  if (isAccordionOpen.value) {
+    accordion.value.style.height = '0px'
+    isAccordionOpen.value = false
+    return
+  }
+  console.log('x')
+  accordion.value.style.height = accordionHeight + 'px'
+  isAccordionOpen.value = true
+}
 
 function outsideClickHandler() {
   isCountryNumbersOpen.value = false

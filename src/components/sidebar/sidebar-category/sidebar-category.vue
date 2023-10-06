@@ -11,12 +11,13 @@
         />
         <span class="sidebar-category__category-name font-medium">Gift cards</span>
       </div>
-      <SvgIcon name="icon-arrow-up" :class="{'rotate-180': !isCategoryOpen}" class="local-transition sidebar-category__arrow w-2 h-2 text-gray-900" />
+      <SvgIcon
+        name="icon-arrow-up"
+        :class="{ 'rotate-180': !isCategoryOpen }"
+        class="local-transition sidebar-category__arrow w-2 h-2 text-gray-900"
+      />
     </div>
-    <div
-      ref="contentContainer"
-      class="overflow-hidden local-transition"
-    >
+    <div ref="contentContainer" class="overflow-hidden local-transition">
       <div class="flex flex-col first:mt-0">
         <SidebarCategoryItem />
         <SidebarCategoryItem />
@@ -30,10 +31,10 @@
 </template>
 
 <style>
-  .local-transition {
-    transition-property: all;
-    transition-duration: 0.3s;
-  }
+.local-transition {
+  transition-property: all;
+  transition-duration: 0.3s;
+}
 </style>
 
 <script setup lang="ts">
@@ -47,16 +48,16 @@ let contentContainerHeight = ''
 
 onMounted(() => {
   contentContainerHeight = contentContainer.value.offsetHeight
-  contentContainer.value.style.height = contentContainerHeight + 'px';
+  contentContainer.value.style.height = contentContainerHeight + 'px'
 })
 
 function accordionHandler() {
   if (isCategoryOpen.value) {
-    contentContainer.value.style.height = '0px';
-    isCategoryOpen.value = false;
+    contentContainer.value.style.height = '0px'
+    isCategoryOpen.value = false
     return
   }
-  contentContainer.value.style.height = contentContainerHeight + 'px';
-  isCategoryOpen.value = true;
+  contentContainer.value.style.height = contentContainerHeight + 'px'
+  isCategoryOpen.value = true
 }
 </script>
