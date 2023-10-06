@@ -113,8 +113,8 @@
           </div>
         </div>
         <div class="account-referral__referral-request-payout flex flex-col w-full bg-gray-50 p-8 mt-12">
-          <div class="text-gray-900 text-lg font-medium">Request payout</div>
-          <div class="flex w-full mt-8 lg:flex-wrap">
+          <div class="text-gray-900 text-lg items-end font-medium">Request payout</div>
+          <div class="flex w-full mt-8 items-end lg:flex-wrap">
             <div class="flex flex-col w-full mr-5 lg:mr-0">
               <div class="text-gray-900 text-sm mb-1">Choose your payout currency</div>
               <SelectCustom class="mt-0" />
