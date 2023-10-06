@@ -54,7 +54,7 @@
                   <div class="text-gray-900 text-sm">Status</div>
                 </div>
                 <div class="flex items-center">
-                  <SvgIcon name="icon-lightning-green" class="w-4 h-4" />
+                  <SvgIcon name="icon-lightning-green" class="w-4 h-4 mr-1.5" />
                   <div class="flex text-right text-gray-900 text-sm font-semibold">Completed</div>
                 </div>
               </div>

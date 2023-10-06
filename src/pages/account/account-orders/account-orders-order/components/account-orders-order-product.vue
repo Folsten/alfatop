@@ -12,7 +12,6 @@
         <SvgIcon name="icon-lightning-green" class="w-4 h-4" />
       </VueCustomTooltip>
       <div class="text-sm font-semibold text-gray-900 ml-2">Completed</div>
-      <button class="btn btn-neutral"></button>
     </div>
     <button class="btn btn-neutral h-[42px] pl-3 pr-3 pt-1.5 pb-1.5">
       <SvgIcon name="icon-favourite-filled" class="w-4 h-4 mr-2" />
