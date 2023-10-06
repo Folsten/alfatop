@@ -35,7 +35,7 @@
               <div
                 class="flex items-center rounded-md pt-3 pb-3 pl-4 pr-4 bg-indigo-500 cursor-pointer"
               >
-                <SvgIcon name="icon-copy" class="w-4 h-4 text-gray-25" />
+                <SvgIcon name="icon-copy-2" class="w-4 h-4 text-gray-25" />
               </div>
             </div>
           </div>
@@ -50,7 +50,7 @@
               <div
                 class="flex items-center rounded-md pt-3 pb-3 pl-4 pr-4 bg-indigo-500 cursor-pointer"
               >
-                <SvgIcon name="icon-copy" class="w-4 h-4 text-gray-25" />
+                <SvgIcon name="icon-copy-2" class="w-4 h-4 text-gray-25" />
               </div>
             </div>
           </div>
