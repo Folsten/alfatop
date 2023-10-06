@@ -16,11 +16,11 @@
         </div>
       </div>
     </div>
-    <hr class="header__hr1 hidden md:flex" />
+    <hr class="header__hr-1 hidden md:flex" />
     <div class="container" v-if="isMenuVisible">
       <HeaderMenu />
     </div>
-    <hr class="header__hr2 md:hidden" />
+    <hr class="header__hr-2 md:hidden" />
   </header>
 </template>
 

@@ -56,14 +56,14 @@
             </div>
             <div class="header-auth__fly-window-my-email text-xs">myworkingemail@gmail.com</div>
           </div>
-          <hr class="header-auth__hr1 text-gray-300 mt-2 mb-2" />
+          <hr class="header-auth__hr1 border-gray-300 mt-2 mb-2" />
           <div class="header-auth__fly-window-content-container flex flex-col pl-4 pr-4 pt-2">
             <div class="header-auth__fly-window-account-text text-xs pb-2">Account</div>
             <div class="header-auth__fly-window-row flex items-center mt-2 cursor-pointer">
               <SvgIcon name="icon-orders" class="header-auth__orders-icon w-5 h-5 text-gray-700" />
               <div class="header-auth__orders-text ml-2 text-gray-700 font-medium">Orders</div>
             </div>
-            <div class="header-auth__fly-window-row flex items-center mt-3 cursor-pointer">
+            <div class="header-auth__fly-window-row flex items-center mt-3.5 cursor-pointer">
               <SvgIcon
                 name="icon-favourite-bag"
                 class="header-auth__favourites-icon w-5 h-5 text-gray-700"
@@ -72,7 +72,7 @@
                 Favourites
               </div>
             </div>
-            <div class="header-auth__fly-window-row flex items-center mt-3 cursor-pointer">
+            <div class="header-auth__fly-window-row flex items-center mt-3.5 cursor-pointer">
               <SvgIcon
                 name="icon-help-support"
                 class="header-auth__icon-help-support w-5 h-5 text-gray-700"
@@ -81,7 +81,7 @@
                 Help & Support
               </div>
             </div>
-            <div class="header-auth__fly-window-row flex items-center mt-3 cursor-pointer">
+            <div class="header-auth__fly-window-row flex items-center mt-3.5 cursor-pointer">
               <SvgIcon
                 name="icon-referral"
                 class="header-auth__icon-referral w-5 h-5 text-gray-700"
@@ -91,7 +91,7 @@
               </div>
             </div>
           </div>
-          <hr class="header-auth__hr2 text-gray-300 mt-2 mb-2" />
+          <hr class="header-auth__hr-2 border-gray-300 mt-5 mb-2" />
           <div class="header-auth__fly-window-bottom flex pl-4 pr-4">
             <div
               class="header-auth__fly-window-bottom-internal-container flex items-center mt-3 pb-5 cursor-pointer"
