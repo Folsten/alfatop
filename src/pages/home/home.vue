@@ -6,7 +6,9 @@
       <Sidebar />
       <Gallery />
     </div>
-    <Newsletter class="container mt-40 mb-40 lg:mt-20 lg:mb-20" />
+    <div class="container">
+      <Newsletter class="mt-40 mb-40 lg:mt-20 lg:mb-20" />
+    </div>
     <Footer />
   </div>
 </template>

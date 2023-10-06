@@ -1,7 +1,7 @@
 <template>
   <div
     :class="{'xl:!flex-wrap': isUltraResponsive}"
-    class="newsletter flex w-full justify-center lg:flex-wrap">
+    class="newsletter bg-gray-50 rounded-lg p-16 flex w-full justify-center lg:flex-wrap">
     <div
       :class="{ 'xl:!mr-0': isUltraResponsive }"
       class="newsletter__info-container flex flex-col w-full mr-5 md:mr-0"
