@@ -16,13 +16,13 @@
             @click="favouriteAdded = true"
             v-if="!favouriteAdded"
             name="icon-favourite"
-            class="w-5 h-5 ml-auto cursor-pointer text-warning-300 mb-1 sm:hidden"
+            class="w-5 h-5 ml-auto cursor-pointer text-warning-300 mb-1 select-none sm:hidden"
           />
           <SvgIcon
             @click="favouriteAdded = false"
             v-if="favouriteAdded"
             name="icon-favourite-filled"
-            class="w-5 h-5 ml-auto cursor-pointer text-warning-300 mb-1 sm:hidden"
+            class="w-5 h-5 ml-auto cursor-pointer text-warning-300 mb-1 select-none sm:hidden"
           />
         </div>
       </div>

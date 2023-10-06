@@ -24,13 +24,13 @@
             @click="isFavouriteAdded = true"
             v-if="! isFavouriteAdded"
             name="icon-favourite"
-            class="showcase-card__favourite-icon w-5 h-5 ml-auto cursor-pointer text-warning-300 sm:hidden"
+            class="showcase-card__favourite-icon w-5 h-5 ml-auto cursor-pointer text-warning-300 select-none sm:hidden"
           />
           <SvgIcon
             @click="isFavouriteAdded = false"
             v-if="isFavouriteAdded"
             name="icon-favourite-filled"
-            class="showcase-card__favourite-icon w-5 h-5 ml-auto cursor-pointer text-warning-300 sm:hidden"
+            class="showcase-card__favourite-icon w-5 h-5 ml-auto cursor-pointer text-warning-300 select-none sm:hidden"
           />
         </div>
       </div>
