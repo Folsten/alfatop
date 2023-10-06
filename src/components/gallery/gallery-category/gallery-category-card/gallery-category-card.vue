@@ -3,7 +3,7 @@
     <div class="relative">
       <img src="../../../../assets/images/coca.jpg" class="rounded-md w-full object-cover h-48" />
       <div class="absolute w-full top-0 flex">
-        <div class="w-full flex pt-4 pl-4 pr-4">
+        <div class="w-full flex items-center pt-4 pl-4 pr-4">
           <div class="bg-blue-600 text-gray-25 text-xs font-medium pt-1 pb-1 pl-3 pr-3 rounded-md">
             New
           </div>
@@ -13,8 +13,16 @@
             Popular
           </div>
           <SvgIcon
+            @click="favouriteAdded = true"
+            v-if="!favouriteAdded"
             name="icon-favourite"
-            class="w-4 h-4 ml-auto cursor-pointer text-warning-300 sm:hidden"
+            class="w-5 h-5 ml-auto cursor-pointer text-warning-300 mb-1 sm:hidden"
+          />
+          <SvgIcon
+            @click="favouriteAdded = false"
+            v-if="favouriteAdded"
+            name="icon-favourite-filled"
+            class="w-5 h-5 ml-auto cursor-pointer text-warning-300 mb-1 sm:hidden"
           />
         </div>
       </div>
@@ -29,4 +37,8 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from 'vue'
+
+let favouriteAdded = ref(false)
+</script>
