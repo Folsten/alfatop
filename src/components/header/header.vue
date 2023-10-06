@@ -33,6 +33,9 @@ import HeaderAuth from './header-auth/header-auth.vue'
 import HeaderMenu from './header-menu/header-menu.vue'
 
 const props = defineProps({
-  isMenuVisible: Boolean
+  isMenuVisible: {
+    type: Boolean,
+    default: true
+  },
 })
 </script>
