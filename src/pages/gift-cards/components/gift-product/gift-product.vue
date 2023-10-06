@@ -90,7 +90,7 @@ src/components/components-product/components-product.vue
       <div
         class="flex w-full items-center mt-6 shadow-xs bg-error-300 rounded-md pl-4 pr-4 pt-3 pb-3"
       >
-        <SvgIcon name="icon-attention" class="w-4 h-4 mr-2 text-gray-900" />
+        <SvgIcon name="icon-attention" class="w-6 h-6 mr-2 text-error-25" />
         <div class="text-sm font-medium text-error-25">
           This gift card is redeemable on the e-commerce platform
         </div>
