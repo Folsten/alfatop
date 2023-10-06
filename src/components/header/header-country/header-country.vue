@@ -6,7 +6,7 @@
     <SvgIcon name="icon-cyprus" class="w-5 h-5 mr-2 text-gray-300" />
     <div class="header-country__selected-name text-gray-500 text-sm font-medium">Cyprus</div>
     <div class="ml-1">
-      <SvgIcon name="icon-arrow-down" class="w-5 h-5 text-gray-300" />
+      <SvgIcon name="icon-arrow-down" :class="{'rotate-180': isOpen}" class="w-5 h-5 text-gray-300 transition-all" />
     </div>
     <Transition name="fade">
       <div v-if="isOpen" class="header-country__fly-window-wrapper cursor-default">

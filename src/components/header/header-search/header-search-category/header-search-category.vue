@@ -4,7 +4,7 @@
     class="header-search-category flex items-center text-gray-500 font-medium text-sm whitespace-nowrap cursor-pointer overflow-y pt-2 pb-2 pl-3"
   >
     <div>Choose category</div>
-    <SvgIcon name="icon-arrow-down" class="w-4 h-4 text-md ml-2" />
+    <SvgIcon name="icon-arrow-down" :class="{'rotate-180': isOpen}" class="w-4 h-4 text-md ml-2 transition-all" />
     <Transition name="fade">
       <div v-if="isOpen" class="header-search-category__fly-window fly-window w-full left-0 top-12">
         <div

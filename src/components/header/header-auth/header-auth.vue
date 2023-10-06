@@ -46,7 +46,7 @@
         <span class="header-auth__my-account-text text-gray-700 font-medium text-sm"
           >My account</span
         >
-        <SvgIcon name="icon-arrow-down" class="header-auth__my-account-arrow w-4 h-4 ml-2" />
+        <SvgIcon name="icon-arrow-down" :class="{'rotate-180': isOpen}" class="header-auth__my-account-arrow w-4 h-4 transition-all ml-2" />
       </div>
       <Transition name="fade">
         <div v-if="isOpen" class="header-auth__fly-window fly-window top-10 right-0 w-64">

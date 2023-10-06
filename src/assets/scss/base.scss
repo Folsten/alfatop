@@ -12,6 +12,16 @@
   opacity: 0;
 }
 
+.fade-010-enter-active,
+.fade-010-leave-active {
+  transition: all 0.10s ease-out;
+}
+
+.fade-010-enter-from,
+.fade-010-leave-to {
+  opacity: 0;
+}
+
 .fade-004-enter-active,
 .fade-004-leave-active {
   transition: all 0.04s ease-out;
