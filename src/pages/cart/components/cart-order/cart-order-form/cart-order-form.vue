@@ -23,17 +23,17 @@
     />
     <div class="cart-order-form__checkbox-container flex mt-6">
       <input type="checkbox" class="cart-order-form__checkbox-input mr-2" />
-      <p class="cart-order-form__checkbox-text text-sm text-gray-700 font-medium">
+      <p class="cart-order-form__checkbox-text flex items-center text-sm text-gray-700 font-medium">
         I agree to subscribe to the newsletter
       </p>
     </div>
     <div class="cart-order-form__checkbox-container flex mt-2">
       <input type="checkbox" class="cart-order-form__checkbox-input mr-2" />
-      <p class="cart-order-form__checkbox-text text-sm text-gray-700 font-medium">
+      <p class="cart-order-form__checkbox-text flex items-center text-sm text-gray-700 font-medium">
         I accept
-        <router-link to="#" class="text-indigo-500">Terms of Use </router-link>
+        <router-link to="#" class="text-indigo-500 ml-1 mr-1">Terms of Use </router-link>
         and
-        <router-link to="#" class="text-indigo-500">Privacy Policy </router-link>
+        <router-link to="#" class="text-indigo-500 ml-1">Privacy Policy </router-link>
       </p>
     </div>
     <div class="cart-order-form__buttons-container flex justify-between mt-8 sm:flex-col">
