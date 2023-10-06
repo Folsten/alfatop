@@ -54,29 +54,36 @@ src/components/components-product/components-product.vue
                 class="flex items-center w-full mt-1 pr-3 pt-2 pb-2 bg-gray-25 border border-gray-300 rounded-md"
               >
                 <div
+                  @click="isCountryNumbersOpen = true"
+                  v-click-outside="outsideClickHandler"
                   class="relative flex items-center h-full border-r border-gray-300 pl-3 cursor-pointer"
                 >
                   <SvgIcon name="icon-cyprus" class="w-4 h-4 mr-2 text-gray-300" />
                   <div class="text-gray-500 font-medium text-sm mr-2">+375</div>
                   <SvgIcon name="icon-arrow-down" class="w-4 h-4 mr-2" />
-                  <div class="fly-window flex flex-col left-0 top-10 w-full p-3 cursor-pointer">
-                    <div class="flex items-center">
-                      <SvgIcon name="icon-cyprus" class="w-4 h-4 text-gray-300" />
-                      <span class="pl-2 text-sm font-medium">+915</span>
+                  <Transition name="fade-010">
+                    <div
+                      v-if="isCountryNumbersOpen"
+                      class="fly-window flex flex-col left-0 top-10 w-full p-3 cursor-pointer"
+                    >
+                      <div class="flex items-center">
+                        <SvgIcon name="icon-cyprus" class="w-4 h-4 text-gray-300" />
+                        <span class="pl-2 text-sm font-medium">+915</span>
+                      </div>
+                      <div class="flex items-center mt-3">
+                        <SvgIcon name="icon-cyprus" class="w-4 h-4 text-gray-300" />
+                        <span class="pl-2 text-sm font-medium">+915</span>
+                      </div>
+                      <div class="flex items-center mt-3">
+                        <SvgIcon name="icon-cyprus" class="w-4 h-4 text-gray-300" />
+                        <span class="pl-2 text-sm font-medium">+915</span>
+                      </div>
+                      <div class="flex items-center mt-3">
+                        <SvgIcon name="icon-cyprus" class="w-4 h-4 text-gray-300" />
+                        <span class="pl-2 text-sm font-medium">+915</span>
+                      </div>
                     </div>
-                    <div class="flex items-center mt-3">
-                      <SvgIcon name="icon-cyprus" class="w-4 h-4 text-gray-300" />
-                      <span class="pl-2 text-sm font-medium">+915</span>
-                    </div>
-                    <div class="flex items-center mt-3">
-                      <SvgIcon name="icon-cyprus" class="w-4 h-4 text-gray-300" />
-                      <span class="pl-2 text-sm font-medium">+915</span>
-                    </div>
-                    <div class="flex items-center mt-3">
-                      <SvgIcon name="icon-cyprus" class="w-4 h-4 text-gray-300" />
-                      <span class="pl-2 text-sm font-medium">+915</span>
-                    </div>
-                  </div>
+                  </Transition>
                 </div>
                 <input type="text" class="text-sm pl-2" />
               </div>
@@ -236,4 +243,11 @@ input[type='checkbox'] {
 
 <script setup lang="ts">
 import SelectCustom from '~/select-custom/select-custom.vue'
+import { ref } from 'vue'
+
+let isCountryNumbersOpen = ref(false)
+
+function outsideClickHandler() {
+  isCountryNumbersOpen.value = false
+}
 </script>

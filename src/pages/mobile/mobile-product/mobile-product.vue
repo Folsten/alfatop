@@ -17,5 +17,5 @@ import Crumbs from '@/components/crumbs/crumbs.vue'
 import Newsletter from '@/components/newsletter/newsletter.vue'
 import MobileProduct from '../components/mobile-product/mobile-product.vue'
 import GalleryCategory from '@/components/gallery/gallery-category/gallery-category.vue'
-import MobileHowItWork from '../components/mobile-product/mobile-product.vue'
+import MobileHowItWork from '../components/mobile-how-it-work/mobile-how-it-work.vue'
 </script>

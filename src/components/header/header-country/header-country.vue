@@ -1,7 +1,8 @@
 <template>
   <div
     class="header-country flex items-center ml-2 cursor-pointer relative z-20"
-    @click="isOpen = !isOpen"
+    v-click-outside="outsideClickHandler"
+    @click="isOpen = true"
   >
     <SvgIcon name="icon-cyprus" class="w-5 h-5 mr-2 text-gray-300" />
     <div class="header-country__selected-name text-gray-500 text-sm font-medium">Cyprus</div>
@@ -52,4 +53,6 @@ import HeaderCountrySearch from './header-country-search.vue/header-country-sear
 import HeaderCountryItem from './header-country-item.vue/header-country-item.vue'
 
 const isOpen = ref(false)
+
+function outsideClickHandler() {isOpen.value = false}
 </script>

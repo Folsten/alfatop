@@ -7,6 +7,7 @@ import VueCustomTooltip from '@adamdehaven/vue-custom-tooltip'
 import type { TooltipOptions } from '@adamdehaven/vue-custom-tooltip'
 // Импортирование директив
 import { TooltipDirective } from './directives/tooltip'
+import vClickOutside from "click-outside-vue3";
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
@@ -31,6 +32,7 @@ const opt: TooltipOptions = {
 }
 
 app.use(VueCustomTooltip, opt)
+app.use(vClickOutside)
 app.use(createPinia())
 app.use(router)
 

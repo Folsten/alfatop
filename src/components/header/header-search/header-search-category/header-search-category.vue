@@ -1,6 +1,7 @@
 <template>
   <div
-    @click="isOpen = !isOpen"
+    @click="isOpen = true"
+    v-click-outside="outsideClickHandler"
     class="header-search-category flex items-center text-gray-500 font-medium text-sm whitespace-nowrap cursor-pointer overflow-y pt-2 pb-2 pl-3"
   >
     <div>Choose category</div>
@@ -31,4 +32,8 @@ import HeaderSearchCategoryGroup from './header-search-category-group/header-sea
 import { ref } from 'vue'
 
 const isOpen = ref(false)
+
+function outsideClickHandler() {
+  isOpen.value = false
+}
 </script>

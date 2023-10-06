@@ -21,7 +21,8 @@
   </div> -->
 
   <div
-    @click="isOpen = !isOpen"
+    @click="isOpen = true"
+    v-click-outside="outsideClickHandler"
     class="select-custom relative flex items-center justify-between w-full mt-1 pl-3 pr-3 pt-2 pb-2 bg-gray-25 border border-gray-300 rounded-md cursor-pointer"
   >
     <span class="select-custom__selected-text text-md font-medium text-gray-900">400 EUR</span>
@@ -72,4 +73,6 @@
 import { ref } from 'vue'
 
 let isOpen = ref(false)
+
+function outsideClickHandler() {isOpen.value = false}
 </script>

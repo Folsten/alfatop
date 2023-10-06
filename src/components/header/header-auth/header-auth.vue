@@ -35,7 +35,8 @@
 <!--  LOGIN BUTTON END -->
 
     <div
-      @click="isOpen = !isOpen"
+      @click="isOpen = true"
+      v-click-outside="outsideClickHandler"
       class="header-auth__main-container relative flex items-center justify-center md:hidden"
     >
       <div class="header-auth__my-account-button flex items-center cursor-pointer">
@@ -118,4 +119,6 @@ import { ref } from 'vue'
 
 let isOpen = ref(false)
 let isMobileMenuOpen = ref(false)
+
+function outsideClickHandler() {isOpen.value = false}
 </script>
