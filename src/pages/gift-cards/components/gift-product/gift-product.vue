@@ -47,7 +47,7 @@ src/components/components-product/components-product.vue
         <button
           class="hidden items-center pt-2 pb-2 pl-3 pr-3 border border-gray-300 rounded-md sm:flex sm:justify-center"
         >
-          <SvgIcon name="icon-favourite-added" class="w-4 h-4 mr-2" />
+          <SvgIcon name="icon-favourite-filled" class="w-4 h-4 mr-2" />
           <div class="text-gray-700 text-sm font-medium">Add to favourites</div>
         </button>
         <button
