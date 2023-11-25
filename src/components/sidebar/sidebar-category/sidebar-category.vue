@@ -17,7 +17,10 @@
         class="local-transition sidebar-category__arrow w-2 h-2 text-gray-900"
       />
     </div>
-    <div ref="contentContainer" class="overflow-hidden local-transition">
+    <div
+      ref="contentContainer"
+      class="overflow-hidden local-transition"
+    >
       <div class="flex flex-col first:mt-0">
         <SidebarCategoryItem />
         <SidebarCategoryItem />
@@ -40,17 +43,17 @@
 <script setup lang="ts">
 import SidebarCategoryItem from './sidebar-category-item/sidebar-category-item.vue'
 import SvgIcon from '~/svg-icon/svg-icon.vue'
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, nextTick } from "vue";
 
 let isCategoryOpen = ref(true)
 let contentContainer = ref()
 let contentContainerHeight = ''
 
-onMounted(() => {
-  getCurrentInstance().$nextTick(function() {
+onMounted(async () => {
+  window.addEventListener("load", function(event) {
     contentContainerHeight = contentContainer.value.offsetHeight
     contentContainer.value.style.height = contentContainerHeight + 'px'
-  })
+  });
 })
 
 function accordionHandler() {
