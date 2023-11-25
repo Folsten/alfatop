@@ -47,8 +47,10 @@ let contentContainer = ref()
 let contentContainerHeight = ''
 
 onMounted(() => {
-  contentContainerHeight = contentContainer.value.offsetHeight
-  contentContainer.value.style.height = contentContainerHeight + 'px'
+  getCurrentInstance().$nextTick(function() {
+    contentContainerHeight = contentContainer.value.offsetHeight
+    contentContainer.value.style.height = contentContainerHeight + 'px'
+  })
 })
 
 function accordionHandler() {
