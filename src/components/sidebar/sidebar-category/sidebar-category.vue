@@ -43,14 +43,14 @@
 <script setup lang="ts">
 import SidebarCategoryItem from './sidebar-category-item/sidebar-category-item.vue'
 import SvgIcon from '~/svg-icon/svg-icon.vue'
-import { ref, onMounted, nextTick } from "vue";
+import { ref, onMounted } from "vue";
 
 let isCategoryOpen = ref(true)
 let contentContainer = ref()
 let contentContainerHeight = ''
 
 onMounted(async () => {
-  window.addEventListener("load", function(event) {
+  window.addEventListener("load", function() {
     contentContainerHeight = contentContainer.value.offsetHeight
     contentContainer.value.style.height = contentContainerHeight + 'px'
   });
