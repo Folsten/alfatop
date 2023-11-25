@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
 import Home from '../pages/home/home.vue'
 import GiftCards from '../pages/gift-cards/gift-cards.vue'
 import GiftCardsProduct from '../pages/gift-cards/gift-cards-product/gift-cards-product.vue'
@@ -25,7 +25,7 @@ import CartCheckout from "@/pages/cart/cart-checkout/cart-checkout.vue";
 import CartCheckoutInvoice from "@/pages/cart/cart-checkout/cart-checkout-invoice/cart-checkout-invoice.vue";
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
