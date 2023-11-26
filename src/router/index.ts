@@ -102,6 +102,21 @@ const router = createRouter({
       name: 'account-favourites',
       component: AccountFavourites
     },
+    {
+      path: '/account/referral',
+      name: 'account-referral',
+      component: AccountReferral
+    },
+    {
+      path: '/cart/checkout',
+      name: 'cart-checkout',
+      component: CartCheckout
+    },
+    {
+      path: '/cart/checkout/invoice',
+      name: 'cart-checkout-invoice',
+      component: CartCheckoutInvoice
+    },
 
     // Error pages
 
@@ -130,21 +145,6 @@ const router = createRouter({
       name: 'error-coming-soon',
       component: ErrorComingSoon
     },
-    {
-      path: '/account/referral',
-      name: 'account-referral',
-      component: AccountReferral
-    },
-    {
-      path: '/cart/checkout',
-      name: 'cart-checkout',
-      component: CartCheckout
-    },
-    {
-      path: '/cart/checkout/invoice',
-      name: 'cart-checkout-invoice',
-      component: CartCheckoutInvoice
-    }
   ]
 })
 
