@@ -1,0 +1,56 @@
+<template>
+  <div
+    class="log-in-start flex flex-col items-center flex-[2] justify-center w-full ml-5 mr-5 xs:ml-3 xs:mr-3"
+  >
+    <div
+      class="log-in-start__main-container flex flex-col items-center w-full max-w-[500px] border rounded-lg bg-gray-50 p-10 xs:p-5"
+    >
+      <div class="log-in-start__title w-full text-left text-lg font-semibold text-gray-900">
+        Log in
+      </div>
+      <div class="log-in-start__subtitle w-full text-left text-sm text-gray-500">
+        Please check that you are visiting
+        <router-link to="#" class="text-indigo-500">alfa.top</router-link>
+      </div>
+      <button class="log-in-start__btn btn btn-neutral w-full h-10 pl-3 pr-3 mt-4">
+        <SvgIcon name="icon-social-google" class="register-start__social-icon w-5 h-5 mr-2" />
+        <span class="log-in-start__btn-text text-sm text-gray-700">Sign up with Google</span>
+      </button>
+      <button class="log-in-start__btn btn btn-neutral w-full h-10 pl-3 pr-3 mt-4">
+        <SvgIcon name="icon-social-meta" class="log-in-start__social-icon w-5 h-5 mr-2" />
+        <span class="log-in-start__btn-text text-sm text-gray-700">Sign up with Meta</span>
+      </button>
+      <div class="log-in-start__or self-center mt-4 mb-4">or</div>
+      <input
+        type="text"
+        class="log-in-start__email-input input-text w-full"
+        placeholder="Enter email specified at registration"
+      />
+      <div class="log-in-start__password-wrapper input-text w-full mt-4">
+        <input
+          type="text"
+          placeholder="Enter password"
+          class="log-in-start__password-input w-full text-sm text-gray-900 mr-4"
+        />
+        <SvgIcon name="icon-crossed-eye" class="log-in-start__eye-icon w-7 h-7 text-gray-500" />
+      </div>
+      <div class="log-in-start__bottom-container mt-4 flex justify-between w-full">
+        <div class="log-in-start__checkbox-container flex">
+          <input type="checkbox" class="log-in-start__checkbox mr-2" />
+          <span class="log-in-start__remember-me text-sm text-gray-900">Remember me</span>
+        </div>
+        <router-link to="#" class="log-in-start__forgot-password text-indigo-500 text-sm"
+          >Forgot the password?</router-link
+        >
+      </div>
+      <button class="log-in-start__btn btn btn-success w-full h-10 mt-4 rounded">Log in</button>
+      <div
+        class="log-in-start__have-an-account register-start__have-an-account text-sm text-gray-900 mt-4"
+      >
+        Already have an account?
+        <router-link to="#" class="text-indigo-500 font-medium">Register</router-link>
+      </div>
+    </div>
+  </div>
+</template>
+<script setup lang="ts"></script>

@@ -1,0 +1,159 @@
+@tailwind components;
+
+@layer components {
+  // Tooltip start
+  .with-tooltip {
+    position: relative;
+
+    &::before {
+      @apply bg-gray-900 rounded-md text-sm font-medium flex justify-center items-center;
+      content: attr(data-tooltip);
+      opacity: 0;
+      position: absolute;
+      transition: opacity 0.3s;
+      color: #fcfcfd;
+      min-width: 60px;
+      text-align: center;
+      padding: 5px 10px 5px 10px;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    &::after {
+      transition: opacity 0.3s;
+      opacity: 0;
+      content: '';
+      border-width: 6px;
+      border-style: solid;
+      position: absolute;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    &:hover::before,
+    &:hover::after,
+    &:focus::before,
+    &:focus::after {
+      opacity: 1;
+    }
+  }
+
+  .tooltip-bottom::before {
+    inset-block-start: 120%;
+    inset-inline-start: 50%;
+    margin-inline-start: -30px;
+  }
+
+  .tooltip-bottom::after {
+    inset-block-start: calc(130% - 15px);
+    inset-inline-start: calc(50% - 5px);
+    border-color: transparent transparent #101828 transparent;
+  }
+
+  .tooltip-top::before {
+    inset-block-start: -50px;
+    inset-inline-start: 50%;
+    margin-inline-start: -30px;
+  }
+
+  .tooltip-top::after {
+    inset-block-start: -16px;
+    inset-inline-start: 50%;
+    border-color: #101828 transparent transparent transparent;
+  }
+
+  .tooltip-left::before {
+    inset-block-end: 0;
+    inset-inline-end: 110%;
+    min-height: 100%;
+  }
+
+  .tooltip-left:after {
+    inset-block-start: calc(50% - 8px);
+    inset-inline-start: calc(-10%);
+    border-color: transparent transparent transparent #101828;
+  }
+
+  .tooltip-right::before {
+    inset-inline-start: calc(100% + 10px);
+    inset-block-start: 0;
+    min-height: 100%;
+  }
+
+  .tooltip-right::after {
+    inset-block-start: calc(50% - 7px);
+    inset-inline-start: calc(100% + -1px);
+    border-color: transparent #101828 transparent transparent;
+  }
+
+  // Tooltip end
+
+  .fly-window {
+    @apply absolute bg-gray-25 rounded-md border border-gray-300 shadow-xs z-10;
+  }
+
+  input::placeholder {
+    @apply text-gray-500 font-normal text-sm;
+  }
+
+  .scroll-custom {
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 6px; /* ширина scrollbar */
+      // height: 24px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: white; /* цвет дорожки */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #c9c9cc; /* цвет плашки */
+      border-radius: 90px; /* закругления плашки */
+      border: 3px solid #c9c9cc; /* padding вокруг плашки */
+    }
+  }
+
+  hr {
+    @apply text-gray-100 bg-gray-100 border-gray-100;
+  }
+
+  .cards-grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 12px;
+  }
+
+  // -----> BUTTONS <-----
+  .btn {
+    @apply flex justify-center items-center rounded-md font-medium text-md h-[42px];
+  }
+
+  .btn-neutral {
+    @apply bg-gray-25 text-gray-700 border border-gray-300 shadow-xs;
+  }
+
+  .btn-orange {
+    @apply bg-orange-400 text-orange-25;
+  }
+
+  .btn-success {
+    @apply bg-success-500 text-success-25;
+  }
+
+  .btn-indigo {
+    @apply bg-indigo-500 text-gray-25;
+  }
+
+  // -----> INPUTS <-----
+
+  .input-text_border {
+    @apply border border-gray-300 rounded-md;
+  }
+
+  // -----> INPUTS <-----
+  .input-text {
+    @apply flex items-center bg-gray-25 shadow-xs border border-gray-300 rounded-md text-gray-900 pl-3 pr-3 pt-2.5 pb-2.5 h-[42px];
+  }
+}
